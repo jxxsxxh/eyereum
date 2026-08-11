@@ -1,0 +1,80 @@
+@charset "utf-8";
+/* standard 1920px 54개 */
+:root {
+	--w-60: 3.1250vw;
+
+	--fs-12: clamp(12px, 0.6250vw, 15px);
+	--fs-14: clamp(12px, 0.7292vw, 17px);
+	--fs-16: clamp(13px, 0.8333vw, 19px);
+	--fs-18: clamp(14.6px, 0.9375vw, 21.4px);
+	--fs-20: clamp(16.2px, 1.0416vw, 23.8px);
+	--fs-22: clamp(17.8px, 1.1458vw, 26.2px);
+	--fs-26: clamp(21.1px, 1.3541vw, 30.9px);
+	--fs-30: clamp(24.3px, 1.5625vw, 35.7px);
+	--fs-32: clamp(25.9px, 1.6666vw, 38.1px);
+	--fs-36: clamp(29.1px, 1.875vw, 42.9px);
+	--fs-48: clamp(38.9px, 2.5vw, 57.1px);
+	--fs-62: min(3.2291vw, 73.8px);
+	--fs-68: min(3.5416vw, 80.9px);
+	--fs-82: min(4.2708vw, 97.6px);
+	--fs-110: min(5.7291vw, 130.9px);
+	--fs-115: min(5.9895vw, 136.7px);
+	--fs-150: min(7.8125vw, 178.5px);
+	--fs-240: min(12.5vw, 285.6px);
+	--fs-300: min(15.625vw, 357px);
+
+	--cl-8: clamp(5px, 0.4167vw, 11px);
+	--cl-9: clamp(6px, 0.4688vw, 12px);
+	--cl-10: clamp(7px, 0.5208vw, 13px);
+	--cl-12: clamp(9px, 0.6250vw, 15px);
+	--cl-13: clamp(10px, 0.6771vw, 16px);
+	--cl-14: clamp(11px, 0.7292vw, 17px);
+	--cl-20: clamp(17px, 1.0417vw, 23px);
+	--cl-28: clamp(23px, 1.4583vw, 33px);
+	--cl-31: clamp(28px, 1.6146vw, 34px);
+	--cl-50: clamp(47px, 2.6042vw, 53px);
+	--cl-64: clamp(61px, 3.3333vw, 67px);
+
+	--minmax-66: 66px;
+}
+
+.xs { display: none !important; }
+.md { display: none !important; }
+.xl { display: block !important; }
+.xl-none { display: none !important; }
+.xs-flex { display: none !important; }
+.md-flex { display: none !important; }
+.xl-flex { display: flex !important; }
+
+.xs-inline { display: none !important; }
+.md-inline { display: none !important; }
+.xl-inline { display: inline-block !important; }
+
+.inner-wrap { padding-left: var(--w-60); padding-right: var(--w-60); }
+.xl-center { width: 83.3333vw; margin-left: auto; margin-right: auto; }
+.xl-inner { padding-left: var(--w-60); padding-right: var(--w-60); }
+.xl-keep-all { word-break: keep-all; }
+
+.d-xl-flex { display: flex !important; }
+.flex-xl-center { justify-content: center !important; align-items: center !important; }
+.flex-xl-wrap { flex-wrap: wrap !important; }
+.flex-xl-ac { align-items: center !important; }
+.flex-xl-as { align-items: flex-start !important; }
+.flex-xl-ae { align-items: flex-end !important; }
+.flex-xl-js { justify-content: flex-start !important; }
+.flex-xl-je { justify-content: flex-end !important; }
+.flex-xl-jc { justify-content: center !important; }
+.flex-xl-jsb { justify-content: space-between !important; }
+.flex-xl-col { flex-direction: column !important; }
+.flex-xl-0-0-auto { flex: 0 0 auto !important; }
+.flex-xl-1-1-auto { flex: 1 1 auto !important; }
+.flex-xl-0-1-auto { flex: 0 1 auto !important; }
+.flex-xl-1-0-auto { flex: 1 0 auto !important; }
+.mx-xl-auto { margin-left: auto !important; margin-right: auto !important; }
+
+.ellipsis-xl-1 { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; word-wrap: normal; }
+.ellipsis-xl-2 { overflow: hidden; display: -webkit-box !important; -webkit-line-clamp: 2; -webkit-box-orient: vertical; text-overflow: ellipsis; }
+.ellipsis-xl-3 { overflow: hidden; display: -webkit-box !important; -webkit-line-clamp: 3; -webkit-box-orient: vertical; text-overflow: ellipsis; }
+.ellipsis-xl-4 { overflow: hidden; display: -webkit-box !important; -webkit-line-clamp: 4; -webkit-box-orient: vertical; text-overflow: ellipsis; }
+.ellipsis-xl-5 { overflow: hidden; display: -webkit-box !important; -webkit-line-clamp: 5; -webkit-box-orient: vertical; text-overflow: ellipsis; }
+.ellipsis-xl-6 { overflow: hidden; display: -webkit-box !important; -webkit-line-clamp: 6; -webkit-box-orient: vertical; text-overflow: ellipsis; }

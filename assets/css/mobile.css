@@ -1,0 +1,66 @@
+@charset "utf-8";
+:root {
+	--w-16: 5.0000vw;
+	--w--16: -5.0000vw;
+
+	--fs-10: 3.1250vw;
+	--fs-11: 3.4375vw;
+	--fs-12: 3.7500vw;
+	--fs-13: 4.0625vw;
+	--fs-14: 4.3750vw;
+	--fs-16: 5.0000vw;
+	--fs-18: 5.6250vw;
+	--fs-20: 6.2500vw;
+	--fs-22: 6.8750vw;
+	--fs-24: 7.5000vw;
+	--fs-26: 8.1250vw;
+	--fs-30: 9.3750vw;
+	--fs-34: 11.2500vw;
+	--fs-36: 10.6250vw;
+	--fs-42: 13.1250vw;
+	--fs-48: 15.0000vw;
+	--fs-68: 21.2500vw;
+	--fs-80: 25.0000vw;
+}
+
+*, *[onclick] { -webkit-tap-highlight-color: transparent; }
+
+.xs { display: block !important; }
+.xs-none { display: none !important; }
+.md { display: none !important; }
+.xl { display: none !important; }
+.xs-flex { display: flex !important; }
+.md-flex { display: none !important; }
+.xl-flex { display: none !important; }
+
+.xs-inline { display: inline-block !important; }
+.md-inline { display: none !important; }
+.xl-inline { display: none !important; }
+
+.inner-wrap { width: 100%; padding-left: var(--w-16); padding-right: var(--w-16); }
+.xs-inner { width: 100%; padding-left: var(--w-16); padding-right: var(--w-16); }
+.xs-keep-all { word-break: keep-all; }
+
+.d-xs-flex { display: flex !important; }
+.flex-xs-center { justify-content: center !important; align-items: center !important; }
+.flex-xs-wrap { flex-wrap: wrap !important; }
+.flex-xs-ac { align-items: center !important; }
+.flex-xs-as { align-items: flex-start !important; }
+.flex-xs-ae { align-items: flex-end !important; }
+.flex-xs-js { justify-content: flex-start !important; }
+.flex-xs-je { justify-content: flex-end !important; }
+.flex-xs-jc { justify-content: center !important; }
+.flex-xs-jsb { justify-content: space-between !important; }
+.flex-xs-col { flex-direction: column !important; }
+.flex-xs-0-0-auto { flex: 0 0 auto !important; }
+.flex-xs-1-1-auto { flex: 1 1 auto !important; }
+.flex-xs-0-1-auto { flex: 0 1 auto !important; }
+.flex-xs-1-0-auto { flex: 1 0 auto !important; }
+.mx-xs-auto { margin-left: auto !important; margin-right: auto !important; }
+
+.ellipsis-xs-1 { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; word-wrap: normal; }
+.ellipsis-xs-2 { overflow: hidden; display: -webkit-box !important; -webkit-line-clamp: 2; -webkit-box-orient: vertical; text-overflow: ellipsis; }
+.ellipsis-xs-3 { overflow: hidden; display: -webkit-box !important; -webkit-line-clamp: 3; -webkit-box-orient: vertical; text-overflow: ellipsis; }
+.ellipsis-xs-4 { overflow: hidden; display: -webkit-box !important; -webkit-line-clamp: 4; -webkit-box-orient: vertical; text-overflow: ellipsis; }
+.ellipsis-xs-5 { overflow: hidden; display: -webkit-box !important; -webkit-line-clamp: 5; -webkit-box-orient: vertical; text-overflow: ellipsis; }
+.ellipsis-xs-6 { overflow: hidden; display: -webkit-box !important; -webkit-line-clamp: 6; -webkit-box-orient: vertical; text-overflow: ellipsis; }
