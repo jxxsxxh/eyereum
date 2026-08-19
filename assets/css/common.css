@@ -6,7 +6,8 @@
     --text-light: #C2BEB8;
     --text-lighter: #DEDDCF;
     --text-highlight: #D03042;
-	--primary-font: 'Pretendard';
+	--primary-font: 'Pretendard Variable';
+	--second-font: 'NanumMyeongjo';
 	--static-01: 0.1px;
 	--static--01: -0.1px;
 	--static-05: 0.5px;
@@ -67,9 +68,9 @@ picture > img { width: 100%; }
 .menu-bg { display: none; position: fixed; top: 0; width: 100%; height: 100vh; background: rgba(0,0,0,0.2); z-index: 98; backdrop-filter: blur(12px); }
 .highlight { color: var(--text-highlight) !important; }
 
-.img-fit-cover > video,
-.img-fit-cover > picture > img,
-.img-fit-cover > img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.fit-cover > video,
+.fit-cover > picture > img,
+.fit-cover > img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
 
 .scroll { overflow: overlay; }
 .scroll::-webkit-scrollbar { width: 15px; }
