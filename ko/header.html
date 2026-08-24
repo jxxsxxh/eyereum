@@ -1,165 +1,350 @@
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=10,chrome=1">
-		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes">
-		<meta name="HandheldFriendly" content="true">
-		<meta name="format-detection" content="telephone=no">
-		<meta property="og:image" content="../assets/img/og.png" />
-		<link rel="shortcut icon" href="../assets/img/favicon.png" />
-		<link rel="apple-touch-icon" href="../assets/img/favicon.png" />
 
-		<title>아이리움 안과</title>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=10,chrome=1">
+	<meta name="viewport"
+		content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="format-detection" content="telephone=no">
+	<meta property="og:image" content="../assets/img/og.png" />
+	<link rel="shortcut icon" href="../assets/img/favicon.png" />
+	<link rel="apple-touch-icon" href="../assets/img/favicon.png" />
 
-		<link rel="stylesheet" href="../assets/font/NanumMyeongjo/NanumMyeongjo.css">
-		<link rel="stylesheet" href="../assets/font/Pretendard.Variable/pretendardvariable.css">
-		<link rel="stylesheet" href="../assets/css/swiper-bundle.min.css">
-		<link rel="stylesheet" href="../assets/css/common.css?ver=<?php echo time()?>">
-		<link rel="stylesheet" href="../assets/css/pc.css?ver=<?php echo time()?>" media="screen and (min-width: 1025px)">
-		<link rel="stylesheet" href="../assets/css/mobile.css?ver=<?php echo time()?>" media="screen and (max-width: 1024px)">
+	<title>아이리움 안과</title>
 
-		<script src="../assets/js/jquery-3.7.1.min.js"></script>
-		<script src="../assets/js/jquery-ui.min.js"></script>
-		<script src="../assets/js/jquery-migrate-3.4.0.min.js"></script>
-		<script src="../assets/js/easings.min.js"></script>
-		<script src="../assets/js/swiper-bundle.min.js"></script>
-		<script src="../assets/js/function.js?ver=<?php echo time()?>"></script>
-		<script src="../assets/js/common.js?ver=<?php echo time()?>"></script>
-	</head>
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.14.2/themes/base/jquery-ui.css">
+ 	<link rel="stylesheet" href="../assets/font/NanumMyeongjo/NanumMyeongjo.css">
+	<link rel="stylesheet" href="../assets/font/Pretendard.Variable/pretendardvariable.css">
+	<link rel="stylesheet" href="../assets/css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="../assets/css/common.css?ver=<?php echo time()?>">
+	<link rel="stylesheet" href="../assets/css/pc.css?ver=<?php echo time()?>" media="screen and (min-width: 1024px)">
+	<link rel="stylesheet" href="../assets/css/mobile.css?ver=<?php echo time()?>"
+		media="screen and (max-width: 1023px)">
 
-	<body>
-		<div id="wrap">
-			<div id="top-banner">
-				<p><img src="../assets/img/cm-top-banner.png" alt=""></p>
+	<script src="../assets/js/jquery-3.7.1.min.js"></script>
+	<script src="../assets/js/jquery-ui.js"></script>
+	<script src="../assets/js/jquery-migrate-3.4.0.min.js"></script>
+	<script src="../assets/js/easings.min.js"></script>
+	<script src="../assets/js/swiper-bundle.min.js"></script>
+	<script src="../assets/js/function.js?ver=<?php echo time()?>"></script>
+	<script src="../assets/js/common.js?ver=<?php echo time()?>"></script>
+</head>
 
-				<div>
-					<div class="checkbox">
-						<input type="checkbox">
-						<label for="">다시보지않기</label>
-					</div>
+<body>
+	<div id="wrap">
+		<div id="top-banner" class="">
+			<p><img src="../assets/img/cm-top-banner.png" alt=""></p>
 
-					<p><img src="../assets/img/svg-close-white.svg" alt=""></p>
+			<div>
+				<div class="checkbox">
+					<input type="checkbox" id="chk-top-banner-today">
+					<label for="chk-top-banner-today">다시보지않기</label>
 				</div>
-			</div>
 
-			<header id="header">
+				<p class="close"><img src="../assets/img/svg-close-white.svg" alt=""></p>
+			</div>
+		</div>
+
+		<header id="header">
+			<div class="top">
 				<p class="logo">
 					<a href="/"><img src="../assets/img/logo.svg" alt=""></a>
 				</p>
 
-				<ul>
-					<li>
-						<p><a href="">시력교정</a></p>
-
-						<div>
-							<div></div>
-
-							<div>
-								<dl>
-									<dt><a href="">나에게 맞는 수술</a></dt>
-									<dd><a href="">나에게 맞는 수술</a></dd>
-								</dl>
-
-								<dl>
-									<dt><a href="">스마일</a></dt>
-									<dd><a href="">로우에너지 스마일</a></dd>
-									<dd><a href="">스마트 노바</a></dd>
-								</dl>
-
-								<dl>
-									<dt><a href="">투데이라섹</a></dt>
-									<dd><a href="">커스텀아이즈 투데이라섹</a></dd>
-									<dd><a href="">스마일라섹</a></dd>
-								</dl>
-
-								<dl>
-									<dt><a href="">투데이라섹</a></dt>
-									<dd><a href="">커스텀아이즈 투데이라섹</a></dd>
-									<dd><a href="">스마일라섹</a></dd>
-								</dl>
-
-								<dl>
-									<dt><a href="">렌즈삽입술</a></dt>
-									<dd><a href="">렌즈삽입술</a></dd>
-									<dd><a href="">EVO+ ICL</a></dd>
-									<dd><a href="">난시교정 EVO+ 토릭ICL</a></dd>
-									<dd><a href="">노안교정 비바 ICL</a></dd>
-									<dd><a href="">KPL</a></dd>
-								</dl>
-
-								<dl>
-									<dt><a href="">엑스트라</a></dt>
-									<dd><a href="">엑스트라</a></dd>
-								</dl>
-
-								<dl>
-									<dt><a href="">재교정 수술</a></dt>
-									<dd><a href="">커스텀아이즈</a></dd>
-									<dd><a href="">렌즈삽입술 부작용 치료</a></dd>
-								</dl>
-
-								<dl>
-									<dt><a href="">비수술 교정, 드림렌즈</a></dt>
-									<dd><a href="">비수술 드림렌즈</a></dd>
-								</dl>
-							</div>
-						</div>
-					</li>
-
-					<li>
-						<p><a href="">노안·백내장</a></p>
-
-						<div>
-							<div></div>
-
-							<div>
-								<dl>
-									<dt><a href="">프레즈비맥스 노안라식</a></dt>
-									<dd><a href="">나에게 맞는 수술</a></dd>
-								</dl>
-
-								<dl>
-									<dt><a href="">백내장수술</a></dt>
-									<dd><a href="">백내장 증상과 치료</a></dd>
-									<dd><a href="">백내장 수술</a></dd>
-									<dd><a href="">노안·백내장 렌즈 종류</a></dd>
-								</dl>
-							</div>
-						</div>
-					</li>
-
-					<li>
-						<p><a href="">질환클리닉</a></p>
-					</li>
-
-					<li>
-						<p><a href="">아이리움 소개</a></p>
-					</li>
-
-					<li>
-						<p><a href="">예약·상담</a></p>
-					</li>
-
-					<li>
-						<p><a href="">소식·후기</a></p>
-					</li>
+				<ul class="gnb">
+					<li data-menu-num="1"><a href="">시력교정</a></li>
+					<li data-menu-num="2"><a href="">노안·백내장</a></li>
+					<li data-menu-num="3"><a href="">질환클리닉</a></li>
+					<li data-menu-num="4"><a href="">아이리움 소개</a></li>
+					<li data-menu-num="5"><a href="">예약·상담</a></li>
+					<li data-menu-num="6"><a href="">소식·후기</a></li>
 				</ul>
 
-				<div>
-					<div>
-						<p><img src="../assets/img/svg-search-black.svg" alt=""></p>
-						<div></div>
+				<div class="tnb">
+					<div class="sch">
+						<form action="">
+							<p><input type="text" placeholder="검색어를 입력하세요."></p>
+							<button type="submit"><img src="../assets/img/svg-search-black.svg" alt=""></button>
+						</form>
 					</div>
 
-					<div>
+					<div class="lang">
 						<dl>
 							<dt><img src="../assets/img/svg-global-black.svg" alt=""></dt>
-							<dd></dd>
+							<dd>
+								<p><a href="">EN</a></p>
+								<p><a href="">CN</a></p>
+								<p><a href="">RU</a></p>
+							</dd>
 						</dl>
 					</div>
 
-					<p><img src="../assets/img/svg-ham-black.svg" alt=""></p>
+					<p class="ham"><img src="../assets/img/svg-ham-black.svg" alt=""></p>
 				</div>
-			</header>
-			<!-- #header end -->
+			</div>
+
+			<div class="submenu">
+				<div class="inner">
+					<div class="event">
+						<p><img src="../assets/img/submenu-event.webp" alt=""></p>
+						<p class="ellipsis-xl-1">원데이 수술 20% 추가 혜택 원데이 수술 20% 추가 혜택</p>
+						<p class="ellipsis-xl-2">고객상담전화 02-3420-2020 <br>으로 문의해 주세요! 고객상담전화 02-3420-2020 <br>으로 문의해 주세요!</p>
+					</div>
+
+					<ul class="menu">
+						<li class="menu-1">
+							<dl>
+								<dt><a href="">나에게 맞는 수술</a></dt>
+								<dd>
+									<p><a href="">나에게 맞는 수술</a></p>
+								</dd>
+							</dl>
+
+							<dl>
+								<dt><a href="">스마일</a></dt>
+								<dd>
+									<p><a href="">로우에너지 스마일</a></p>
+									<p><a href="">스마트 노바</a></p>
+								</dd>
+							</dl>
+
+							<dl>
+								<dt><a href="">투데이라섹</a></dt>
+								<dd>
+									<p><a href="">커스텀아이즈 투데이라섹</a></p>
+									<p><a href="">스마일라섹</a></p>
+								</dd>
+							</dl>
+
+							<dl>
+								<dt><a href="">렌즈삽입술</a></dt>
+								<dd>
+									<p><a href="">렌즈삽입술</a></p>
+									<p><a href="">EVO+ ICL</a></p>
+									<p><a href="">난시교정 EVO+ 토릭ICL</a></p>
+									<p><a href="">노안교정 비바 ICL</a></p>
+									<p><a href="">KPL</a></p>
+								</dd>
+							</dl>
+
+							<dl>
+								<dt><a href="">엑스트라</a></dt>
+								<dd>
+									<p><a href="">엑스트라</a></p>
+								</dd>
+							</dl>
+
+							<dl>
+								<dt><a href="">재교정 수술</a></dt>
+								<dd>
+									<p><a href="">커스텀아이즈</a></p>
+									<p><a href="">렌즈삽입술 부작용 치료</a></p>
+								</dd>
+							</dl>
+
+							<dl>
+								<dt><a href="">비수술 교정, 드림렌즈</a></dt>
+								<dd>
+									<p><a href="">비수술 드림렌즈</a></p>
+								</dd>
+							</dl>
+						</li>
+
+						<li class="menu-2">
+							<dl>
+								<dt><a href="">프레즈비맥스 노안라식</a></dt>
+								<dd>
+									<p><a href="">프레즈비맥스 노안라식</a></p>
+								</dd>
+							</dl>
+
+							<dl>
+								<dt><a href="">백내장수술</a></dt>
+								<dd>
+									<p><a href="">백내장 증상과 치료</a></p>
+									<p><a href="">백내장 수술</a></p>
+									<p><a href="">노안·백내장 렌즈 종류</a></p>
+								</dd>
+							</dl>
+						</li>
+
+						<li class="menu-3">
+							<dl>
+								<dt><a href="">원추각막수술</a></dt>
+								<dd>
+									<p><a href="">원추각막클리닉</a></p>
+									<p><a href="">원추각막 치료방법</a></p>
+									<p><a href="">원추각막 치료사례</a></p>
+								</dd>
+							</dl>
+
+							<dl>
+								<dt><a href="">안구건조증</a></dt>
+								<dd>
+									<p><a href="">안구건조증 치료</a></p>
+									<p><a href="">마이봄샘 기능장애</a></p>
+								</dd>
+							</dl>
+
+							<dl>
+								<dt><a href="">결막 질환</a></dt>
+								<dd>
+									<p><a href="">결막이완증</a></p>
+									<p><a href="">결막모반</a></p>
+									<p><a href="">익상편</a></p>
+								</dd>
+							</dl>
+
+							<dl>
+								<dt><a href="">종합 눈 검진</a></dt>
+								<dd>
+									<p><a href="">녹내장</a></p>
+									<p><a href="">황반변성</a></p>
+									<p><a href="">망막박리</a></p>
+									<p><a href="">당뇨망막병증</a></p>
+									<p><a href="">포도막염</a></p>
+									<p><a href="">망막혈관폐쇄</a></p>
+								</dd>
+							</dl>
+						</li>
+
+						<li class="menu-4">
+							<dl>
+								<dt><a href="">아이리움 소개</a></dt>
+								<dd>
+									<p><a href="">근거로 증명하는 아이리움</a></p>
+									<p><a href="">연구와 학술활동</a></p>
+									<p><a href="">아이리움 CI</a></p>
+								</dd>
+							</dl>
+
+							<dl>
+								<dt><a href="">의료진 소개</a></dt>
+								<dd>
+									<p><a href="">강성용 대표원장</a></p>
+									<p><a href="">최진영 대표원장</a></p>
+									<p><a href="">정병훈 대표원장</a></p>
+									<p><a href="">장준혁 원장</a></p>
+									<p><a href="">정상원 원장</a></p>
+								</dd>
+							</dl>
+
+							<dl>
+								<dt><a href="">첨단 장비 소개</a></dt>
+								<dd>
+									<p><a href="">VISUMAX 800</a></p>
+									<p><a href="">ATOS</a></p>
+									<p><a href="">VISUMAX 500</a></p>
+									<p><a href="">AMARIS 1050RS</a></p>
+									<p><a href="">KXL® System</a></p>
+									<p><a href="">LENSAR®</a></p>
+									<p><a href="">UNITY® CS</a></p>
+									<p><a href="">정밀 검사 장비</a></p>
+								</dd>
+							</dl>
+
+							<dl>
+								<dt><a href="">아이리움 둘러보기</a></dt>
+								<dd>
+									<p><a href="">검사·진료</a></p>
+									<p><a href="">수술</a></p>
+								</dd>
+							</dl>
+
+							<dl>
+								<dt><a href="">진료시간·오시는 길</a></dt>
+								<dd>
+									<p><a href="">진료시간·오시는 길</a></p>
+								</dd>
+							</dl>
+
+							<dl>
+								<dt><a href="">의료 네트워크</a></dt>
+								<dd>
+									<p><a href="">협력병원</a></p>
+									<p><a href="">진료의뢰센터</a></p>
+								</dd>
+							</dl>
+						</li>
+
+						<li class="menu-5">
+							<dl>
+								<dt><a href="">예약·상담</a></dt>
+								<dd>
+									<p><a href="">온라인 예약</a></p>
+									<p><a href="">온라인 상담</a></p>
+									<p><a href="">간편 비용상담</a></p>
+								</dd>
+							</dl>
+
+							<dl>
+								<dt><a href="">검사·수술 안내</a></dt>
+								<dd>
+									<p><a href="">원데이 수술 안내</a></p>
+									<p><a href="">수술 전 안전검사</a></p>
+									<p><a href="">수술 과정 미리보기</a></p>
+								</dd>
+							</dl>
+
+							<dl>
+								<dt><a href="">수술 전·후 관리</a></dt>
+								<dd>
+									<p><a href="">검사·수술 전 주의사항</a></p>
+									<p><a href="">수술 후 주의사항</a></p>
+									<p><a href="">아이리움 라이프케어</a></p>
+								</dd>
+							</dl>
+
+							<dl>
+								<dt><a href="">자주 묻는 질문</a></dt>
+								<dd>
+									<p><a href="">자주 묻는 질문</a></p>
+								</dd>
+							</dl>
+
+							<dl>
+								<dt><a href="">고객의 소리</a></dt>
+								<dd>
+									<p><a href="">고객의 소리</a></p>
+								</dd>
+							</dl>
+						</li>
+
+						<li class="menu-6">
+							<dl>
+								<dt><a href="">공지 · 뉴스</a></dt>
+								<dd>
+									<p><a href="">아이리움 소식</a></p>
+									<p><a href="">언론 보도</a></p>
+									<p><a href="">사회공헌 활동</a></p>
+								</dd>
+							</dl>
+
+							<dl>
+								<dt><a href="">진행 중인 이벤트</a></dt>
+								<dd>
+									<p><a href="">진행 중인 이벤트</a></p>
+								</dd>
+							</dl>
+
+							<dl>
+								<dt><a href="">영상 후기</a></dt>
+								<dd>
+									<p><a href="">영상 후기</a></p>
+								</dd>
+							</dl>
+
+							<dl>
+								<dt><a href="">아이리움 튜브</a></dt>
+								<dd>
+									<p><a href="">아이리움 튜브</a></p>
+								</dd>
+							</dl>
+						</li>
+					</ul>
+				</div>
+			</div><!-- .submenu end -->
+		</header>
+		<!-- #header end -->

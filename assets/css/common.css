@@ -1,11 +1,7 @@
 @charset "utf-8";
 :root {
-    --text-body: #817E7A;
-    --text-dark: #4A4948;
-    --text-darkest: #1C1B1B;
-    --text-light: #C2BEB8;
-    --text-lighter: #DEDDCF;
-    --text-highlight: #D03042;
+    --highlight-color: #020287;
+	--main-color: #2D91FF;
 	--primary-font: 'Pretendard Variable';
 	--second-font: 'NanumMyeongjo';
 	--static-01: 0.1px;
@@ -21,7 +17,7 @@
 	--text-indent: -99999999999px;
 }
 
-* { box-sizing: border-box; padding: 0; margin: 0; list-style: none; }
+* { box-sizing: border-box; padding: 0; margin: 0; list-style: none; line-height: normal; }
 *::before,
 *::after { box-sizing: border-box; }
 html.show-layer { overflow: hidden; }
