@@ -1,19 +1,19 @@
-$(function() {
-    const $banner = $('#top-banner');
+$(function () {
+	const $banner = $('#top-banner');
 
-    // 쿠키 존재 여부 확인 후 배너 제어
-    if (WebUtil.getCookie('hideTopBanner') === 'Y') {
-        $banner.addClass('hide');
-    }
+	// 쿠키 존재 여부 확인 후 배너 제어
+	if (WebUtil.getCookie('hideTopBanner') === 'Y') {
+		$banner.addClass('hide');
+	}
 
-    // 닫기 버튼 클릭 이벤트
-    $banner.find('.close').on('click', function() {
-        if ($('#chk-top-banner-today').is(':checked')) {
-            WebUtil.setCookie('hideTopBanner', 'Y', 7);
-        }
+	// 닫기 버튼 클릭 이벤트
+	$banner.find('.close').on('click', function () {
+		if ($('#chk-top-banner-today').is(':checked')) {
+			WebUtil.setCookie('hideTopBanner', 'Y', 7);
+		}
 		$banner.addClass('hide');
 		$(window).trigger('scroll');
-    });
+	});
 });
 
 
@@ -73,21 +73,21 @@ $(function () {
 		$('.menu-bg').hide();
 	});
 
-	$('#header').on('click', '.ham', (event)=>{
+	$('#header').on('click', '.ham', (event) => {
 		$('html').addClass('scroll-hidden');
 		$('#sitemap').show();
 
-		if( $(window).width() > 1024 ){
+		if ($(window).width() > 1024) {
 			// 모바일에서 gnb 닫고 PC로 가서 gnb 열었을 때 서브메뉴 안보이는 문제
 			//$('#gnb .menu > dl > dd').show();
 		}
 	});
 
-	$('#header').on('click', '.lang > dl > dt', (event)=>{
+	$('#header').on('click', '.lang > dl > dt', (event) => {
 		$('.lang > dl > dd').toggleClass('on');
 	});
 
-	$('#sitemap').on('click', '.close', (event)=>{
+	$('#sitemap').on('click', '.close', (event) => {
 		$('html').removeClass('scroll-hidden');
 		$('#sitemap').hide();
 	});
@@ -113,15 +113,15 @@ $(function () {
 		},
 		speed: 800,
 		pagination: {
-			el: slideWrap+' .pagination',
+			el: slideWrap + ' .pagination',
 			clickable: true,
 			renderBullet: function (index, className) {
 				return '<span class="' + className + '">' + (slideTxt[index]) + '</span>';
 			},
 		},
 		navigation: {
-			nextEl: slideWrap+' .swiper-next',
-			prevEl: slideWrap+' .swiper-prev',
+			nextEl: slideWrap + ' .swiper-next',
+			prevEl: slideWrap + ' .swiper-prev',
 		},
 	});
 });
@@ -142,7 +142,7 @@ $(function () {
 		},
 		observer: true,
 		observeParents: true,
-		observeSlideChildren:true,
+		observeSlideChildren: true,
 		slidesPerView: 'auto',
 		spaceBetween: 0,
 		//loop: true,
@@ -152,15 +152,15 @@ $(function () {
 		},
 		speed: 800,
 		pagination: {
-			el: slideWrap+' .pagination',
+			el: slideWrap + ' .pagination',
 			clickable: true,
 			renderBullet: function (index, className) {
 				return '<span class="' + className + '">' + (slideTxt[index]) + '</span>';
 			},
 		},
 		navigation: {
-			nextEl: slideWrap+' .swiper-next',
-			prevEl: slideWrap+' .swiper-prev',
+			nextEl: slideWrap + ' .swiper-next',
+			prevEl: slideWrap + ' .swiper-prev',
 		},
 	});
 });
@@ -181,8 +181,8 @@ $(function () {
 		},
 		speed: 800,
 		navigation: {
-			nextEl: slideWrap+' .swiper-next',
-			prevEl: slideWrap+' .swiper-prev',
+			nextEl: slideWrap + ' .swiper-next',
+			prevEl: slideWrap + ' .swiper-prev',
 		},
 	});
 });
@@ -194,19 +194,19 @@ $(function () {
 		dateFormat: 'yy-mm-dd',
 		prevText: '이전 달',
 		nextText: '다음 달',
-		monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
-		monthNamesShort: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
-		dayNames: ['일','월','화','수','목','금','토'],
-		dayNamesShort: ['일','월','화','수','목','금','토'],
-		dayNamesMin: ['일','월','화','수','목','금','토'],
+		monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+		monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+		dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+		dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+		dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
 		showMonthAfterYear: true,
 		//changeMonth: true,
 		//changeYear: true,
 		yearSuffix: '년',
 		minDate: +1,
-		onSelect: function(dateText, inst) {
+		onSelect: function (dateText, inst) {
 			$('.inc.online .time').find('select').show();
-	   }
+		}
 	});
 });
 
@@ -225,7 +225,16 @@ $(function () {
 
 
 $(function () {
-	$('.social-link').on('click', function() {
-		$(this).toggleClass('active');
+	$('.social-link > dt').on('click', function () {
+		$('.social-link').toggleClass('active');
+	});
+});
+
+
+
+$(function () {
+	$('.select-fake-wrap select').on('change', function () {
+		var selectedText = $(this).find('option:selected').text();
+		$(this).siblings('.fake-text').text(selectedText);
 	});
 });

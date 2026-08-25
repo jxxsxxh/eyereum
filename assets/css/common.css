@@ -63,7 +63,7 @@ hr.line-041242 { display: block; width: 100%; height: var(--static-10); backgrou
 .pre-wrap { white-space: pre-wrap; }
 .keep-all { word-break: keep-all; }
 .menu-bg { display: none; position: fixed; top: 0; width: 100%; height: 100vh; background: rgba(0,0,0,0.2); z-index: 98; backdrop-filter: blur(12px); }
-.highlight { color: var(--text-highlight) !important; }
+.highlight { color: var(--main-color) !important; font-weight: 700; }
 
 .fit-cover > video,
 .fit-cover > picture > img,

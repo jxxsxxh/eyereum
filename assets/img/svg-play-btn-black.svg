@@ -1,6 +1,6 @@
 <svg width="74" height="74" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g opacity="0.9">
-<rect width="74" height="74" rx="37" fill="white"/>
-<path d="M44 37L33.5 43.0622V30.9378L44 37Z" fill="black"/>
+<rect width="74" height="74" rx="37" fill="black"/>
+<path d="M44 37L33.5 43.0622V30.9378L44 37Z" fill="white"/>
 </g>
 </svg>
