@@ -83,14 +83,6 @@ $(function () {
 		}
 	});
 
-	$('#header .sch > form').on('submit', function (e) {
-        if (!$(this).hasClass('active')) {
-            e.preventDefault();
-            $(this).addClass('active');
-            //$(this).find('input[type="text"]').focus();
-        }
-    });
-
 	$('#header').on('click', '.lang > dl > dt', (event)=>{
 		$('.lang > dl > dd').toggleClass('on');
 	});
@@ -176,6 +168,28 @@ $(function () {
 
 
 $(function () {
+	const slideWrap = '#container.board.list .swiper';
+
+	new Swiper(slideWrap, {
+		slidesPerView: 'auto',
+		spaceBetween: 0,
+		centeredSlides: true,
+		//loop: true,
+		autoplay: {
+			delay: 3000,
+			disableOnInteraction: false,
+		},
+		speed: 800,
+		navigation: {
+			nextEl: slideWrap+' .swiper-next',
+			prevEl: slideWrap+' .swiper-prev',
+		},
+	});
+});
+
+
+
+$(function () {
 	$("#datepicker").datepicker({
 		dateFormat: 'yy-mm-dd',
 		prevText: '이전 달',
@@ -193,5 +207,17 @@ $(function () {
 		onSelect: function(dateText, inst) {
 			$('.inc.online .time').find('select').show();
 	   }
+	});
+});
+
+
+
+$(function () {
+	$('.sch > form').on('submit', function (e) {
+		if (!$(this).hasClass('active')) {
+			e.preventDefault();
+			$(this).addClass('active');
+			//$(this).find('input[type="text"]').focus();
+		}
 	});
 });
