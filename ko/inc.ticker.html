@@ -8,17 +8,19 @@
 			<li>수술 임상 데이터 &rarr; 연구·혁신 &rarr; 더 좋은 수술 결과</li>
 		</ul>
 		<ul class="ticker-row">
-			<li>한국백내장굴절수술학회 최우수 연구 4회</li>
+			<li>미국백내장굴절수술학회 최우수 연구 4회</li>
 			<li>SCI 논문 65편</li>
 			<li>아시아 유일 유럽학회 공로상 수상</li>
 			<li>스마일 SCI 논문 16편 (2025년 기준)</li>
+			<li>미국백내장굴절수술학회 최우수 연구 4회</li>
 		</ul>
 		<ul class="ticker-row">
-			<li>굴절교정 시과학대학 전임의</li>
+			<li>국제 굴절교정 시과학대학 전임의</li>
 			<li>IOVS 등재 리뷰어</li>
 			<li>아마리스 최고 개발자</li>
 			<li>아베드로 자문위원</li>
 			<li>슈빈트 의료자문위원</li>
+			<li>국제 굴절교정 시과학대학 전임의</li>
 		</ul>
 	</div>
 </div> <!-- .inc.ticker end -->
@@ -27,34 +29,43 @@
 	document.addEventListener("DOMContentLoaded", function () {
 		gsap.registerPlugin(ScrollTrigger);
 
-		gsap.to('.ticker-row:nth-child(1)', {
-			x: -200,
-			scrollTrigger: {
-				trigger: '.inc.ticker',
-				start: 'top bottom',
-				end: 'bottom top',
-				scrub: 1
+		gsap.fromTo('.ticker-row:nth-child(1)',
+			{ x: 100 },
+			{
+				x: -200,
+				scrollTrigger: {
+					trigger: '.inc.ticker',
+					start: 'top bottom',
+					end: 'bottom top',
+					scrub: 1
+				}
 			}
-		});
+		);
 
-		gsap.to('.ticker-row:nth-child(2)', {
-			x: 200,
-			scrollTrigger: {
-				trigger: '.inc.ticker',
-				start: 'top bottom',
-				end: 'bottom top',
-				scrub: 1
+		gsap.fromTo('.ticker-row:nth-child(2)',
+			{ x: -600 },
+			{
+				x: 100,
+				scrollTrigger: {
+					trigger: '.inc.ticker',
+					start: 'top bottom',
+					end: 'bottom top',
+					scrub: 1
+				}
 			}
-		});
+		);
 
-		gsap.to('.ticker-row:nth-child(3)', {
-			x: -150,
-			scrollTrigger: {
-				trigger: '.inc.ticker',
-				start: 'top bottom',
-				end: 'bottom top',
-				scrub: 1
+		gsap.fromTo('.ticker-row:nth-child(3)',
+			{ x: 100 },
+			{
+				x: -150,
+				scrollTrigger: {
+					trigger: '.inc.ticker',
+					start: 'top bottom',
+					end: 'bottom top',
+					scrub: 1
+				}
 			}
-		});
+		);
 	});
 </script>

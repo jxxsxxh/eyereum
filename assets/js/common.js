@@ -221,3 +221,11 @@ $(function () {
 		}
 	});
 });
+
+
+
+$(function () {
+	$('.social-link').on('click', function() {
+		$(this).toggleClass('active');
+	});
+});
