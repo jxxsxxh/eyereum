@@ -1,0 +1,49 @@
+<?php include_once('header.html')?>
+
+<div id="container" class="subpage board list" data-menu-group="예약·상담" data-menu-depth2="고객의 소리" data-menu-depth3="고객의 소리">
+	<div class="top">
+		<div class="inner xl-inner">
+			<div>
+				<span>Online Consultation</span>
+				<h1>고객의 소리</h1>
+			</div>
+			<p>개선사항을 남겨주시면 더 좋은 서비스로 보답하겠습니다.</p>
+		</div>
+	</div><!-- .top end -->
+
+	<hr class="line-041242">
+
+    <div class="voc-wrapper">
+        <h2>고객의 소리 VOC</h2>
+
+        <div class="voc-card">
+            <div class="notice-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+					<path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="#2D91FF"/>
+					<path d="M12 8V12" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+					<path d="M12 16H12.01" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+				</svg>
+                <p class="notice-text">고객의 소리는 솔직한 고객님의 의견을 듣기 위해 익명으로 운영됩니다. 답변이 필요한 의견이나 문의사항은 고객님의 성함과 전화번호를 남겨주시면 성실히 답변드리겠습니다.</p>
+            </div>
+
+            <form action="" method="post">
+                <div class="input-group">
+                    <label for="voc-title">제목</label>
+                    <input type="text" id="voc-title" placeholder="제목을 입력해주세요.">
+                </div>
+
+                <div class="input-group">
+                    <label for="voc-content">내용</label>
+                    <textarea id="voc-content" class="scroll3" placeholder="불편사항이나 더 좋은 서비스를 위한 의견을 남겨주세요.&#10;더 좋은 서비스로 보답하겠습니다."></textarea>
+                </div>
+
+                <div class="btn-wrap">
+                    <button type="submit" class="btn-submit">전송</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</div><!-- #container end -->
+
+<?php include_once('footer.html')?>
