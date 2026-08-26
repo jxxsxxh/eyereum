@@ -594,11 +594,12 @@ html.scroll-hidden { overflow: hidden; }
 #container.board.list .board-grid-review > ul > li { width: 100%; word-break: keep-all; }
 #container.board.list .board-grid-review > ul > li > p { position: relative; width: 100%; }
 #container.board.list .board-grid-review > ul > li > p.best::before { content: 'BEST'; position: absolute; z-index: 2; top: -8px; left: 18px; width: 50px; height: 50px; border-radius: 5px; background-color: var(--main-color); color: #fff; font-size: var(--fs-14); font-weight: 700; display: flex; align-items: center; justify-content: center; }
-#container.board.list .board-grid-review > ul > li > p > a { display: block; width: 100%; background-color: #000; border-radius: 14px; overflow: hidden; }
+#container.board.list .board-grid-review > ul > li > p > a { display: block; width: 100%; border-radius: 14px; overflow: hidden; }
 #container.board.list .board-grid-review > ul > li > p > a > img { display: block; width: 100%; aspect-ratio: 440/248; object-fit: cover; object-position: center; }
 
 #container.board.list .board-grid-review > ul > li > div { display: flex; flex-direction: column; }
-#container.board.list .board-grid-review > ul > li > div > a { margin-top: 40px; font-size: var(--fs-28); font-weight: 600; line-height: 1.35; }
+#container.board.list .board-grid-review > ul > li > div > h2 { margin-top: 40px; }
+#container.board.list .board-grid-review > ul > li > div > h2 > a {  font-size: var(--fs-28); font-weight: 600; line-height: 1.35; }
 #container.board.list .board-grid-review > ul > li > div > ul { display: flex; align-items: center; margin-top: 30px; font-size: var(--fs-16); color: #686869; line-height: 1.5; }
 #container.board.list .board-grid-review > ul > li > div > ul > li + li::before { content: '|'; font-size: var(--fs-16); color: #C5C1C4; margin: 0 14px; }
 #container.board.list .board-grid-review > ul > li > div > p { display: block; margin-top: 20px; padding-top: 20px; border-top: var(--static-10) solid #DFDCDF; font-size: var(--fs-18); font-weight: 600; color: var(--main-color); line-height: 1.44; }
@@ -617,8 +618,8 @@ html.scroll-hidden { overflow: hidden; }
 #container.board.list .board-grid-youtube > ul > li > div > a::after { content: ''; position: absolute; width: 72px; height: 72px; border-radius: 100px; bottom: 19px; right: 19px; background: url('../img/svg-play-btn.svg') center/cover no-repeat; transition: background 0.5s ease; }
 #container.board.list .board-grid-youtube > ul > li > div > a:hover::after { background-image: url('../img/svg-play-btn-black.svg'); }
 #container.board.list .board-grid-youtube > ul > li > div > a > img{ width: 100%; }
-#container.board.list .board-grid-youtube > ul > li > p { margin-top: 40px; }
-#container.board.list .board-grid-youtube > ul > li > p > a { font-size: var(--fs-28); font-weight: 600; line-height: 1.35; }
+#container.board.list .board-grid-youtube > ul > li > h2 { margin-top: 40px; }
+#container.board.list .board-grid-youtube > ul > li > h2 > a { font-size: var(--fs-28); font-weight: 600; line-height: 1.35; }
 #container.board.list .board-grid-youtube > ul > li > span { margin-top: 30px; font-size: var(--fs-18); color: #686869; line-height: 1.66; }
 
 

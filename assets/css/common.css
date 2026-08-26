@@ -17,7 +17,7 @@
 	--text-indent: -99999999999px;
 }
 
-* { box-sizing: border-box; padding: 0; margin: 0; list-style: none; line-height: normal; }
+* { box-sizing: border-box; padding: 0; margin: 0; list-style: none; }
 *::before,
 *::after { box-sizing: border-box; }
 html.show-layer { overflow: hidden; }
