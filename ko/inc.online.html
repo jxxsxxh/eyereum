@@ -13,17 +13,15 @@
 
 			<ul>
 				<li class="name">
-					<p>이름</p>
-					<input type="text">
+					<input type="text" placeholder="이름">
 				</li>
 
 				<li class="tel">
-					<p>휴대폰 번호</p>
-					<input type="text">
+					<input type="text" placeholder="휴대폰 번호">
 				</li>
 
 				<li class="time">
-					<p>통화 가능 시간 <span>(선택)</span></p>
+					<label for="datepicker">통화 가능 시간 <span>(선택)</span></label>
 					<input type="text" id="datepicker">
 					<select name="">
 						<option value="">10:00</option>
@@ -43,20 +41,21 @@
 				</li>
 
 				<li class="content">
-					<p>문의내용</p>
-					<textarea name=""></textarea>
+					<textarea name="" placeholder="문의내용"></textarea>
 				</li>
 
 				<li class="privacy">
-					<input type="checkbox">
-					<label for="">개인정보 수집동의 <span>ㅣ</span></label>
-					<a target="_blank" href="">
-						<span>내용보기</span>
-						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 10" fill="none">
-							<path d="M0.75 0.75L4.75 4.75L0.75 8.75" stroke="#383839" stroke-width="1.5"
-								stroke-linecap="round" stroke-linejoin="round" />
-						</svg>
-					</a>
+					<div>
+						<input type="checkbox" id="agree">
+						<label for="agree">개인정보 수집동의 <span>ㅣ</span></label>
+						<a target="_blank" href="">
+							<span>내용보기</span>
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 10" fill="none">
+								<path d="M0.75 0.75L4.75 4.75L0.75 8.75" stroke="#383839" stroke-width="1.5"
+									stroke-linecap="round" stroke-linejoin="round" />
+							</svg>
+						</a>
+					</div>
 				</li>
 			</ul>
 
