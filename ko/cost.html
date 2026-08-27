@@ -1,0 +1,365 @@
+<?php include_once('header.html')?>
+
+<div id="container" class="subpage consult cost" data-menu-group="예약·상담" data-menu-depth2="예약·상담" data-menu-depth3="간편 비용상담">
+	<div class="top">
+		<div class="inner xl-inner">
+			<div>
+				<span>Quick Cost Estimate</span>
+				<h1>간편 비용 조회</h1>
+			</div>
+			<p>간편한 상담으로, 세계가 인정한 아이리움의 전문성을 담아 투명하게 비용 정보를 안내해 드립니다.</p>
+		</div>
+	</div><!-- .top end -->
+
+
+	<hr class="line-041242">
+
+
+	<div class="contents">
+		<div class="booking-wrapper">
+			<h2>고객 정보</h2>
+
+			<div class="booking-card">
+				<form action="" method="post">
+					<div class="form-section">
+						<div class="input-group check-group">
+							<span class="label-title">관심 수술</span>
+							<div class="check-grid">
+								<label><input type="checkbox" name="surgery_type" value="smile" checked> 스마일·스마일프로</label>
+								<label><input type="checkbox" name="surgery_type" value="smart_nova"> 스마트 노바</label>
+								<label><input type="checkbox" name="surgery_type" value="icl"> 렌즈삽입술</label>
+								<label><input type="checkbox" name="surgery_type" value="twoday_lasek"> 투데이라섹</label>
+								<label><input type="checkbox" name="surgery_type" value="lasik"> 라식</label>
+								<label><input type="checkbox" name="surgery_type" value="presbyopia"> 노안</label>
+								<label><input type="checkbox" name="surgery_type" value="cataract"> 백내장</label>
+								<label><input type="checkbox" name="surgery_type" value="retouch"> 재교정</label>
+								<label><input type="checkbox" name="surgery_type" value="keratoconus"> 원추각막수술</label>
+								<label><input type="checkbox" name="surgery_type" value="oneday"> 원데이 수술</label>
+								<label><input type="checkbox" name="surgery_type" value="dream_lens"> 드림렌즈</label>
+							</div>
+						</div>
+					</div>
+
+					<div class="form-section">
+						<div class="input-group">
+							<label for="book-name">이름</label>
+							<input type="text" id="book-name" placeholder="이름을 입력해주세요.">
+						</div>
+						<div class="input-group">
+							<label for="book-phone">전화번호</label>
+							<input type="tel" id="book-phone" placeholder="예) 010-0000-0000">
+						</div>
+					</div>
+
+					<div class="form-section">
+						<div class="input-group check-row-group">
+							<span class="label-title">연락 방법</span>
+							<div class="check-row-list">
+								<div class="check-row">
+									<label><input type="checkbox" name="contact_method" value="call" checked> 전화상담</label>
+									<div class="select-wrap">
+										<input type="text" name="call_date" id="call_date" placeholder="통화 가능 날짜/시간을 선택해주세요.">
+										<select name="call_time" class="call_time">
+											<option value="10:00">10:00</option>
+											<option value="10:30">10:30</option>
+											<option value="11:00">11:00</option>
+											<option value="11:30">11:30</option>
+											<option value="12:00">12:00</option>
+											<option value="12:30">12:30</option>
+											<option value="13:00">13:00</option>
+											<option value="13:30">13:30</option>
+											<option value="14:00">14:00</option>
+											<option value="14:30">14:30</option>
+											<option value="15:00">15:00</option>
+											<option value="15:30">15:30</option>
+											<option value="16:00">16:00</option>
+										</select>
+									</div>
+								</div>
+								<div class="check-row">
+									<label><input type="checkbox" name="contact_method" value="kakao"> 카카오톡</label>
+								</div>
+								<div class="check-row">
+									<label><input type="checkbox" name="contact_method" value="email"> 이메일</label>
+									<input type="email" placeholder="이메일을 입력해주세요.">
+								</div>
+								<div class="check-row">
+									<label><input type="checkbox" name="contact_method" value="etc"> 기타</label>
+									<input type="text" placeholder="해외거주시 WhatsApp, wechat 등 sns와 ID를 남겨주세요.">
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="form-section">
+						<div class="input-group check-group">
+							<span class="label-title">수술 전 검사 경험</span>
+							<div class="check-wrap">
+								<label><input type="radio" name="test_exp" value="none" checked> 없음</label>
+								<label><input type="radio" name="test_exp" value="exist"> 있음</label>
+							</div>
+						</div>
+					</div>
+
+					<div class="form-section">
+						<div class="input-group check-group">
+							<span class="label-title">렌즈 착용 여부</span>
+							<div class="check-wrap">
+								<label><input type="radio" name="lens_wear" value="none" checked> 착용 안함</label>
+								<label><input type="radio" name="lens_wear" value="soft"> 소프트 렌즈</label>
+								<label><input type="radio" name="lens_wear" value="hard"> 하드 렌즈</label>
+								<label><input type="radio" name="lens_wear" value="astigmatism"> 난시 렌즈</label>
+								<label><input type="radio" name="lens_wear" value="dream"> 드림 렌즈</label>
+							</div>
+						</div>
+					</div>
+
+					<div class="form-section">
+						<div class="input-group check-group">
+							<span class="label-title">맞춤 정보</span>
+							<div class="check-grid">
+								<label><input type="checkbox" name="custom_info" value="office" checked> 직장인</label>
+								<label><input type="checkbox" name="custom_info" value="student"> 학생</label>
+								<label><input type="checkbox" name="custom_info" value="military"> 군인</label>
+								<label><input type="checkbox" name="custom_info" value="travel_sports"> 여행·스포츠</label>
+								<label><input type="checkbox" name="custom_info" value="parenting"> 육아</label>
+								<label><input type="checkbox" name="custom_info" value="health"> 건강</label>
+								<label><input type="checkbox" name="custom_info" value="academic"> 학업</label>
+							</div>
+						</div>
+					</div>
+
+					<div class="form-section">
+						<div class="input-group">
+							<label for="inquiry-text">문의내용</label>
+							<textarea id="inquiry-text" class="scroll3" placeholder="문의사항을 입력하세요&#10;(예시 : 회복이 빠른 시력교정술을 원하는데, 검사 당일에 수술도 가능할까요?)"></textarea>
+						</div>
+					</div>
+
+					<div class="form-section">
+						<div class="input-group check-row-group reply">
+							<span class="label-title">문의사항에 대해 어떻게 답변을 드릴까요? (1가지 선택 필수 / 중복 선택 가능)</span>
+							<div class="check-row-list">
+								<div class="check-row">
+									<label><input type="checkbox" name="reply_method" value="kakao"> 카카오톡으로 실시간 상담 원해요.</label>
+								</div>
+								<div class="check-row">
+									<label><input type="checkbox" name="reply_method" value="call"> 원하는 시간에 전화주세요.</label>
+								</div>
+								<div class="check-row">
+									<div class="select-wrap">
+										<input type="text" name="reply_call_date" id="reply_call_date" placeholder="전화상담 희망 일시를 선택하세요.">
+										<select name="reply_call_time">
+											<option value="10:00" selected>10:00</option>
+											<option value="10:30">10:30</option>
+											<option value="11:00">11:00</option>
+											<option value="11:30">11:30</option>
+											<option value="12:00">12:00</option>
+											<option value="12:30">12:30</option>
+											<option value="13:00">13:00</option>
+											<option value="13:30">13:30</option>
+											<option value="14:00">14:00</option>
+											<option value="14:30">14:30</option>
+											<option value="15:00">15:00</option>
+											<option value="15:30">15:30</option>
+											<option value="16:00">16:00</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="terms-section">
+						<div class="terms-header">
+							<label class="check-label">
+								<input type="checkbox" name="agree_privacy">
+								<span>개인정보 수집동의</span>
+							</label>
+							<a target="_blank" href="">
+								<span>내용보기</span>
+								<svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10" fill="none">
+									<path d="M0.75 0.75L4.75 4.75L0.75 8.75" stroke="#383839" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</a>
+						</div>
+					</div>
+
+					<div class="btn-wrap">
+						<button type="submit" class="btn-submit btn-main-color">비용조회 신청하기</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<?php include_once('inc.review-event.html')?>
+	<?php include_once('inc.online.html')?>
+	<?php include_once('inc.ticker.html')?>
+
+</div><!-- #container end -->
+
+<script>
+$(function () {
+	$("#container.cost #reply_call_date").datepicker({
+		dateFormat: 'yy-mm-dd',
+		prevText: '이전 달',
+		nextText: '다음 달',
+		monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+		monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+		dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+		dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+		dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+		showMonthAfterYear: true,
+		//changeMonth: true,
+		//changeYear: true,
+		yearSuffix: '년',
+		minDate: +1
+	});
+
+	$("#container.cost #call_date").datepicker({
+		dateFormat: 'yy-mm-dd',
+		prevText: '이전 달',
+		nextText: '다음 달',
+		monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+		monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+		dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+		dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+		dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+		showMonthAfterYear: true,
+		//changeMonth: true,
+		//changeYear: true,
+		yearSuffix: '년',
+		minDate: +1,
+		onSelect: function (dateText, inst) {
+			$('.call_time').show();
+		}
+	});
+});
+
+$(function () {
+    $('input[name="contact_method"]').on('change', function() {
+        var name = $(this).attr('name');
+        if ($(this).is(':checked')) {
+            $('input[name="' + name + '"]').not(this).prop('checked', false);
+        }
+    });
+
+
+	$('.contents .booking-wrapper .booking-card form').on('submit', function(e) {
+		// 1. 이름 검사
+		var $nameInput = $('#book-name');
+		var nameVal = $.trim($nameInput.val());
+
+		if (nameVal === '') {
+			alert('이름을 입력해주세요.');
+			$nameInput.focus();
+			return false;
+		}
+
+		var nameRegex = /^[가-힣a-zA-Z]{2,}$/;
+		if (!nameRegex.test(nameVal)) {
+			alert('올바른 이름을 입력해주세요. (한글 또는 영문 2자 이상)');
+			$nameInput.focus();
+			return false;
+		}
+
+		// 2. 전화번호 검사
+		var $phoneInput = $('#book-phone');
+		var phoneVal = $.trim($phoneInput.val());
+
+		if (phoneVal === '') {
+			alert('전화번호를 입력해주세요.');
+			$phoneInput.focus();
+			return false;
+		}
+
+		var phoneRegex = /^01([0|1|6|7|8|9])-?([0-9]{3,4})-?([0-9]{4})$/;
+		if (!phoneRegex.test(phoneVal)) {
+			alert('올바른 전화번호 형식을 입력해주세요.');
+			$phoneInput.focus();
+			return false;
+		}
+
+		// 3. 연락 방법 선택 및 세부 입력값 검사
+		var $selectedContact = $('.contents .booking-wrapper .booking-card input[name="contact_method"]:checked');
+
+		if ($selectedContact.length === 0) {
+			alert('연락 방법을 선택해주세요.');
+			return false;
+		}
+
+		var contactVal = $selectedContact.val();
+
+		// 3-1. 전화상담 선택 시 날짜 입력 검사
+		if (contactVal === 'call') {
+			var $callDate = $('#call_date');
+			if ($.trim($callDate.val()) === '') {
+				alert('통화 가능 날짜/시간을 입력해주세요.');
+				$callDate.focus();
+				return false;
+			}
+		}
+
+		// 3-2. 이메일 선택 시 이메일 입력 및 형식 검사
+		if (contactVal === 'email') {
+			var $emailInput = $selectedContact.closest('.check-row').find('input[type="email"]');
+			var emailVal = $.trim($emailInput.val());
+
+			if (emailVal === '') {
+				alert('이메일을 입력해주세요.');
+				$emailInput.focus();
+				return false;
+			}
+
+			var emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+			if (!emailRegex.test(emailVal)) {
+				alert('올바른 이메일 형식을 입력해주세요.');
+				$emailInput.focus();
+				return false;
+			}
+		}
+
+		// 3-3. 기타 선택 시 내용 입력 검사
+		if (contactVal === 'etc') {
+			var $etcInput = $selectedContact.closest('.check-row').find('input[type="text"]');
+			if ($.trim($etcInput.val()) === '') {
+				alert('SNS 및 ID 정보를 입력해주세요.');
+				$etcInput.focus();
+				return false;
+			}
+		}
+
+		// 4. 문의사항 답변 방식 검사 (최소 1개 이상 선택)
+		var $replyMethods = $('.contents .booking-wrapper .booking-card input[name="reply_method"]:checked');
+
+		if ($replyMethods.length === 0) {
+			alert('문의사항에 대한 답변 방식을 최소 1가지 이상 선택해주세요.');
+			return false;
+		}
+
+		// 전화상담 답변 방식 선택 시 희망 일시 입력 검사
+		var $replyCallCheck = $('.contents .booking-wrapper .booking-card input[name="reply_method"][value="call"]');
+		if ($replyCallCheck.is(':checked')) {
+			var $replyCallDate = $('#reply_call_date');
+			if ($.trim($replyCallDate.val()) === '') {
+				alert('전화상담 희망 일시를 입력해주세요.');
+				$replyCallDate.focus();
+				return false;
+			}
+		}
+
+		// 5. 개인정보 수집동의 검사
+		var $privacyAgree = $('.contents .booking-wrapper .booking-card input[name="agree_privacy"]');
+		if (!$privacyAgree.is(':checked')) {
+			alert('개인정보 수집동의에 체크해주세요.');
+			$privacyAgree.focus();
+			return false;
+		}
+
+		return true;
+		});
+});
+</script>
+
+<?php include_once('footer.html')?>

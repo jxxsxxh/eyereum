@@ -1,6 +1,7 @@
 @charset "utf-8";
 :root {
 	--w-120: 6.2500vw;
+	--w-240: 12.5vw;
 
 	--fs-12: 12px;
 	--fs-13: 13px;
@@ -83,6 +84,10 @@ html.scroll-hidden { overflow: hidden; }
 .swiper .nav > div.swiper-button-disabled { opacity: 0.3 !important; }
 .swiper .nav > div > img { width: 100%; }
 .swiper-pagination-bullet { margin: 0 !important; border-radius: 0 !important; opacity: 1 !important; display: block !important; width: auto; height: auto; }
+
+.btn-line { display: inline-block; border-radius: 100px; padding: 22px 36px; border: var(--static-10) solid #000; font-size: var(--fs-16); font-weight: 700; }
+.btn-main-color { display: inline-block; border-radius: 100px; padding: 22px 36px; border: var(--static-10) solid var(--main-color); font-size: var(--fs-16); font-weight: 700; color: #fff; background-color: var(--main-color); }
+.btn-second-color { display: inline-block; border-radius: 100px; padding: 22px 36px; border: var(--static-10) solid var(--highlight-color); font-size: var(--fs-16); font-weight: 700; color: #fff; background-color: var(--highlight-color); }
 
 .more-detail { font-size: var(--fs-16); font-weight: 700; letter-spacing: -0.16px; display: flex; align-items: center; gap: 6px; }
 .more-detail::after { content: ""; width: 16px; height: 16px; border-radius: 100%; background-size: 100%; background-color: #000; background-position: center; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M5 8L11 8' stroke='%23F4F1F4' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M8 5L11 8L8 11' stroke='%23F4F1F4' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");}
@@ -478,8 +483,8 @@ html.scroll-hidden { overflow: hidden; }
 #container .inc.review-event > .inner > .review > .swiper .swiper-slide > p:nth-of-type(2) > a { color: inherit; text-decoration: none; }
 #container .inc.review-event > .inner > .review > .swiper .nav { margin-top: 40px; padding-top: 30px; border-top: var(--static-10) solid #C5C1C4; height: max-content; }
 
-#container .inc.review-event > .inner > .event > .event-list { display: flex; justify-content: space-between; }
-#container .inc.review-event > .inner > .event > .event-list > li { width: 330px; }
+#container .inc.review-event > .inner > .event > .event-list { display: flex; justify-content: space-between; gap: 24px; }
+#container .inc.review-event > .inner > .event > .event-list > li { flex: 1; }
 #container .inc.review-event > .inner > .event > .event-list > li > dl > dt { width: 100%; aspect-ratio: 1 / 1; overflow: hidden; border-radius: 14px; }
 #container .inc.review-event > .inner > .event > .event-list > li > dl > dt > a > img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; }
 #container .inc.review-event > .inner > .event > .event-list > li > dl > dd:nth-of-type(1) > a { display: block; margin-top: 30px; font-size: var(--fs-22); font-weight: 500; line-height: 1.45; word-break: keep-all; }
@@ -500,14 +505,6 @@ html.scroll-hidden { overflow: hidden; }
 /* ========== 게시판 리스트 페이지 ========== */
 #container.board.list {}
 #container.board.list .inc.online { margin-top: 120px; }
-
-#container.board.list > .top { width: 100%; }
-#container.board.list > .top > .inner { width: 100%; padding-top: 229px; height: 550px; display: flex;justify-content: flex-start; gap: 180px; }
-#container.board.list > .top > .inner > div { position: relative; }
-#container.board.list > .top > .inner > div > span { font-size: var(--fs-16); font-weight: 500; display: block; position: absolute; left: 0; top: -35px; }
-#container.board.list > .top > .inner > div > h1,
-#container.board.list > .top > .inner > h1 { font-family: var(--second-font); font-size: var(--fs-82); font-weight: 700; letter-spacing: -3.28px; width: 855px; }
-#container.board.list > .top > .inner > p { font-size: var(--fs-18); line-height: 1.44; color: #686869; width: 524px; word-break: keep-all; }
 
 
 
@@ -903,3 +900,243 @@ html.scroll-hidden { overflow: hidden; }
 #container.subpage .voc-card form > .input-group > textarea::placeholder { color: #8B898B; }
 #container.subpage .voc-card form > .btn-wrap { padding-top: 30px; border-top: var(--static-10) solid #8B898B; margin-top: 30px; text-align: center; }
 #container.subpage .voc-card form > .btn-wrap > .btn-submit { padding: 22px 36px; border: none; border-radius: 100px; background-color: var(--main-color); font-size: var(--fs-16); font-weight: 700; color: #fff; cursor: pointer; }
+
+
+
+
+
+/* ========== 서브페이지 ========== */
+#container.subpage > .top { width: 100%; }
+#container.subpage > .top > .inner { width: 100%; padding-top: 229px; height: 550px; padding-right: var(--w-240); display: flex;justify-content: space-between; gap: 180px; }
+#container.subpage > .top > .inner > div { position: relative; }
+#container.subpage > .top > .inner > div > span { font-size: var(--fs-16); font-weight: 500; display: block; position: absolute; left: 0; top: -35px; }
+#container.subpage > .top > .inner > div > h1,
+#container.subpage > .top > .inner > h1 { font-family: var(--second-font); font-size: var(--fs-82); font-weight: 700; letter-spacing: -3.28px; }
+#container.subpage > .top > .inner > p { flex: 0 0 auto; font-size: var(--fs-18); line-height: 1.44; color: #686869; width: 524px; word-break: keep-all; }
+
+
+#container.subpage > .sub-category { padding-bottom: 50px; }
+#container.subpage > .sub-category > ul { display: flex; gap: 30px; align-items: center; }
+#container.subpage > .sub-category > ul > li { display: flex; align-items: center; gap: 30px; }
+#container.subpage > .sub-category > ul > li~li::before { content: ''; width: var(--static-10); height: 24px; background-color: #C5C1C4; }
+#container.subpage > .sub-category > ul > li > a { font-size: var(--fs-20); font-weight:700; color: #8B898B; }
+#container.subpage > .sub-category > ul > li > a:hover,
+#container.subpage > .sub-category > ul > li.on > a { color: var(--main-color); }
+
+
+#container.subpage .tab-category { padding: 30px 0; border-bottom: var(--static-10) solid var(--highlight-color); }
+#container.subpage .tab-category > ul { display: flex; gap: 30px; align-items: center; }
+#container.subpage .tab-category > ul > li { display: flex; align-items: center; gap: 30px; font-size: var(--fs-18); font-weight:700; color: #8B898B; cursor: pointer; }
+#container.subpage .tab-category > ul > li~li::before { content: ''; width: var(--static-10); height: 24px; background-color: #DFDCDF; }
+#container.subpage .tab-category > ul > li.on { color: var(--main-color); }
+
+
+#container.subpage > .contents { padding-top: 130px; }
+#container.subpage > .contents .section { font-size: var(--fs-18); line-height: 1.66; color: #383839; }
+
+#container.subpage > .contents .h2-title > h2 { font-family: var(--second-font); font-size: var(--fs-48); font-weight: 900; letter-spacing: -0.96px; line-height: 1.41; }
+#container.subpage > .contents .h2-title > p { margin-top: 14px; font-size: var(--fs-18); font-weight: 500; line-height: 1.44; color: #8B898B; }
+#container.subpage > .contents .h2-title > .symbol { display: flex; gap: 10px; align-items: center; margin-bottom: 30px; }
+#container.subpage > .contents .h2-title > .symbol > img { width: 30px; }
+#container.subpage > .contents .h2-title > .symbol > p { font-size: var(--fs-15); font-weight: 700; line-height: 1.06; color: var(--main-color); }
+
+#container.subpage > .contents .h3-title > h3 { font-size: var(--fs-40); font-weight: 500; line-height: 1.3; }
+
+#container.subpage > .contents .grid-col-3-title-img-text { display: grid; gap: 80px; grid-template-columns: repeat(3, 1fr); }
+#container.subpage > .contents .grid-col-3-title-img-text > li { display: flex; flex-direction: column; gap: 40px; }
+#container.subpage > .contents .grid-col-3-title-img-text > li > p { font-size: var(--fs-28); font-weight: 700; line-height: 1.35; text-align: center; }
+#container.subpage > .contents .grid-col-3-title-img-text > li > .img { width: 100%; aspect-ratio: 71/40; }
+#container.subpage > .contents .grid-col-3-title-img-text > li > .text { padding-top: 40px; border-top: var(--static-10) dashed #C5C1C4; }
+
+
+#container.subpage .youtube-frame { width: 708px; aspect-ratio: 169/95; position: relative; border-radius: 14px; overflow: hidden; }
+#container.subpage .youtube-frame > p.cover { position: absolute; left: 0; top: 0; width: 100%; height: 100%; cursor: pointer; }
+#container.subpage .youtube-frame > p.cover > img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+#container.subpage .youtube-frame > p.cover::after { content: ''; position: absolute; width: 74px; height: 74px; border-radius: 100px; bottom: 20px; right: 20px; background: url('../img/svg-play-btn.svg') center/cover no-repeat; transition: background 0.5s ease; }
+#container.subpage .youtube-frame > p.cover:hover::after { background-image: url('../img/svg-play-btn-black.svg'); }
+#container.subpage .youtube-frame > div.iframe { width: 100%; height: 100%; }
+#container.subpage .youtube-frame > div.iframe iframe { width: 100%; height: 100%; }
+
+
+
+/* 온라인 예약 */
+#container.reservation .contents { padding-top: 130px; }
+#container.reservation .reservation-list { display: flex; gap: 76px; justify-content: center; }
+#container.reservation .reservation-list > li { flex: 1; max-width: 682px; text-align: center; }
+#container.reservation .reservation-list > li > h2 { font-size: var(--fs-40); font-weight: 500; line-height: 1.3; text-align: center; }
+#container.reservation .reservation-list > li > div:nth-of-type(1) { margin-top: 40px; border-radius: 14px; overflow: hidden; width: 100%; aspect-ratio: 682/384; }
+#container.reservation .reservation-list > li > div:nth-of-type(2) { margin-top: 40px; padding-top: 40px; border-top: var(--static-10) dashed #C5C1C4; display: flex; justify-content: center; gap: 10px; }
+
+
+#container.reservation .reservation-iframe-wrap { width: 800px; margin: 0 auto; }
+#container.reservation .reservation-iframe-wrap > h2 { font-size: var(--fs-40); font-weight: 900; letter-spacing: -1.6px; font-family: var(--second-font); }
+#container.reservation .reservation-iframe-wrap > div { border: var(--static-10) solid #8B898B; border-radius: 14px; overflow: hidden; margin-top: 40px; }
+#container.reservation .reservation-iframe-wrap > div > div { width: 100%; height: 720px; padding: 30px 13px; height: 720px; overflow-y: auto; }
+#container.reservation .reservation-iframe-wrap > div > div > iframe { width: 100%; height: 700px; }
+
+
+
+/* 온라인 상담 */
+#container.consult {}
+#container.consult .contents { padding-top: 130px; }
+#container.consult .booking-wrapper { width: 800px; margin: 0 auto; }
+#container.consult .booking-wrapper > h2 { font-size: var(--fs-40); font-weight: 900; letter-spacing: -1.6px; font-family: var(--second-font); }
+#container.consult .booking-card { border: var(--static-10) solid #8B898B; border-radius: 14px; padding: 80px; margin-top: 40px; }
+#container.consult .booking-card > .notice-box { display: flex; align-items: center; justify-content: center; gap: 8px; padding: 10px 20px; background-color: #F5F5F7; border-radius: 100px; margin-bottom: 40px; }
+#container.consult .booking-card > .notice-box > svg {}
+#container.consult .booking-card > .notice-box > .notice-text { font-size: var(--fs-16); color: #686869; line-height: 1.5; }
+#container.consult .booking-card > .notice-box > .notice-text > strong { font-weight: 700; color: #000; }
+
+#container.consult .booking-card form > .form-section + .form-section { padding-top: 30px; border-top: var(--static-10) dashed #C5C1C4; margin-top: 30px; }
+#container.consult .booking-card .input-group + .input-group { margin-top: 20px; }
+#container.consult .booking-card .input-group > label,
+#container.consult .booking-card .input-group > .label-title { display: block; font-size: var(--fs-18); font-weight: 600; line-height: 1.44; }
+#container.consult .booking-card .input-group > input[type="text"],
+#container.consult .booking-card .input-group > input[type="tel"],
+#container.consult .booking-card .input-group > input[type="email"] { width: 100%; padding: 18px 30px; border: var(--static-10) solid #C5C1C4; border-radius: 100px; font-size: var(--fs-16); margin-top: 10px; }
+#container.consult .booking-card .input-group > input::placeholder,
+#container.consult .booking-card .input-group > textarea::placeholder { color: #8B898B; }
+
+#container.consult .booking-card .input-group > textarea { width: 100%; height: 120px; padding: 28px 30px; border: var(--static-10) solid #C5C1C4; border-radius: 14px; font-size: var(--fs-16); margin-top: 10px; resize: none; font-family: inherit; overflow-y: auto; }
+
+#container.consult .booking-card .check-group > .check-wrap { display: flex; gap: 20px; margin-top: 13px; }
+#container.consult .booking-card .check-group label { display: flex; align-items: center; gap: 10px; font-size: var(--fs-18); color: #383839; cursor: pointer; }
+#container.consult .booking-card .check-group label > input[type="checkbox"],
+#container.consult .booking-card .check-group label > input[type="radio"] { width: 24px; height: 24px; accent-color: #000; }
+
+#container.consult .booking-card .check-row-group > .check-row-list { margin-top: 10px; }
+#container.consult .booking-card .check-row-group .check-row { display: flex; align-items: flex-start; gap: 20px; }
+#container.consult .booking-card .check-row-group .check-row + .check-row { margin-top: 22px; }
+#container.consult .booking-card .check-row-group .check-row > label { display: flex; align-items: center; gap: 8px; min-width: 160px; height: 50px; font-size: var(--fs-18); color: #383839; cursor: pointer; }
+#container.consult .booking-card .check-row-group .check-row > label > input[type="checkbox"] { width: 24px; height: 24px; accent-color: #000; }
+#container.consult .booking-card .check-row-group .check-row select { flex: 1; padding: 13px 30px; border: var(--static-10) solid #C5C1C4; border-radius: 100px; font-size: var(--fs-16); color: #000; outline: none;  background: url('../img/svg-select-arrow.svg') calc(100% - 30px) center/14px 8px no-repeat; }
+#container.consult .booking-card .check-row-group .check-row input[type="text"],
+#container.consult .booking-card .check-row-group .check-row input[type="email"] { flex: 1; padding: 14px 30px; border: var(--static-10) solid #C5C1C4; border-radius: 100px; font-size: var(--fs-16); }
+#container.consult .booking-card .check-row-group.reply {}
+#container.consult .booking-card .check-row-group.reply .check-row-list { margin-top: 20px; }
+#container.consult .booking-card .check-row-group.reply .check-row > label { height: auto; }
+#container.consult .booking-card .check-row-group.reply .check-row> .select-wrap > select { display: block; }
+
+#container.consult .booking-card .check-row-group .check-row > .select-wrap { flex: 1; display: flex; flex-direction: column; gap: 10px; }
+#container.consult .booking-card .check-row-group .check-row > .select-wrap > select { width: 100%; flex: 0 0 auto; display: none; }
+#container.consult .booking-card .check-row-group .check-row > .select-wrap > .guide-text { font-size: var(--fs-16); color: #8B898B; margin-top: 10px; padding-left: 30px; line-height: 1.5; word-break: keep-all; }
+
+#container.consult .booking-card .check-group > .check-grid { display: flex; flex-wrap: wrap; gap: 20px; margin-top: 13px; }
+#container.consult .booking-card .check-group > .etc-input { display: flex; align-items: center; gap: 20px; margin-top: 20px; }
+#container.consult .booking-card .check-group > .etc-input > label { min-width: 60px; }
+#container.consult .booking-card .check-group > .etc-input > input[type="text"] { flex: 1; padding: 14px 30px; border: var(--static-10) solid #C5C1C4; border-radius: 100px; font-size: var(--fs-16); }
+
+#container.consult .booking-card .terms-section { padding-top: 30px; border-top: var(--static-10) dashed #C5C1C4; margin-top: 30px; }
+#container.consult .booking-card .terms-section .terms-header { display: flex; justify-content: flex-start; align-items: center; gap: 30px; }
+#container.consult .booking-card .terms-section .terms-header .check-label { display: flex; align-items: center; gap: 10px; cursor: pointer; }
+#container.consult .booking-card .terms-section .terms-header .check-label > input[type="checkbox"] { width: 24px; height: 24px; accent-color: #000; }
+#container.consult .booking-card .terms-section .terms-header .check-label > span { font-size: var(--fs-18); font-weight: 600; }
+#container.consult .booking-card .terms-section .terms-header > a { display: flex; align-items: center; gap: 10px; position: relative; line-height: normal; }
+#container.consult .booking-card .terms-section .terms-header > a::before { content: ''; position: absolute; left: -15px; top: 50%; transform: translateY(-50%); width: var(--static-10); height: 22px; background-color: #dfdcdf; }
+#container.consult .booking-card .terms-section .terms-header > a > svg { width: 6px; margin-top: 1px; }
+
+#container.consult .booking-card .btn-wrap { padding-top: 30px; margin-top: 30px; text-align: center; border-top: var(--static-10) solid #8B898B; }
+#container.consult .booking-card .btn-wrap > .btn-submit { cursor: pointer; }
+
+
+
+/* 원데이 수술 안내 */
+#container.surgeryGuide_01 {}
+#container.surgeryGuide_01 .contents .section1 {}
+#container.surgeryGuide_01 .contents .section1 .grid-col-3-title-img-text { margin-top: 60px; padding-top: 60px; border-top: var(--static-10) solid #C5C1C4; }
+#container.surgeryGuide_01 .contents .section1 .notice { margin-top: 60px; padding-top: 30px; border-top: var(--static-10) solid #C5C1C4; color: #686869; }
+
+
+#container.surgeryGuide_01 .contents .section2 { padding-top: 140px; }
+#container.surgeryGuide_01 .contents .section2 > ul { display: flex; gap: 80px; margin-top: 60px; padding: 50px 0 60px; border-top: var(--static-10) solid #C5C1C4; border-bottom: var(--static-10) solid #C5C1C4; }
+#container.surgeryGuide_01 .contents .section2 > ul > li { flex: 1; }
+#container.surgeryGuide_01 .contents .section2 > ul > li > p { text-align: center; font-size: var(--fs-28); font-weight: 700; line-height: 1.35; }
+#container.surgeryGuide_01 .contents .section2 > ul > li > .svg { padding: 46px 0 50px; text-align: center; }
+#container.surgeryGuide_01 .contents .section2 > ul > li > .svg > svg { height: 77px; }
+#container.surgeryGuide_01 .contents .section2 > ul > li > .text { padding-top: 50px; border-top: var(--static-10) dotted #8B898B; }
+#container.surgeryGuide_01 .contents .section2 > ul > li > .text > span { display: block; margin-top: 20px; font-size: var(--fs-16); line-height: 1.5; color: #686869; }
+
+
+#container.surgeryGuide_01 .contents .section3 { padding-top: 140px; display: flex; }
+#container.surgeryGuide_01 .contents .section3 .h3-title { flex: 1 1 0; }
+#container.surgeryGuide_01 .contents .section3 .h3-title > p { margin-top: 40px; }
+
+
+
+/* 수술 전 안전검사 */
+#container.surgeryGuide_02 .inspection-process { margin-top: 50px; width: 100%; padding-left: 70px; }
+#container.surgeryGuide_02 .inspection-process > ul { display: grid; column-gap: 40px; grid-template-columns: repeat(4, 1fr); grid-template-areas: "item1 item2 item3 item4" "item8 item7 item6 item5" "item9 item10 item11 item12" "item16 item15 item14 item13" "item17 item18 item19 ."; }
+#container.surgeryGuide_02 .inspection-process > ul > li { position: relative; min-height: 258px; }
+#container.surgeryGuide_02 .inspection-process > ul > li:nth-of-type(1) { grid-area: item1; }
+#container.surgeryGuide_02 .inspection-process > ul > li:nth-of-type(2) { grid-area: item2; }
+#container.surgeryGuide_02 .inspection-process > ul > li:nth-of-type(3) { grid-area: item3; }
+#container.surgeryGuide_02 .inspection-process > ul > li:nth-of-type(4) { grid-area: item4; }
+#container.surgeryGuide_02 .inspection-process > ul > li:nth-of-type(5) { grid-area: item5; }
+#container.surgeryGuide_02 .inspection-process > ul > li:nth-of-type(6) { grid-area: item6; }
+#container.surgeryGuide_02 .inspection-process > ul > li:nth-of-type(7) { grid-area: item7; }
+#container.surgeryGuide_02 .inspection-process > ul > li:nth-of-type(8) { grid-area: item8; }
+#container.surgeryGuide_02 .inspection-process > ul > li:nth-of-type(9) { grid-area: item9; }
+#container.surgeryGuide_02 .inspection-process > ul > li:nth-of-type(10) { grid-area: item10; }
+#container.surgeryGuide_02 .inspection-process > ul > li:nth-of-type(11) { grid-area: item11; }
+#container.surgeryGuide_02 .inspection-process > ul > li:nth-of-type(12) { grid-area: item12; }
+#container.surgeryGuide_02 .inspection-process > ul > li:nth-of-type(13) { grid-area: item13; }
+#container.surgeryGuide_02 .inspection-process > ul > li:nth-of-type(14) { grid-area: item14; }
+#container.surgeryGuide_02 .inspection-process > ul > li:nth-of-type(15) { grid-area: item15; }
+#container.surgeryGuide_02 .inspection-process > ul > li:nth-of-type(16) { grid-area: item16; }
+#container.surgeryGuide_02 .inspection-process > ul > li:nth-of-type(17) { grid-area: item17; }
+#container.surgeryGuide_02 .inspection-process > ul > li:nth-of-type(18) { grid-area: item18; }
+#container.surgeryGuide_02 .inspection-process > ul > li:nth-of-type(19) { grid-area: item19; }
+#container.surgeryGuide_02 .inspection-process > ul > li::before { content: ''; position: absolute; top: 20px; left: 0; width: calc(100% + 50px); height: 10px; background-color: #DFDCDF; z-index: 1; }
+#container.surgeryGuide_02 .inspection-process > ul > li:nth-of-type(4)::before,
+#container.surgeryGuide_02 .inspection-process > ul > li:nth-of-type(5)::before,
+#container.surgeryGuide_02 .inspection-process > ul > li:nth-of-type(12)::before,
+#container.surgeryGuide_02 .inspection-process > ul > li:nth-of-type(13)::before { width: 60%; }
+#container.surgeryGuide_02 .inspection-process > ul > li:nth-of-type(19)::before { width: 0; }
+#container.surgeryGuide_02 .inspection-process > ul > li:nth-of-type(4)::after,
+#container.surgeryGuide_02 .inspection-process > ul > li:nth-of-type(8)::after,
+#container.surgeryGuide_02 .inspection-process > ul > li:nth-of-type(12)::after,
+#container.surgeryGuide_02 .inspection-process > ul > li:nth-of-type(16)::after { content: ''; position: absolute; top: 20px; right: 0px; width: 140px; height: 268px; border: 10px solid #DFDCDF; border-left: 0; border-radius: 0 80px 80px 0; z-index: 1; }
+#container.surgeryGuide_02 .inspection-process > ul > li:nth-of-type(8)::after,
+#container.surgeryGuide_02 .inspection-process > ul > li:nth-of-type(16)::after { left: -70px; border-right: 0; border-left: 10px solid #DFDCDF; border-radius: 80px 0 0 80px; }
+#container.surgeryGuide_02 .inspection-process > ul > li .num { position: relative; display: inline-flex; align-items: center; justify-content: center; width: 50px; height: 50px; background-color: #000; color: #fff; font-size: var(--fs-20); font-weight: 700; border-radius: 50%; z-index: 2; }
+#container.surgeryGuide_02 .inspection-process > ul > li.active .num { background-color: var(--main-color); }
+#container.surgeryGuide_02 .inspection-process > ul > li > strong { display: block; font-size: var(--fs-28); font-weight: 700; line-height: 1.35; margin-top: 15px; }
+#container.surgeryGuide_02 .inspection-process > ul > li > p { font-size: var(--fs-18); color: #383839; line-height: 1.44; margin-top: 15px; }
+#container.surgeryGuide_02 .inspection-process > ul > li .badge { display: inline-block; background-color: var(--main-color); color: #fff; font-size: var(--fs-13); font-weight: 600; padding: 4px 8px; border-radius: 4px; margin-top: 15px; }
+#container.surgeryGuide_02 .inspection-process > .notice { padding-top: 20px; border-top: var(--static-10) solid #C5C1C4; }
+
+
+#container.surgeryGuide_02_01 .section2 { padding-top: 180px; }
+#container.surgeryGuide_02_01 .section2 .tab-category { margin-top: 60px; }
+#container.surgeryGuide_02_01 .section2 .tab-contents { margin-top: 120px; }
+#container.surgeryGuide_02_01 .section2 .tab-contents > div { display: none; }
+#container.surgeryGuide_02_01 .section2 .tab-contents > div.on { display: block; }
+#container.surgeryGuide_02_01 .section2 .tab-contents .grid-col-3-title-img-text > li { padding-bottom: 60px; border-bottom: var(--static-10) solid #C5C1C4; }
+
+
+#container.surgeryGuide_02_01 .section3 { padding-top: 180px; }
+#container.surgeryGuide_02_01 .section3 > ul { display: grid; grid-template-columns: repeat(2, 1fr); gap: 80px; margin-top: 60px; }
+#container.surgeryGuide_02_01 .section3 > ul > li { display: flex; flex-direction: column; padding-top: 60px; border-top: var(--static-10) solid #C5C1C4; }
+#container.surgeryGuide_02_01 .section3 > ul > li > h3 { font-size: var(--fs-32); font-weight: 700; text-align: center; line-height: normal; }
+#container.surgeryGuide_02_01 .section3 > ul > li > .img { width: 100%; aspect-ratio: 680/382; border-radius: 14px; margin-top: 50px; overflow: hidden; }
+#container.surgeryGuide_02_01 .section3 > ul > li > p:nth-of-type(2) { font-size: var(--fs-22); font-weight: 600; padding-top: 40px; border-top: var(--static-10) dashed #C5C1C4; margin-top: 40px; }
+#container.surgeryGuide_02_01 .section3 > ul > li > div { font-size: var(--fs-18); line-height: 1.66; margin-top: 20px; }
+
+#container.surgeryGuide_02_01 .section3 > ul > li > dl { display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px; padding-top: 40px; border-top: var(--static-10) solid #C5C1C4; margin-top: 50px; }
+#container.surgeryGuide_02_01 .section3 > ul > li > dl > dt { font-size: var(--fs-20); font-weight: 600; text-align: center; grid-row: 1; }
+#container.surgeryGuide_02_01 .section3 > ul > li > dl > dd { display: flex; flex-direction: column; align-items: center; grid-row: 2; margin-top: 15px; }
+#container.surgeryGuide_02_01 .section3 > ul > li > dl > dd > p { width: 100%; aspect-ratio: 320/180; border-radius: 14px; overflow: hidden; }
+#container.surgeryGuide_02_01 .section3 > ul > li > dl > dd > span { font-size: var(--fs-16); color: #686869; line-height: 1.5; margin-top: 20px; }
+
+
+#container.surgeryGuide_02_01 .section4 { padding-top: 180px; }
+#container.surgeryGuide_02_01 .section4 > ul { margin-top: 120px; display: flex; flex-direction: column; gap: 120px; }
+#container.surgeryGuide_02_01 .section4 > ul > li { display: grid; grid-template-columns: repeat(2, 1fr); gap: 80px; align-items: center; }
+#container.surgeryGuide_02_01 .section4 > ul > li:nth-of-type(1) > div > h3 { font-size: var(--fs-40); font-weight: 500; line-height: 1.3; }
+#container.surgeryGuide_02_01 .section4 > ul > li:nth-of-type(1) > div > p:nth-of-type(1) { margin-top: 40px; }
+#container.surgeryGuide_02_01 .section4 > ul > li:nth-of-type(1) > div > p:nth-of-type(2) { font-weight: 600; padding-top: 40px; border-top: var(--static-10) dashed #C5C1C4; margin-top: 40px; }
+#container.surgeryGuide_02_01 .section4 > ul > li:nth-of-type(1) > div > p:nth-of-type(3) { margin-top: 20px; color: #686869; line-height: 1.44; }
+#container.surgeryGuide_02_01 .section4 > ul > li:nth-of-type(1) > p.img { width: 100%; border-radius: 14px; aspect-ratio: 708/398; overflow: hidden; }
+
+#container.surgeryGuide_02_01 .section4 > ul > li:nth-of-type(2) { align-items: flex-start; }
+#container.surgeryGuide_02_01 .section4 > ul > li:nth-of-type(2) > p { margin-top: 10px; }

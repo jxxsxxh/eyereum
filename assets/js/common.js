@@ -238,3 +238,41 @@ $(function () {
 		$(this).siblings('.fake-text').text(selectedText);
 	});
 });
+
+
+
+$(function () {
+    $('.youtube-frame .cover').on('click', function() {
+        var $frame = $(this).closest('.youtube-frame');
+        var $iframe = $frame.find('iframe');
+        var src = $iframe.attr('src');
+
+        // URL에 이미 쿼리스트링(?)이 있는지 확인하여 autoplay 파라미터 추가
+        if (src.indexOf('?') > -1) {
+            src += '&autoplay=1';
+        } else {
+            src += '?autoplay=1';
+        }
+
+        // iframe src 갱신 및 커버 숨김 처리
+        $iframe.attr('src', src);
+        $(this).fadeOut();
+    });
+});
+
+
+
+$(function () {
+    $('.tab-category > ul > li').on('click', function() {
+        if ($(this).hasClass('on')) return;
+
+        var tabText = $.trim($(this).text());
+
+        $(this).addClass('on').siblings().removeClass('on');
+
+        var $target = $('.tab-contents > div[data-tab-contents="' + tabText + '"]');
+
+        $('.tab-contents > div').hide();
+        $target.stop(true, true).fadeIn(300);
+    });
+});

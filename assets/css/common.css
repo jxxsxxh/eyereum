@@ -27,7 +27,7 @@ hr { margin: 0; border: 0; }
 input { outline: none; font-family: var(--primary-font); background: #fff; }
 select { border: 0; -o-appearance: none; -webkit-appearance: none; -moz-appearance: none; appearance: none; font-family: var(--primary-font); background: #fff; cursor: pointer; }
 textarea {outline: none;  font-family: var(--primary-font); background: #fff; }
-button { background: none; margin: 0; padding: 0; border: 0; }
+button { background: none; margin: 0; padding: 0; border: 0; font-family: var(--primary-font); }
 pre { font-family: var(--primary-font); }
 html, body { font-family: var(--primary-font); color: #000; }
 picture { display: block; }
