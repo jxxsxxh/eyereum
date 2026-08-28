@@ -23,3 +23,35 @@ class WebUtil {
 function goToTop(){
 	$( 'html, body' ).animate( { scrollTop : 0 }, 400 );
 }
+
+
+
+function stickyTop(opt=null){
+	if( $('.sticky-wrap').length > 0 && $(window).width() > 1024 ){
+
+		const offsetTop = Math.floor($('.sticky-wrap').offset().top);
+		const scrollTop = $(window).scrollTop();
+
+		if( scrollTop > offsetTop){
+			if (opt == 'up') {
+				const headerHeight = $('#header').outerHeight();
+                $('.sticky-wrap > div').addClass('up').removeClass('down').css('top', headerHeight + 'px');
+			}
+			else if(opt=='down'){
+				$('.sticky-wrap > div').addClass('down').removeClass('up').css('top', 0);
+			}
+		}
+		else{
+			$('.sticky-wrap > div').removeClass('up down').css('top', 0);
+		}
+	}
+}
+
+
+
+function getResponsivePx(standard, px){
+    const winW = $(window).width();
+    const result = (px * winW) / standard;
+
+    return result;
+}
