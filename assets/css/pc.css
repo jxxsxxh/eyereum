@@ -92,6 +92,10 @@ html.scroll-hidden { overflow: hidden; }
 .more-detail { font-size: var(--fs-16); font-weight: 700; letter-spacing: -0.16px; display: flex; align-items: center; gap: 6px; }
 .more-detail::after { content: ""; width: 16px; height: 16px; border-radius: 100%; background-size: 100%; background-color: #000; background-position: center; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M5 8L11 8' stroke='%23F4F1F4' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M8 5L11 8L8 11' stroke='%23F4F1F4' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");}
 
+.more-detail.white { color: #fff; }
+.more-detail.white::after { content: ""; background-color: transparent; background-image: url('../img/svg-arrow-right-white.svg'); }
+
+
 .btn-link { transition: all .5s ease; font-size: var(--fs-16); font-weight: 700; display: inline-flex; align-items: center; gap: 6px; color: #fff; padding: 15px 16px 15px 20px; border: var(--static-10) solid #fff; border-radius: 100px; }
 .btn-link::after { transition: all .5s ease; content: ""; width: 16px; height: 16px; background-size: 100%; background-repeat: no-repeat; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M3.33594 8H12.6693' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M8 3.33594L12.6667 8.0026L8 12.6693' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"); }
 .btn-link:hover { color: #000; background-color: #fff; }
@@ -255,6 +259,19 @@ html.scroll-hidden { overflow: hidden; }
 #footer .ft_bottom > .ft_bottom_inner > .copyright { font-size: var(--fs-16); line-height: 1.5; color: #8B898B; margin-top: 10px; }
 #footer .ft_bottom > .ft_bottom_inner > .lang_select { position: absolute; top: 0; right: 0; width: 166px; }
 #footer .ft_bottom > .ft_bottom_inner > .lang_select > p { width: 100%; padding: 14px 0; font-size: var(--fs-16); font-weight: 600; color: #C5C1C4; display: flex; justify-content: space-between; align-items: center; background: url('../img/svg-select-arrow-gray.svg') 100% center/12px 7px no-repeat; cursor: pointer; border-bottom: var(--static-10) solid rgba(139, 137, 139, 0.50); }
+
+
+
+
+
+#pop-layer-wrap { position: fixed; width: 100%; height: 100%; top: 0; left: 0; z-index: 10000; background-color: rgba(0,0,0,0.45); display: none; }
+#pop-layer-wrap .layer { width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; }
+#pop-layer-wrap .layer .inner { width: 62.5000vw; aspect-ratio: 16/9; position: relative; }
+#pop-layer-wrap .layer .inner[data-type='세로형'] {}
+#pop-layer-wrap .layer .inner .frame { width: 100%; height: 100%; border-radius: 14px; overflow: hidden; background-color: #DFDCDF; }
+#pop-layer-wrap .layer .inner .frame iframe { width: 100%; height: 100%; }
+#pop-layer-wrap .layer .inner .close { position: absolute; right: -60px; top: -60px; width: 60px; height: 60px; background-color: #000; border-radius: 100px; overflow: hidden; cursor: pointer; }
+#pop-layer-wrap .layer .inner .close svg { width: 100%; }
 
 
 
@@ -911,11 +928,14 @@ html.scroll-hidden { overflow: hidden; }
 
 #container.subpage > .top { width: 100%; }
 #container.subpage > .top > .inner { width: 100%; padding-top: 229px; height: 550px; padding-right: var(--w-240); display: flex;justify-content: space-between; gap: 180px; }
-#container.subpage > .top > .inner > div { position: relative; }
-#container.subpage > .top > .inner > div > span { font-size: var(--fs-16); font-weight: 500; display: block; position: absolute; left: 0; top: -35px; }
-#container.subpage > .top > .inner > div > h1,
+#container.subpage > .top > .inner > div:nth-of-type(1) { position: relative; }
+#container.subpage > .top > .inner > div:nth-of-type(1) > span { font-size: var(--fs-16); font-weight: 500; display: block; position: absolute; left: 0; top: -35px; }
+#container.subpage > .top > .inner > div:nth-of-type(1) > h1,
 #container.subpage > .top > .inner > h1 { font-family: var(--second-font); font-size: var(--fs-82); font-weight: 700; letter-spacing: -3.28px; line-height: 1.14; }
+#container.subpage > .top > .inner > div:nth-of-type(2),
 #container.subpage > .top > .inner > p { flex: 0 0 auto; font-size: var(--fs-18); line-height: 1.44; color: #686869; width: 524px; word-break: keep-all; }
+#container.subpage > .top > .inner > div:nth-of-type(2) {}
+#container.subpage > .top > .inner > div:nth-of-type(2) > strong { color: #000; font-size: var(--fs-22); line-height: 1.45; font-weight: 500; display: block; margin-bottom: 22px; }
 
 
 #container.subpage > .sub-category { padding-bottom: 50px; }
@@ -946,22 +966,31 @@ html.scroll-hidden { overflow: hidden; }
 
 
 #container.subpage > .contents { padding-top: 130px; }
-#container.subpage > .contents .section { font-size: var(--fs-18); line-height: 1.66; color: #383839; }
 
-#container.subpage > .contents .h2-title > h2 { font-family: var(--second-font); font-size: var(--fs-48); font-weight: 900; letter-spacing: -0.96px; line-height: 1.41; }
+#container.subpage > .contents .h2-title > h2 { font-family: var(--second-font); font-size: var(--fs-48); font-weight: 900; letter-spacing: -0.96px; line-height: 1.41; color: #000; }
 #container.subpage > .contents .h2-title > p { margin-top: 14px; font-size: var(--fs-18); font-weight: 500; line-height: 1.44; color: #8B898B; }
 #container.subpage > .contents .h2-title > .symbol { display: flex; gap: 10px; align-items: center; margin-bottom: 30px; }
 #container.subpage > .contents .h2-title > .symbol > img { width: 30px; }
 #container.subpage > .contents .h2-title > .symbol > p { font-size: var(--fs-15); font-weight: 700; line-height: 1.06; color: var(--main-color); }
 
-#container.subpage > .contents .h3-title > h3 { font-size: var(--fs-40); font-weight: 500; line-height: 1.3; }
+#container.subpage > .contents .h3-title > h3 { font-size: var(--fs-40); font-weight: 500; line-height: 1.3;  color: #000; }
+#container.subpage > .contents .h3-title > p { margin-top: 40px; }
 
 #container.subpage > .contents .grid-col-3-title-img-text { display: grid; gap: 80px; grid-template-columns: repeat(3, 1fr); }
 #container.subpage > .contents .grid-col-3-title-img-text > li { display: flex; flex-direction: column; gap: 40px; }
 #container.subpage > .contents .grid-col-3-title-img-text > li > p { font-size: var(--fs-28); font-weight: 700; line-height: 1.35; text-align: center; }
 #container.subpage > .contents .grid-col-3-title-img-text > li > .img { width: 100%; aspect-ratio: 71/40; }
-#container.subpage > .contents .grid-col-3-title-img-text > li > .text { padding-top: 40px; border-top: var(--static-10) dashed #C5C1C4; }
+#container.subpage > .contents .grid-col-3-title-img-text > li > .text { padding-top: 40px; border-top: var(--static-10) dashed #C5C1C4; font-size: var(--fs-18); color: #383839; line-height: 1.66; }
 #container.subpage > .contents .grid-col-3-title-img-text > li > .text > strong { font-size: var(--fs-20); font-weight: 600; line-height: normal; margin-bottom: 22px; display: block; }
+
+
+#container.subpage .grid-col-2-zigzag > li { display: flex; justify-content: space-between; gap: 80px; }
+#container.subpage .grid-col-2-zigzag > li + li { margin-top: 120px; }
+#container.subpage .grid-col-2-zigzag > li:nth-of-type(2n) { flex-direction: row-reverse; }
+#container.subpage .grid-col-2-zigzag > li > .text { width: 30.8333vw; }
+#container.subpage .grid-col-2-zigzag > li > .text > .text-box { margin-top: 30px; font-size: var(--fs-18); color: #666; line-height: 1.6; word-break: keep-all; }
+#container.subpage .grid-col-2-zigzag > li > .text > .text-box strong { color: #000; font-weight: 700; }
+#container.subpage .grid-col-2-zigzag > li > .img { width: 36.8750vw; aspect-ratio: 708/398; border-radius: 14px; overflow: hidden; }
 
 
 #container.subpage .youtube-frame { width: 708px; aspect-ratio: 169/95; position: relative; border-radius: 14px; overflow: hidden; }
@@ -973,9 +1002,73 @@ html.scroll-hidden { overflow: hidden; }
 #container.subpage .youtube-frame > div.iframe iframe { width: 100%; height: 100%; }
 
 
+#container.subpage .youtube-pop { width: 100%; aspect-ratio: 245/138; position: relative; border-radius: 8px; overflow: hidden; }
+#container.subpage .youtube-pop > p.cover { position: absolute; left: 0; top: 0; width: 100%; height: 100%; cursor: pointer; }
+#container.subpage .youtube-pop > p.cover > img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+#container.subpage .youtube-pop > p.cover::after { content: ''; position: absolute; width: 56px; height: 56px; border-radius: 100px; bottom: 10px; right: 10px; background: url('../img/svg-play-btn.svg') center/cover no-repeat; transition: background 0.5s ease; }
+#container.subpage .youtube-pop > p.cover:hover::after { background-image: url('../img/svg-play-btn-black.svg'); }
+#container.subpage .youtube-pop > div.iframe { width: 100%; height: 100%; }
+#container.subpage .youtube-pop > div.iframe iframe { width: 100%; height: 100%; }
+
+
 #container.subpage .bannerPart { position: relative; }
 #container.subpage .bannerPart.center { border-radius: 14px; overflow: hidden; }
 #container.subpage .bannerPart.center > p { width: 100%; aspect-ratio: 1440/410; }
+
+
+#container.subpage .wide-bannerPart { position: relative; }
+#container.subpage .wide-bannerPart > p { width: 100%; aspect-ratio: 1920/520; }
+#container.subpage .wide-bannerPart .layer { position: absolute; left: 0; top: 0; width: 100%; height: 100%; }
+#container.subpage .wide-bannerPart.type-right-bottom-text .text { position: absolute; width: 524px; bottom: 80px; right: var(--w-240); }
+#container.subpage .wide-bannerPart.type-right-bottom-text .text .text-body { line-height: 1.44; color: #686869; margin-top: 20px; }
+#container.subpage .wide-bannerPart.type-left-top-link {}
+#container.subpage .wide-bannerPart.type-left-top-link .text { padding-top: 140px; padding-left: var(--w-240); }
+#container.subpage .wide-bannerPart.type-left-top-link .text strong { display: block; font-size: var(--fs-38); line-height: 1.05; }
+#container.subpage .wide-bannerPart.type-left-top-link .text .text-body { margin-top: 40px; }
+#container.subpage .wide-bannerPart.type-left-top-link .text .btn-link { margin-top: 30px; }
+
+
+#container.subpage .text-h3 { font-size: var(--fs-40); font-weight: 500; color: #000; line-height: 1.3; }
+#container.subpage .text-body-22 { display: block; font-size: var(--fs-22); line-height: 1.54; color: #000; }
+#container.subpage .text-body { font-size: var(--fs-18); line-height: 1.66; color: #383839; }
+
+
+#container.subpage ul.dot-list { width: 100%; }
+#container.subpage ul.dot-list > li { font-size: var(--fs-18); position: relative; padding-left: 10px; line-height: 1.44; }
+#container.subpage ul.dot-list > li::before { content: '•'; position: absolute; left: 0; top: 0; color: #000; }
+
+
+#container.subpage .top-blue-box { width: 95.8333vw; margin: 0 auto; }
+#container.subpage .top-blue-box .inner { width: 100%; background-color: #041242; padding: 100px 105px 140px; border-radius: 28px; overflow: hidden; }
+#container.subpage .top-blue-box .target { display: grid; grid-template-columns: repeat(5, 1fr); gap: 70px; }
+#container.subpage .top-blue-box .target > li { display: flex; flex-direction: column; justify-content: space-between; position: relative; }
+#container.subpage .top-blue-box .target > li > div > span { display: flex; align-items: center; justify-content: center; width: 110px; height: 110px; margin: 0 auto; }
+#container.subpage .top-blue-box .target > li > div > span > img { width: 100%; }
+#container.subpage .top-blue-box .target > li > div > p:nth-of-type(1) { margin-top: 30px; font-size: var(--fs-28); font-weight: 600; color: #ffffff; line-height: 1.35; word-break: keep-all; text-align: center; }
+#container.subpage .top-blue-box .target > li > div > p:nth-of-type(2) { font-size: var(--fs-18); color: #C5C1C4; line-height: 1.44; margin-top: 50px; padding-top: 30px; border-top: var(--static-10) dotted #8B898B; word-break: keep-all; }
+#container.subpage .top-blue-box .target > li > a { margin-top: 40px; }
+
+
+#container.subpage .faq-list { margin-top: 50px; border-top: var(--static-10) solid #8B898B; border-bottom: var(--static-10) solid #8B898B; }
+#container.subpage .faq-list li + li { border-top: var(--static-10) solid #8B898B; }
+#container.subpage .faq-list .faq-q { display: flex; align-items: center; padding: 32px; cursor: pointer; }
+#container.subpage .faq-list .faq-q > strong { font-size: var(--fs-24); font-weight: 700; line-height: 0.9; }
+#container.subpage .faq-list .faq-q .title { font-size: var(--fs-20); font-weight: 500; margin-left: 16px; flex: 1; line-height: 1.4; }
+#container.subpage .faq-list .faq-q .btn-toggle { width: 18px; height: 10px; border: 0; cursor: pointer; background: url('../img/svg-select-arrow.svg') center/100% no-repeat; }
+#container.subpage .faq-list > li.active .faq-q .btn-toggle { transform: rotate(180deg); }
+#container.subpage .faq-list .faq-a { display: none; padding: 60px; background-color: #F5F5F7; max-height: 180px; }
+#container.subpage .faq-list .faq-a > p { font-size: var(--fs-18); color: #383839; line-height: 1.6; }
+
+
+#container.subpage .contents .table { width: 100%; }
+#container.subpage .contents .table > table { width: 100%; }
+#container.subpage .contents .table > table { margin-top: 60px; width: 100%; border-collapse: collapse; border-spacing: 0; font-size: var(--fs-18); color: #000; text-align: left; table-layout: fixed; }
+#container.subpage .contents .table > table > caption { display: none; }
+#container.subpage .contents .table > table > thead > tr > th { font-size: var(--fs-22); font-weight: 700; text-align: center; padding: 35px 10px; border-top: var(--static-10) solid #000; border-bottom: var(--static-10) solid #000; }
+#container.subpage .contents .table > table > tbody > tr > th { font-size: var(--fs-20); font-weight: 600; text-align: center; padding: 35px 10px; border-bottom: var(--static-10) solid #DFDCDF; word-break: keep-all; }
+#container.subpage .contents .table > table > tbody > tr > td { font-size: var(--fs-18); color: #000; line-height: 1.44; padding: 35px 10px; border-bottom: var(--static-10) solid #DFDCDF; vertical-align: top; word-break: keep-all; }
+
+
 
 
 
@@ -1064,7 +1157,7 @@ html.scroll-hidden { overflow: hidden; }
 #container.surgeryGuide_01 {}
 #container.surgeryGuide_01 .contents .section1 {}
 #container.surgeryGuide_01 .contents .section1 .grid-col-3-title-img-text { margin-top: 60px; padding-top: 60px; border-top: var(--static-10) solid #C5C1C4; }
-#container.surgeryGuide_01 .contents .section1 .notice { margin-top: 60px; padding-top: 30px; border-top: var(--static-10) solid #C5C1C4; color: #686869; }
+#container.surgeryGuide_01 .contents .section1 .notice { margin-top: 60px; padding-top: 30px; border-top: var(--static-10) solid #C5C1C4; color: #686869; line-height: 1.44; }
 
 
 #container.surgeryGuide_01 .contents .section2 { padding-top: 140px; }
@@ -1186,8 +1279,8 @@ html.scroll-hidden { overflow: hidden; }
 #container.surgeryGuide_02_01 .section3 > ul > li { display: flex; flex-direction: column; padding-top: 60px; border-top: var(--static-10) solid #C5C1C4; }
 #container.surgeryGuide_02_01 .section3 > ul > li > h3 { font-size: var(--fs-32); font-weight: 700; text-align: center; line-height: normal; }
 #container.surgeryGuide_02_01 .section3 > ul > li > .img { width: 100%; aspect-ratio: 680/382; border-radius: 14px; margin-top: 50px; overflow: hidden; }
-#container.surgeryGuide_02_01 .section3 > ul > li > p:nth-of-type(2) { font-size: var(--fs-22); font-weight: 600; padding-top: 40px; border-top: var(--static-10) dashed #C5C1C4; margin-top: 40px; }
-#container.surgeryGuide_02_01 .section3 > ul > li > div { font-size: var(--fs-18); line-height: 1.66; margin-top: 20px; }
+#container.surgeryGuide_02_01 .section3 > ul > li > p:nth-of-type(2) { font-size: var(--fs-22); font-weight: 600; padding-top: 40px; border-top: var(--static-10) dashed #C5C1C4; margin-top: 40px; line-height: 1.54; }
+#container.surgeryGuide_02_01 .section3 > ul > li > div { font-size: var(--fs-18); line-height: 1.66; margin-top: 20px; color: #383839; }
 
 #container.surgeryGuide_02_01 .section3 > ul > li > dl { display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px; padding-top: 40px; border-top: var(--static-10) solid #C5C1C4; margin-top: 50px; }
 #container.surgeryGuide_02_01 .section3 > ul > li > dl > dt { font-size: var(--fs-20); font-weight: 600; text-align: center; grid-row: 1; }
@@ -1201,7 +1294,7 @@ html.scroll-hidden { overflow: hidden; }
 #container.surgeryGuide_02_01 .section4 > ul > li { display: grid; grid-template-columns: repeat(2, 1fr); gap: 80px; align-items: center; }
 #container.surgeryGuide_02_01 .section4 > ul > li:nth-of-type(1) > div > h3 { font-size: var(--fs-40); font-weight: 500; line-height: 1.3; }
 #container.surgeryGuide_02_01 .section4 > ul > li:nth-of-type(1) > div > p:nth-of-type(1) { margin-top: 40px; }
-#container.surgeryGuide_02_01 .section4 > ul > li:nth-of-type(1) > div > p:nth-of-type(2) { font-weight: 600; padding-top: 40px; border-top: var(--static-10) dashed #C5C1C4; margin-top: 40px; }
+#container.surgeryGuide_02_01 .section4 > ul > li:nth-of-type(1) > div > p:nth-of-type(2) { font-weight: 600; padding-top: 40px; border-top: var(--static-10) dashed #C5C1C4; margin-top: 40px; line-height: 1.44; }
 #container.surgeryGuide_02_01 .section4 > ul > li:nth-of-type(1) > div > p:nth-of-type(3) { margin-top: 20px; color: #686869; line-height: 1.44; }
 #container.surgeryGuide_02_01 .section4 > ul > li:nth-of-type(1) > p.img { width: 100%; border-radius: 14px; aspect-ratio: 708/398; overflow: hidden; }
 
@@ -1223,14 +1316,14 @@ html.scroll-hidden { overflow: hidden; }
 #container.surgeryGuide_02_04 .section1 .avellino-info > .banner-box > p { font-size: var(--fs-22); font-weight: 700; color: var(--highlight-color); line-height: 1.54; }
 
 #container.surgeryGuide_02_04 .section2 { padding-top: 140px; }
-.dna-step-section { margin-top: 60px; padding-top: 50px; border-top: var(--static-10) solid #C5C1C4; }
-.dna-step-section > ul { display: grid; grid-template-columns: repeat(4, 1fr); gap: 80px; }
-.dna-step-section > ul > li { text-align: center; padding-bottom: 40px; border-bottom: var(--static-10) dashed #8B898B; }
-.dna-step-section > ul > li > .step-num { font-size: var(--fs-20); color: #000; font-weight: 700; line-height: 1.4; }
-.dna-step-section > ul > li > .step-num > span { display: inline-flex; justify-content: center; align-items: center; width: 30px; height: 30px; background-color: #000; color: #fff; border-radius: 50%; font-size: var(--fs-14); margin-left: 14px; vertical-align: middle; }
-.dna-step-section > ul > li > strong { display: block; margin-top: 20px; font-size: var(--fs-28); color: #000; font-weight: 700; line-height: 1.35; }
-.dna-step-section > ul > li > .img-wrap { margin-top: 50px; border-radius: 14px; overflow: hidden; width: 100%; aspect-ratio: 300/168; }
-.dna-step-section > ul > li > .img-wrap > img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+#container.surgeryGuide_02_04 .section2 .dna-step-section { margin-top: 60px; padding-top: 50px; border-top: var(--static-10) solid #C5C1C4; }
+#container.surgeryGuide_02_04 .section2 .dna-step-section > ul { display: grid; grid-template-columns: repeat(4, 1fr); gap: 80px; }
+#container.surgeryGuide_02_04 .section2 .dna-step-section > ul > li { text-align: center; padding-bottom: 40px; border-bottom: var(--static-10) dashed #8B898B; }
+#container.surgeryGuide_02_04 .section2 .dna-step-section > ul > li > .step-num { font-size: var(--fs-20); color: #000; font-weight: 700; line-height: 1.4; }
+#container.surgeryGuide_02_04 .section2 .dna-step-section > ul > li > .step-num > span { display: inline-flex; justify-content: center; align-items: center; width: 30px; height: 30px; background-color: #000; color: #fff; border-radius: 50%; font-size: var(--fs-14); margin-left: 14px; vertical-align: middle; }
+#container.surgeryGuide_02_04 .section2 .dna-step-section > ul > li > strong { display: block; margin-top: 20px; font-size: var(--fs-28); color: #000; font-weight: 700; line-height: 1.35; }
+#container.surgeryGuide_02_04 .section2 .dna-step-section > ul > li > .img-wrap { margin-top: 50px; border-radius: 14px; overflow: hidden; width: 100%; aspect-ratio: 300/168; }
+#container.surgeryGuide_02_04 .section2 .dna-step-section > ul > li > .img-wrap > img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
 
 
 
@@ -1254,7 +1347,7 @@ html.scroll-hidden { overflow: hidden; }
 
 
 
-/* 수술 과정 미리보기 */
+/* 수술 전후 관리 */
 #container.surgeryCare .pre-care-section { margin-top: 130px; }
 #container.surgeryCare .pre-care-section.section1 { margin-top: 0; }
 #container.surgeryCare .pre-care-section > .banner-box { margin-top: 60px; padding: 30px 0; border-top: var(--static-10) solid #DFDCDF; border-bottom: var(--static-10) solid #C5C1C4; text-align: center; }
@@ -1265,7 +1358,7 @@ html.scroll-hidden { overflow: hidden; }
 #container.surgeryCare .pre-care-section > ul > li > .title-area > .num { display: inline-flex; justify-content: center; align-items: center; width: 50px; height: 50px; background-color: #000; color: #fff; border-radius: 100px; font-size: var(--fs-18); font-weight: 700; flex-shrink: 0; }
 #container.surgeryCare .pre-care-section > ul > li:nth-of-type(1) > .title-area > .num { background-color: var(--main-color); }
 #container.surgeryCare .pre-care-section > ul > li > .title-area > strong { font-size: var(--fs-28); color: #000; font-weight: 700; line-height: 1.35; }
-#container.surgeryCare .pre-care-section > ul > li > p { word-break: keep-all; }
+#container.surgeryCare .pre-care-section > ul > li > p { word-break: keep-all; font-size: var(--fs-18); color: #383839; line-height: 1.66; }
 #container.surgeryCare .pre-care-section > ul > li > p:nth-of-type(1) { margin-top: 30px; }
 #container.surgeryCare .pre-care-section > ul > li > p.sub-txt { margin-top: 12px; line-height: 1.44; color: #8B898B; }
 #container.surgeryCare .pre-care-section > ul > li > a { margin-top: 30px; padding: 13px 16px 12px 20px; line-height: normal; }
@@ -1279,6 +1372,33 @@ html.scroll-hidden { overflow: hidden; }
 #container.surgeryCare .life-care > .care-grid > .care-item > p { text-align: center; font-size: var(--fs-32); font-weight: 700; line-height: normal; color: #000; }
 #container.surgeryCare .life-care > .care-grid > .care-item > .img-wrap { margin-top: 40px; border-radius: 14px; overflow: hidden; width: 100%; aspect-ratio: 217/122; }
 #container.surgeryCare .life-care > .care-grid > .care-item > .img-wrap > img { width: 100%; height: 100%; object-fit: cover; display: block; }
-#container.surgeryCare .life-care > .care-grid > .care-item > .txt-box { margin-top: 40px; padding-top: 40px; border-top: var(--static-10) dashed #C5C1C4; }
+#container.surgeryCare .life-care > .care-grid > .care-item > .txt-box { margin-top: 40px; padding-top: 40px; border-top: var(--static-10) dashed #C5C1C4; font-size: var(--fs-18); color: #383839; line-height: 1.66; }
 #container.surgeryCare .life-care > .care-grid > .care-item > .txt-box > .sub-txt { margin-top: 14px; color: #686869; line-height: 1.44; }
 #container.surgeryCare .life-care > .care-grid > .care-item > .youtube-frame { margin-top: 40px; width: 100%; aspect-ratio: 217/122; }
+
+
+
+/* 나에게 맞는 수술 */
+#container.customSurgery_01 .contents { padding-top: 0; }
+#container.customSurgery_01 .contents .section2 { padding-top: 130px; }
+#container.customSurgery_01 .contents .section2 .table > table > thead > tr > th+th { background-color: #f9f9f9; }
+#container.customSurgery_01 .contents .section2 .table > table > tbody > tr > td { background-color: #f9f9f9; }
+#container.customSurgery_01 .contents .section2 .table > table > tbody > tr > td > div { width: 12.7604vw; margin: 0 auto; }
+#container.customSurgery_01 .contents .section2 .table > table > tbody > tr > td > div > .youtube-pop + p { margin-top: 20px; }
+
+#container.customSurgery_01 .contents .section2 .table > table > tbody > tr.point-row { position: relative; }
+#container.customSurgery_01 .contents .section2 .table > table > tbody > tr.point-row::after { content: ''; position: absolute; left: 0; top: 0; border: var(--static-20) solid var(--highlight-color); z-index: 2; width: 100%; height: 100%; }
+#container.customSurgery_01 .contents .section2 .table > table > tbody > tr.point-row > th { font-weight: 700; }
+#container.customSurgery_01 .contents .section2 .table > table > tbody > tr.point-row > th,
+#container.customSurgery_01 .contents .section2 .table > table > tbody > tr.point-row > td,
+#container.customSurgery_01 .contents .section2 .table > table > tbody > tr.point-row > td strong { color: var(--highlight-color); }
+
+#container.customSurgery_01 .contents .section2 .table > table > tbody > tr > td > div > ul { margin-bottom: 30px; padding-bottom: 30px; border-bottom: var(--static-10) dashed #C5C1C4; min-height: 290px; }
+
+#container.customSurgery_01 .contents .section3 { padding-top: 180px; }
+#container.customSurgery_01 .contents .section3 .wide-bannerPart { margin-top: 60px; }
+#container.customSurgery_01 .contents .section3 .grid-col-2-zigzag { margin-top: 130px; }
+
+#container.customSurgery_01 .contents .section4 { padding-top: 120px; }
+
+#container.customSurgery_01 .contents .section5 { padding-top: 120px; }

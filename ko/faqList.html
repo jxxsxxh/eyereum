@@ -192,24 +192,4 @@
 
 </div><!-- #container end -->
 
-<script>
-$(function () {
-    $('.faq-list').on('click', '.faq-q', function() {
-        var $li = $(this).closest('li');
-        var $answer = $li.find('.faq-a');
-
-        if ($li.hasClass('active')) {
-            $li.removeClass('active');
-            $answer.stop().slideUp();
-        } else {
-            $('.faq-list li').removeClass('active');
-            $('.faq-list .faq-a').stop().slideUp();
-
-            $li.addClass('active');
-            $answer.stop().slideDown();
-        }
-    });
-});
-</script>
-
 <?php include_once('footer.html')?>

@@ -326,3 +326,118 @@ $(function () {
         });
     });
 });
+
+
+$(function () {
+    $('.faq-list').on('click', '.faq-q', function() {
+        var $li = $(this).closest('li');
+        var $answer = $li.find('.faq-a');
+
+        if ($li.hasClass('active')) {
+            $li.removeClass('active');
+            $answer.stop().slideUp();
+        } else {
+            $('.faq-list li').removeClass('active');
+            $('.faq-list .faq-a').stop().slideUp();
+
+            $li.addClass('active');
+            $answer.stop().slideDown();
+        }
+    });
+});
+
+
+/*
+$(function () {
+    $('.youtube-pop .cover').on('click', function() {
+        var $pop = $(this).closest('.youtube-pop');
+        var youtubeId = $pop.data('youtube-id');
+        var youtubeType = $pop.data('youtube-type');
+
+        if (youtubeId) {
+            var iframeHtml = '<iframe src="https://www.youtube.com/embed/' + youtubeId + '?autoplay=1&enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+
+            if (youtubeType) {
+                $('#pop-layer-wrap .inner').attr('data-type', youtubeType);
+            } else {
+                $('#pop-layer-wrap .inner').removeAttr('data-type');
+            }
+
+            $('#pop-layer-wrap .frame').html(iframeHtml);
+            $('#pop-layer-wrap').fadeIn();
+        }
+    });
+
+    $('#pop-layer-wrap').on('click', '.close', function() {
+        $('#pop-layer-wrap').fadeOut(function() {
+            $('#pop-layer-wrap .frame').empty();
+            $('#pop-layer-wrap .inner').removeAttr('data-type');
+        });
+    });
+});
+*/
+var ytPlayer = null;
+function onYouTubeIframeAPIReady() {}
+
+$(function () {
+    $('.youtube-pop .cover').on('click', function() {
+        var $pop = $(this).closest('.youtube-pop');
+        var youtubeId = $pop.data('youtube-id');
+        var youtubeType = $pop.data('youtube-type');
+
+        if (!youtubeId || typeof youtubeId !== 'string' || $.trim(youtubeId) === '') {
+            console.warn('올바른 YouTube Video ID가 아닙니다:', youtubeId);
+            return;
+        }
+
+        youtubeId = $.trim(youtubeId);
+
+        if (youtubeType) {
+            $('#pop-layer-wrap .inner').attr('data-type', youtubeType);
+        } else {
+            $('#pop-layer-wrap .inner').removeAttr('data-type');
+        }
+
+        if (ytPlayer) {
+            try {
+                ytPlayer.destroy();
+            } catch (e) {
+                console.error(e);
+            }
+            ytPlayer = null;
+        }
+
+        $('#pop-layer-wrap .frame').html('<div id="yt-popup-player"></div>');
+        $('#pop-layer-wrap').fadeIn();
+
+        ytPlayer = new YT.Player('yt-popup-player', {
+            videoId: youtubeId,
+            playerVars: {
+                'autoplay': 1,
+                'controls': 1,
+                'rel': 0
+            },
+            events: {
+                'onReady': function(event) {
+                    event.target.playVideo();
+                }
+            }
+        });
+    });
+
+    $('#pop-layer-wrap').on('click', '.close', function() {
+        $('#pop-layer-wrap').fadeOut(function() {
+            if (ytPlayer) {
+                if (typeof ytPlayer.stopVideo === 'function') {
+                    ytPlayer.stopVideo();
+                }
+                if (typeof ytPlayer.destroy === 'function') {
+                    ytPlayer.destroy();
+                }
+                ytPlayer = null;
+            }
+            $('#pop-layer-wrap .frame').empty();
+            $('#pop-layer-wrap .inner').removeAttr('data-type');
+        });
+    });
+});
