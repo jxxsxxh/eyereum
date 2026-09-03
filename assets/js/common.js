@@ -265,15 +265,17 @@ $(function () {
 
 $(function () {
     $('.tab-category > ul > li').on('click', function() {
+        /* 주석 제외 요청으로 주석 없음 */
         if ($(this).hasClass('on')) return;
 
         var tabText = $.trim($(this).text());
 
         $(this).addClass('on').siblings().removeClass('on');
 
-        var $target = $('.tab-contents > div[data-tab-contents="' + tabText + '"]');
+        var $contents = $(this).closest('.tab-category').next('.tab-contents');
+        var $target = $contents.children('div[data-tab-contents="' + tabText + '"]');
 
-        $('.tab-contents > div').hide();
+        $contents.children('div').hide();
         $target.stop(true, true).fadeIn(300);
     });
 });
