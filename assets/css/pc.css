@@ -996,9 +996,11 @@ html.scroll-hidden { overflow: hidden; }
 
 #container.subpage .grid-col-4-title-28-img-text { display: grid; gap: 0 80px; grid-template-columns: repeat(4, 1fr); border-top: var(--static-10) solid #C5C1C4; padding-top: 60px; }
 #container.subpage .grid-col-4-title-28-img-text > li {}
-#container.subpage .grid-col-4-title-28-img-text > li > p { font-size: var(--fs-28); font-weight: 700; line-height: 1.35; text-align: center; }
-#container.subpage .grid-col-4-title-28-img-text > li > .img { margin-top: 40px; width: 100%; aspect-ratio: 300/169; }
-#container.subpage .grid-col-4-title-28-img-text > li > .text { margin-top: 40px; padding-top: 40px; border-top: var(--static-10) dashed #C5C1C4; font-size: var(--fs-18); color: #383839; line-height: 1.66; }
+#container.subpage .grid-col-4-title-28-img-text > li > .title { font-size: var(--fs-28); font-weight: 700; line-height: 1.35; text-align: center; }
+#container.subpage .grid-col-4-title-28-img-text > li > .img { width: 100%; aspect-ratio: 300/169; }
+#container.subpage .grid-col-4-title-28-img-text > li > .title+.img { margin-top: 40px; }
+#container.subpage .grid-col-4-title-28-img-text > li > .text { margin-top: 40px; padding-top: 40px; border-top: var(--static-10) dashed #C5C1C4; font-size: var(--fs-18); color: #383839; line-height: 1.66; word-break: keep-all; }
+#container.subpage .grid-col-4-title-28-img-text > li > .youtube-pop > p:after { right: 20px; bottom: 20px; }
 #container.subpage .grid-col-4-title-28-img-text.senior > li > .text { font-size: var(--fs-20); line-height: 1.5; }
 
 
@@ -1136,6 +1138,10 @@ html.scroll-hidden { overflow: hidden; }
 #container.subpage .wide-bannerPart.type-left-top-text .text { position: absolute; width: 616px; top: 120px; left: var(--w-240); }
 #container.subpage .wide-bannerPart.type-left-top-text .text > strong { font-size: var(--fs-38); line-height: 1.05; }
 #container.subpage .wide-bannerPart.type-left-top-text .text .text-body { line-height: 1.44; color: #686869; margin-top: 40px; }
+
+#container.subpage .wide-bannerPart .check-list { position: absolute; right: 180px; top: 140px; }
+#container.subpage .wide-bannerPart .check-list > li { font-size: var(--fs-22); font-weight: 500; line-height: 2.09; color: #000; display: flex; gap: 20px; }
+#container.subpage .wide-bannerPart .check-list > li::before { content: ''; width: 24px; height: 24px; background: url('../img/svg-checkbox.svg') center/100% no-repeat; margin-top: 10px; }
 
 
 #container.subpage .bannerContents { width: 100%; padding: 80px; border-radius: 14px; overflow: hidden; display: flex; gap: 60px; background-color: #F5F5F7; }
@@ -2310,3 +2316,55 @@ html.scroll-hidden { overflow: hidden; }
 #container.dreamLens_01 .contents > .wide-bannerPart .layer .text > a { margin-top: 30px; }
 
 #container.dreamLens_01 .section4 { padding-top: 120px; }
+
+
+
+/* 프레즈비맥스 노안라식 */
+#container.subpage .sub-nav { padding-bottom: 50px; }
+#container.subpage .sub-nav > p { font-size: var(--fs-20); line-height: normal; color: #8B898B; }
+
+
+#container.presbyopia_01 {}
+#container.presbyopia_01 .section1 { margin-top: 130px; }
+#container.presbyopia_01 .section1 > ul { display: flex; justify-content: center; gap: 160px; margin-top: 70px; border-top: var(--static-10) solid #C5C1C4; border-bottom: var(--static-10) solid #C5C1C4; padding: 50px 0; }
+#container.presbyopia_01 .section1 > ul > li { display: flex; flex-direction: column; align-items: center; }
+#container.presbyopia_01 .section1 > ul > li > p { height: 78px; }
+#container.presbyopia_01 .section1 > ul > li > p > img { height: 100%; }
+#container.presbyopia_01 .section1 > ul > li > div { margin-top: 30px; text-align: center; font-size: var(--fs-20); color: #383839; line-height: 1.5; font-weight: 600; }
+
+#container.presbyopia_01 .section2 { padding-top: 180px; }
+#container.presbyopia_01 .section2 .grid-col-4-title-28-img-text { margin-top: 60px; }
+#container.presbyopia_01 .section2 .grid-col-2-zigzag { margin-top: 130px; }
+#container.presbyopia_01 .section2 .grid-col-2-zigzag .num-title-text { margin-top: 20px; padding-top: 50px; border-top: var(--static-10) solid #C5C1C4; }
+#container.presbyopia_01 .section2 .grid-col-2-zigzag .num-title-text > li+li { margin-top: 50px; }
+#container.presbyopia_01 .section2 .grid-col-2-zigzag+ul { display: flex; gap: 48px; margin-top: 80px; }
+#container.presbyopia_01 .section2 .grid-col-2-zigzag+ul > li { flex: 1; }
+#container.presbyopia_01 .section2 .grid-col-2-zigzag+ul > li > img { width: 100%; }
+
+#container.presbyopia_01 .section3 { padding-top: 180px; }
+#container.presbyopia_01 .section3 .wide-bannerPart { margin-top: 60px; }
+#container.presbyopia_01 .section3 .grid-col-4-title-28-img-text { margin-top: 120px; border-top: 0; padding-top: 0; }
+#container.presbyopia_01 .section3 .box-592 { margin-top: 140px; }
+#container.presbyopia_01 .section3 .box-592+.xl-center { margin-top: 60px; }
+#container.presbyopia_01 .section3 .box-592+.xl-center > picture { width: 100%; }
+#container.presbyopia_01 .section3 .box-592+.xl-center > picture > img { width: 100%; height: auto; }
+
+#container.presbyopia_01 .wide-bannerPart { margin-top: 120px; }
+
+#container.presbyopia_01 .section4 { padding-top: 120px; }
+#container.presbyopia_01 .section4 .grid-col-2-zigzag .text .text-box > p > strong { color: #383839; }
+#container.presbyopia_01 .section4 .grid-col-2-zigzag .text .text-box+div { margin-top: 50px; padding-top: 50px; border-top: var(--static-10) solid #C5C1C4; }
+#container.presbyopia_01 .section4 .grid-col-2-zigzag .text .text-box+div > dl+dl { margin-top: 50px; }
+#container.presbyopia_01 .section4 .grid-col-2-zigzag .text .text-box+div > dl > dt { font-size: var(--fs-22); font-weight: 700; line-height: 1.54; color: #000; }
+#container.presbyopia_01 .section4 .grid-col-2-zigzag .text .text-box+div > dl > dd { margin-top: 12px; font-size: var(--fs-20); color: #383839; line-height: 1.5; }
+
+#container.presbyopia_01 .section5 { padding-top: 180px; }
+#container.presbyopia_01 .section5 > ul { display: flex; justify-content: center; gap: 80px; margin-top: 70px; border-top: var(--static-10) solid #C5C1C4; border-bottom: var(--static-10) solid #C5C1C4; padding: 50px 0; }
+#container.presbyopia_01 .section5 > ul > li { display: flex; flex-direction: column; align-items: center; flex: 1; }
+#container.presbyopia_01 .section5 > ul > li > p { height: 78px; }
+#container.presbyopia_01 .section5 > ul > li > p > img { height: 100%; }
+#container.presbyopia_01 .section5 > ul > li > div { margin-top: 30px; text-align: center; font-size: var(--fs-20); color: #383839; line-height: 1.5; font-weight: 600; word-break: keep-all; }
+
+#container.presbyopia_01 .section5 .bannerContents > div > strong { font-size: var(--fs-20); margin-top: 40px; margin-bottom: 20px; display: block; }
+
+#container.presbyopia_01 .section6 { margin-top: 120px; }
