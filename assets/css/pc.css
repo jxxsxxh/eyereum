@@ -106,6 +106,10 @@ html.scroll-hidden { overflow: hidden; }
 .btn-link.black:hover { color: #fff; background-color: #000; }
 .btn-link.black:hover::after { background-image: url("../img/svg-arrow-right-white.svg"); }
 
+.btn-link.highlight { transition: all .5s ease; color: var(--highlight-color) !important; border-color: var(--highlight-color); }
+.btn-link.highlight::after { display: none; }
+.btn-link.highlight:hover { color: #fff !important; background-color: var(--highlight-color); }
+
 .btn-link-type2 { display: inline-flex; gap: 12px; align-items: center; }
 .btn-link-type2::after { content: ''; width: 20px; height: 20px; background: url('../img/svg-link2.svg') center/cover no-repeat; }
 
@@ -2091,9 +2095,11 @@ html.scroll-hidden { overflow: hidden; }
 
 /* 엑스트라 */
 #container.subpage .grid-col-2-img-title-32-text { display: grid; grid-template-columns: repeat(2, 1fr); gap: 80px 48px; padding-top: 70px; border-top: var(--static-10) solid #C5C1C4; }
+#container.subpage .grid-col-2-img-title-32-text > li .video,
 #container.subpage .grid-col-2-img-title-32-text > li .img { width: 100%; aspect-ratio: 696/391; border-radius: 14px; overflow: hidden; }
 #container.subpage .grid-col-2-img-title-32-text > li .title { margin-top: 40px; font-size: var(--fs-32); font-weight: 600; line-height: normal; }
 #container.subpage .grid-col-2-img-title-32-text > li .text { margin-top: 16px; font-size: var(--fs-18); font-weight: 400; line-height: 1.44; color :#383839; }
+#container.subpage .grid-col-2-img-title-32-text.senior > li .text { font-size: var(--fs-20); line-height: 1.5; }
 
 
 #container.xtra_01 .section1 {}
@@ -2365,6 +2371,90 @@ html.scroll-hidden { overflow: hidden; }
 #container.presbyopia_01 .section5 > ul > li > p > img { height: 100%; }
 #container.presbyopia_01 .section5 > ul > li > div { margin-top: 30px; text-align: center; font-size: var(--fs-20); color: #383839; line-height: 1.5; font-weight: 600; word-break: keep-all; }
 
+#container.presbyopia_01 .section5 .bannerContents { margin-top: 70px; }
 #container.presbyopia_01 .section5 .bannerContents > div > strong { font-size: var(--fs-20); margin-top: 40px; margin-bottom: 20px; display: block; }
 
 #container.presbyopia_01 .section6 { margin-top: 120px; }
+
+
+
+/* 백내장 증상과 치료 */
+#container.cataract_01 .grid-col-4-title-28-img-text { margin-top: 120px; padding-top: 50px; counter-reset: step; }
+#container.cataract_01 .grid-col-4-title-28-img-text > li { counter-increment: step; }
+#container.cataract_01 .grid-col-4-title-28-img-text > li .text { text-align: center; }
+#container.cataract_01 .grid-col-4-title-28-img-text > li .step { display: flex; font-size: var(--fs-20); color: #000; font-weight: 700; line-height: 1.4; justify-content: center; gap: 14px; }
+#container.cataract_01 .grid-col-4-title-28-img-text > li .step::after { content: counter(step); width: 30px; height: 30px; font-size: var(--fs-14); color: #fff; font-weight: 700; line-height: normal; background-color: #000; border-radius: 100px; display: flex; align-items: center; justify-content: center; }
+#container.cataract_01 .grid-col-4-title-28-img-text > li .step+.title { margin-top: 20px; }
+
+
+#container.cataract_01 .section1 > ul { display: flex; gap: 48px; margin-top: 70px; padding-top: 70px; border-top: var(--static-10) solid #C5C1C4; border-bottom: var(--static-10) solid #C5C1C4; }
+#container.cataract_01 .section1 > ul > li { flex: 1; }
+#container.cataract_01 .section1 > ul > li > p > img { width: 100%; }
+#container.cataract_01 .section1 > ul > li > div { padding: 40px 0; font-size: var(--fs-28); font-weight: 600; line-height: 1.35; color: #000; text-align: center; }
+
+#container.cataract_01 .section1 .cataract_check { width: 100%; margin-top: 70px; }
+#container.cataract_01 .section1 .cataract_check > .inner > .title { font-size: var(--fs-32); font-weight: 500; color: var(--main-color); line-height: 1.35; }
+#container.cataract_01 .section1 .cataract_check > .inner > .desc { font-size: var(--fs-20); color: #383839; margin-top: 30px; line-height: 1.5; }
+#container.cataract_01 .section1 .cataract_check > .inner > .check_list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px 0; margin-top: 40px; padding-top: 50px; border-top: var(--static-10) solid #C5C1C4; padding-bottom: 50px; border-bottom: var(--static-10) solid #C5C1C4; }
+#container.cataract_01 .section1 .cataract_check > .inner > .check_list > li > .checkbox { position: relative; display: flex; align-items: center; }
+#container.cataract_01 .section1 .cataract_check > .inner > .check_list > li > .checkbox > input[type="checkbox"] { width: 30px; height: 30px; accent-color: #000; }
+#container.cataract_01 .section1 .cataract_check > .inner > .check_list > li > .checkbox > label { position: relative; padding-left: 12px; font-size: var(--fs-20); font-weight: 500; color: #000; cursor: pointer; user-select: none; line-height: 1.4; }
+#container.cataract_01 .section1 .cataract_check > .inner > .btn_area { display: flex; justify-content: flex-end; margin-top: 40px; gap: 20px; }
+
+#container.cataract_01 .section2 { padding-top: 180px; }
+#container.cataract_01 .section2 .wide-bannerPart { margin-top: 60px; }
+#container.cataract_01 .section2 .grid-col-4-title-28-img-text { margin-top: 120px; border-top: 0; padding-top: 0; }
+#container.cataract_01 .section2 .grid-col-4-title-28-img-text .text { text-align: left; }
+#container.cataract_01 .section2 .grid-col-4-title-28-img-text+.box-592 { margin-top: 120px; }
+
+#container.cataract_01 .section2 .cataract-list { margin-top: 60px; border-top: var(--static-10) solid #000; }
+#container.cataract_01 .section2 .cataract-list > .cataract-item { display: grid; grid-template-columns: 324px 1fr 1fr; gap: 48px; padding: 40px 0; border-bottom: var(--static-10) solid #DFDCDF; }
+#container.cataract_01 .section2 .cataract-list > .cataract-item > .info-area > .title { font-size: var(--fs-22); font-weight: 700; color: #000; line-height: 1.54; }
+#container.cataract_01 .section2 .cataract-list > .cataract-item > .info-area > .desc { font-size: var(--fs-20); color: #383839; margin-top: 20px; line-height: normal; }
+#container.cataract_01 .section2 .cataract-list > .cataract-item .eye-diagram,
+#container.cataract_01 .section2 .cataract-list > .cataract-item .view-simulation { width: 100%; aspect-ratio: 510/287; border-radius: 14px; overflow: hidden; background-color: #F5F5F7; border-radius: 14px; overflow: hidden; }
+#container.cataract_01 .section2 .cataract-list > .cataract-item .eye-diagram > img,
+#container.cataract_01 .section2 .cataract-list > .cataract-item .view-simulation > img { width: 100%; height: auto; object-fit: cover; object-position: center; }
+#container.cataract_01 .section2 .cataract-list > .cataract-item > .daynight-group { grid-column: span 2; display: grid; gap: 40px 48px; grid-template-columns: repeat(2, 1fr); }
+
+#container.cataract_01 .section3 { padding-top: 120px; }
+#container.cataract_01 .section3 .grid-table { margin-top: 60px; }
+#container.cataract_01 .section3 .grid-table > ul > li { grid-row: span 3; border-bottom: var(--static-10) solid #DFDCDF; }
+#container.cataract_01 .section3 .grid-table > ul { grid-template-columns: 13.8889% 1fr 1fr; }
+#container.cataract_01 .section3 .grid-table > ul > li > div.span-2 { grid-row: span 2; }
+
+#container.cataract_01 .section3 .bannerContents { gap: 0; margin-top: 80px; }
+#container.cataract_01 .section3 .bannerContents > div { width: 50%; display: flex; gap: 20px; }
+#container.cataract_01 .section3 .bannerContents > div:before { content: ''; width: 30px; height: 30px; background: url('../img/svg-mark-1.svg') center/100% no-repeat; flex: 0 0 auto; }
+#container.cataract_01 .section3 .bannerContents > div:nth-of-type(1) { padding-left: 0; border: 0; padding-right: 80px; }
+#container.cataract_01 .section3 .bannerContents > div:nth-of-type(2) { padding-left: 70px; border-left: var(--static-10) solid #C5C1C4; word-break: keep-all; }
+#container.cataract_01 .section3 .bannerContents > div:nth-of-type(2)::before { background-image: url('../img/svg-mark-2.svg'); }
+#container.cataract_01 .section3 .bannerContents > div > div > strong { font-size: var(--fs-22); line-height: 1.54; display: block; }
+#container.cataract_01 .section3 .bannerContents > div > div > div { margin-top: 20px; }
+#container.cataract_01 .section3 .bannerContents+.h3-title { margin-top: 140px; }
+#container.cataract_01 .section3 .h3-title+.grid-col-4-title-28-img-text { margin-top: 60px; border-bottom: var(--static-10) solid #C5C1C4; padding-bottom: 80px; }
+
+#container.cataract_01 .section4 { padding-top: 180px; }
+#container.cataract_01 .section4 > .bannerPart { margin-top: 60px; position: relative; }
+#container.cataract_01 .section4 > .bannerPart > p { aspect-ratio: 1440/498; }
+#container.cataract_01 .section4 > .bannerPart > div { position: absolute; right: 50px; top: 50px; }
+
+#container.cataract_01 .section4 > .bannerPart+ul { display: flex; justify-content: center; margin-top: 70px; border-top: var(--static-10) solid #C5C1C4; border-bottom: var(--static-10) solid #C5C1C4; padding: 50px 80px; }
+#container.cataract_01 .section4 > .bannerPart+ul > li { display: flex; flex-direction: column; align-items: center; flex: 1; }
+#container.cataract_01 .section4 > .bannerPart+ul > li > p { height: 78px; }
+#container.cataract_01 .section4 > .bannerPart+ul > li > p > img { height: 100%; }
+#container.cataract_01 .section4 > .bannerPart+ul > li > div { margin-top: 30px; text-align: center; font-size: var(--fs-20); color: #383839; line-height: 1.5; font-weight: 600; word-break: keep-all; }
+#container.cataract_01 .section4 > .h3-title { margin-top: 120px; }
+#container.cataract_01 .section4 > .h3-title+.grid-col-2-img-title-32-text { margin-top: 60px; border-top: 0; padding-top: 0; }
+#container.cataract_01 .section4 > .bannerContents { margin-top: 70px; }
+#container.cataract_01 .section4 > .bannerContents+.box-592 { margin-top: 140px; }
+#container.cataract_01 .section4 > .grid-col-3-title-32-img-text { margin-top: 60px; border-top: var(--static-10) solid #C5C1C4; }
+#container.cataract_01 .section4 > .grid-col-3-title-32-img-text > li { border-top: 0; }
+
+#container.cataract_01 .section4 > .center-text-highlight { border-top: var(--static-10) solid #DFDCDF; border-bottom: var(--static-10) solid #DFDCDF; padding: 30px 0; margin-top: 60px; font-size: var(--fs-22); font-weight: 700; line-height: 1.54; color: var(--highlight-color); text-align: center; }
+#container.cataract_01 .section4 > .center-text-highlight > a { margin-top: 20px; }
+
+#container.cataract_01 .section4 > .center-text-highlight+.box-592 { margin-top: 120px; }
+#container.cataract_01 .section4 > .box-592+.grid-col-4-title-28-img-text { margin-top: 70px; }
+
+#container.cataract_01 .section5 { padding-top: 120px; }
