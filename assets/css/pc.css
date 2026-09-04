@@ -72,6 +72,9 @@
 .xl-fit-cover > picture > img,
 .xl-fit-cover > img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
 
+.xl-border-top { border-top: var(--static-10) solid #C5C1C4; }
+.xl-border-bottom { border-bottom: var(--static-10) solid #C5C1C4; }
+
 
 
 
@@ -1180,6 +1183,7 @@ html.scroll-hidden { overflow: hidden; }
 
 #container.subpage .top-blue-box { width: 95.8333vw; margin: 0 auto; }
 #container.subpage .top-blue-box .inner { width: 100%; background-color: #041242; padding: 100px 105px 140px; border-radius: 28px; overflow: hidden; }
+#container.subpage .top-blue-box .inner > h2 { font-weight: 400; }
 #container.subpage .top-blue-box .target { display: grid; grid-template-columns: repeat(5, 1fr); gap: 70px; }
 #container.subpage .top-blue-box .target > li { display: flex; flex-direction: column; justify-content: space-between; position: relative; }
 #container.subpage .top-blue-box .target > li > div > span { display: flex; align-items: center; justify-content: center; width: 110px; height: 110px; margin: 0 auto; }
@@ -2458,3 +2462,95 @@ html.scroll-hidden { overflow: hidden; }
 #container.cataract_01 .section4 > .box-592+.grid-col-4-title-28-img-text { margin-top: 70px; }
 
 #container.cataract_01 .section5 { padding-top: 120px; }
+
+
+
+/* 백내장 수술 */
+#container.subpage .grid-col-3-title-28-img-text { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0 80px; text-align: center; }
+#container.subpage .grid-col-3-title-28-img-text > li { display: grid; grid-template-rows: subgrid; grid-row: span 4; row-gap: 0; align-items: center; }
+#container.subpage .grid-col-3-title-28-img-text > li > .point { font-size: var(--fs-82); font-weight: 700; color: var(--highlight-color); line-height: 1; display: flex; align-items: flex-start; justify-content: center; gap: 5px; }
+#container.subpage .grid-col-3-title-28-img-text > li > .point > span { font-size: var(--fs-28); font-weight: 600; line-height: normal; color: #8B898B; }
+#container.subpage .grid-col-3-title-28-img-text > li > .title { font-size: var(--fs-28); font-weight: 700; color: #000; margin-top: 20px; line-height: 1.35; }
+#container.subpage .grid-col-3-title-28-img-text > li > .img { width: 100%; aspect-ratio: 426/240; border-radius: 14px; overflow: hidden; margin-top: 50px; }
+#container.subpage .grid-col-3-title-28-img-text > li > .text { font-size: var(--fs-20); color: #383839; padding-top: 40px; margin-top: 40px; border-top: var(--static-10) dashed #C5C1C4; line-height: 1.5; word-break: keep-all; }
+
+#container.subpage .grid-col-2-svg-title-28-text { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0px 80px; padding: 60px 0 80px; border-top: var(--static-10) solid #C5C1C4; border-bottom: var(--static-10) solid #C5C1C4; }
+#container.subpage .grid-col-2-svg-title-28-text > li { display: flex; flex-direction: column; align-items: center; }
+#container.subpage .grid-col-2-svg-title-28-text > li > .img { height: 78px; }
+#container.subpage .grid-col-2-svg-title-28-text > li > .img > img { height: 100%; }
+#container.subpage .grid-col-2-svg-title-28-text > li > .title { font-size: var(--fs-28); font-weight: 700; color: #000; margin-top: 40px; line-height: 1.35; text-align: center; }
+#container.subpage .grid-col-2-svg-title-28-text > li > .text { font-size: var(--fs-18); color: #383839; line-height: 1.66; margin-top: 50px; padding-top: 50px; border-top: var(--static-10) dashed #8B898B; word-break: keep-all; width: 100%; }
+#container.subpage .grid-col-2-svg-title-28-text.senior > li > .text { font-size: var(--fs-20); line-height: 1.5; }
+
+
+#container.cataract_02 .section1 { margin-top: 130px; }
+#container.cataract_02 .section1 .feature-list { width: 100%; padding-bottom: 60px; }
+#container.cataract_02 .section1 .feature-list > ul { display: flex; justify-content: center; gap: 72px; margin-top: 80px; }
+#container.cataract_02 .section1 .feature-list > ul > li { display: flex; flex-direction: column; align-items: center; text-align: center; width: 294px; }
+#container.cataract_02 .section1 .feature-list > ul > li > img { width: 110px; height: 110px; object-fit: contain; border-radius: 50%; }
+#container.cataract_02 .section1 .feature-list > ul > li > h3 { font-size: var(--fs-28); font-weight: 600; color: #fff; margin-top: 30px; line-height: 1.35; }
+
+#container.cataract_02 .section2 { padding-top: 130px; }
+#container.cataract_02 .section2 .bannerPart { margin-top: 60px; }
+#container.cataract_02 .section2 .bannerPart+.box-592 { margin-top: 50px; }
+#container.cataract_02 .section2 .grid-col-2-zigzag { margin-top: 120px; }
+
+#container.cataract_02 .section3 { padding-top: 180px; }
+#container.cataract_02 .section3 .grid-col-2-zigzag { margin-top: 60px; }
+
+#container.cataract_02 .section4 { padding-top: 180px; }
+#container.cataract_02 .section4 .grid-col-3-title-28-img-text { padding: 70px 0 80px; margin-top: 60px; }
+#container.cataract_02 .section4 .grid-col-3-title-28-img-text+div { padding: 40px 0; display: flex; flex-direction: column; align-items: center; text-align: center; }
+#container.cataract_02 .section4 .grid-col-3-title-28-img-text+div > strong { font-size: var(--fs-22); line-height: 1.54; color: var(--highlight-color); }
+#container.cataract_02 .section4 .grid-col-3-title-28-img-text+div > p { margin-top: 10px; font-size: var(--fs-20); line-height: 1.4; color: #686869; }
+
+#container.cataract_02 .section4 .bannerContents { margin-top: 80px; }
+#container.cataract_02 .section4 .bannerContents > .title { width: 365px; }
+#container.cataract_02 .section4 .bannerContents > div > div:nth-of-type(1) { display: flex; align-items: center; margin-top: 14px; gap: 18px; font-size: var(--fs-20); line-height: 1; color: #8B898B; }
+#container.cataract_02 .section4 .bannerContents > div > div:nth-of-type(1) > img { width: 30px; }
+#container.cataract_02 .section4 .bannerContents > div > div:nth-of-type(2) { padding-top: 30px; margin-top: 40px; border-top: var(--static-10) dashed #C5C1C4; font-size: var(--fs-20); color: #8B898B; line-height: 1.5; }
+
+#container.cataract_02 .section5 { padding-top: 180px; }
+#container.cataract_02 .section5 > .bannerPart { margin-top: 60px; position: relative; }
+#container.cataract_02 .section5 > .bannerPart > p { aspect-ratio: 1440/498; }
+#container.cataract_02 .section5 > .bannerPart > div { position: absolute; right: 50px; top: 50px; }
+
+#container.cataract_02 .section5 > .bannerPart+ul { display: flex; justify-content: center; margin-top: 70px; border-top: var(--static-10) solid #C5C1C4; border-bottom: var(--static-10) solid #C5C1C4; padding: 50px 80px; }
+#container.cataract_02 .section5 > .bannerPart+ul > li { display: flex; flex-direction: column; align-items: center; flex: 1; }
+#container.cataract_02 .section5 > .bannerPart+ul > li > p { height: 78px; }
+#container.cataract_02 .section5 > .bannerPart+ul > li > p > img { height: 100%; }
+#container.cataract_02 .section5 > .bannerPart+ul > li > div { margin-top: 30px; text-align: center; font-size: var(--fs-20); color: #383839; line-height: 1.5; font-weight: 600; word-break: keep-all; }
+#container.cataract_02 .section5 > .h3-title { margin-top: 120px; }
+#container.cataract_02 .section5 > .h3-title+.grid-col-2-img-title-32-text { margin-top: 60px; border-top: 0; padding-top: 0; }
+#container.cataract_02 .section5 > .bannerContents { margin-top: 70px; }
+
+#container.cataract_02 .section6 { padding-top: 180px; }
+#container.cataract_02 .section6 .grid-table { margin-top: 60px; }
+#container.cataract_02 .section6 .grid-table > ul { grid-template-columns: 21.5278% 1fr 1fr; }
+#container.cataract_02 .section6 .grid-table > ul > li { border-bottom: var(--static-10) solid #C5C1C4; }
+#container.cataract_02 .section6 .grid-table > ul > li:nth-of-type(2) { background-color: #f9f9f9; }
+#container.cataract_02 .section6 .grid-table > ul > li.td > div { align-items: center; }
+#container.cataract_02 .section6 .grid-table > ul > li.point-box { position: relative; }
+#container.cataract_02 .section6 .grid-table > ul > li.point-box::after { content: ''; position: absolute; left: 0; top: -1px; width: calc(100% + var(--static-20)); height: calc(100% + var(--static-20)); border: var(--static-20) solid var(--highlight-color); }
+#container.cataract_02 .section6 .grid-table > ul > li.point-box > div { color: var(--highlight-color); font-weight: 600; }
+#container.cataract_02 .section6 .grid-table > ul > li.point-box > div:first-of-type { font-weight: 800; }
+
+#container.cataract_02 .section6 .feature-list { width: 100%; margin-top: 80px; padding: 40px 0; }
+#container.cataract_02 .section6 .feature-list > dt { font-size: var(--fs-22); font-weight: 700; color: #000; line-height: 1.54; }
+#container.cataract_02 .section6 .feature-list > dt + dd { font-size: var(--fs-20); color: #686869; line-height: 1.4; margin-top: 10px; word-break: keep-all; }
+#container.cataract_02 .section6 .feature-list > dd + dt { margin-top: 40px; }
+
+#container.cataract_02 .section7 { padding-top: 180px; }
+#container.cataract_02 .section7 .grid-col-3-title-32-img-text { margin-top: 60px; padding-top: 60px; }
+#container.cataract_02 .section7 .grid-col-3-title-32-img-text > li { padding-top: 0; border-top: 0; }
+
+#container.cataract_02 .section7+.wide-bannerPart { margin-top: 120px; }
+#container.cataract_02 .section7+.wide-bannerPart .text .text-body { color: #383839; }
+#container.cataract_02 .section7+.wide-bannerPart .text .btn-wrap { display: flex; gap: 20px; margin-top: 30px; }
+#container.cataract_02 .section7+.wide-bannerPart .check-list { top: 0; height: 100%; display: flex; flex-direction: column; justify-content: center; }
+
+#container.cataract_02 .section8 { padding-top: 140px; }
+#container.cataract_02 .section8 .grid-col-2-svg-title-28-text { margin-top: 60px; }
+#container.cataract_02 .section8 .grid-col-2-svg-title-28-text+ul { margin-top: 0; border-top: 0; }
+
+#container.cataract_02 .section9 { padding-top: 120px; }
