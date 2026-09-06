@@ -984,7 +984,7 @@ html.scroll-hidden { overflow: hidden; }
 #container.subpage > .contents:has(.top-big-banner) { padding-top: 0; }
 
 
-#container.subpage .h2-title > h2 { font-family: var(--second-font); font-size: var(--fs-48); font-weight: 900; letter-spacing: -0.96px; line-height: 1.41; color: #000; }
+#container.subpage .h2-title > h2 { font-family: var(--second-font); font-size: var(--fs-48) !important; font-weight: 900 !important; letter-spacing: -0.96px; line-height: 1.41 !important; color: #000 !important; }
 #container.subpage .h2-title > p { margin-top: 14px; font-size: var(--fs-18); font-weight: 500; line-height: 1.44; color: #8B898B; }
 #container.subpage .h2-title > .symbol { display: flex; gap: 10px; align-items: center; margin-bottom: 30px; }
 #container.subpage .h2-title > .symbol > img { width: 30px; }
@@ -2639,3 +2639,18 @@ html.scroll-hidden { overflow: hidden; }
 #container.cataract_03 .section7 .lens-price-table .notice-text { font-size: var(--fs-20); color: #686869; line-height: 1.4; margin-top: 30px; word-break: keep-all; display: flex; gap: 5px; }
 
 #container.cataract_03 .section8 { padding-top: 120px; }
+
+
+
+/* 원추각막 클리닉 */
+#container.disease_01_01 .section1 .grid-col-2-zigzag { margin-top: 60px; }
+
+#container.disease_01_01 .section2 { padding-top: 180px; }
+#container.disease_01_01 .section2 .grid-col-2-img-title-28-text { margin-top: 60px; padding-top: 70px; border-top: var(--static-10) solid #C5C1C4; }
+#container.disease_01_01 .section2 .grid-col-2-img-title-28-text .title { text-align: center; }
+#container.disease_01_01 .section2 .grid-col-2-zigzag { margin-top: 40px; padding-top: 130px; border-top: var(--static-10) solid #C5C1C4; }
+#container.disease_01_01 .section2 .grid-col-2-zigzag .text-box+p { margin-top: 30px; color: #686869; line-height: 1.44; font-size: var(--fs-18); }
+#container.disease_01_01 .section2 > .h3-title { margin-top: 180px; }
+
+#container.disease_01_01 .section2 > .h3-title { margin-top: 180px; }
+#container.disease_01_01 .section2 > .h3-title+.grid-col-3-title-32-img-text { margin-top: 60px; }
