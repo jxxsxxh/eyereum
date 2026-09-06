@@ -2851,3 +2851,16 @@ html.scroll-hidden { overflow: hidden; }
 #container.disease_03_02 .section3 .grid-col-4-title-28-img-text > li .step+.title { margin-top: 20px; }
 
 #container.disease_03_02 .section4 { padding-top: 120px; }
+
+
+
+/* 익상편 */
+#container.disease_03_03 .section1 > .h3-title { margin-top: 120px; }
+#container.disease_03_03 .section1 > .h3-title+.bannerPart { margin-top: 60px; }
+#container.disease_03_03 .section1 > .box-592 { margin-top: 50px; }
+#container.disease_03_03 .section1 > dl { margin-top: 70px; }
+#container.disease_03_03 .section1 > dl > dt { font-size: var(--fs-22); font-weight: 700; line-height: 1.54; }
+#container.disease_03_03 .section1 > dl > dd > ul.num-title-text { margin-top: 40px; padding: 50px 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 0 80px; }
+#container.disease_03_03 .section1 > dl > dd+dt { margin-top: 70px; }
+#container.disease_03_03 .section1 > dl > dd > ul.dot-list-383839 { margin-top: 20px; }
+#container.disease_03_03 .section1 > dl > dd > p { margin-top: 20px; font-size: var(--fs-18); line-height: 1.55; color: #686869; }
