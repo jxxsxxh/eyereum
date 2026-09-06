@@ -2827,3 +2827,27 @@ html.scroll-hidden { overflow: hidden; }
 #container.disease_03_01 .section3 .grid-col-4-svg-title-text > li { border-bottom: var(--static-10) dashed #C5C1C4; padding-bottom: 50px; }
 
 #container.disease_03_01 .section4 { padding-top: 180px; }
+
+
+/* 결막모반 */
+#container.disease_03_02 .section1 {}
+#container.disease_03_02 .section1 .grid-col-4-svg-text { margin-top: 70px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 0 80px; justify-content: center; padding: 50px 0; }
+#container.disease_03_02 .section1 .grid-col-4-svg-text > li { display: grid; grid-row: span 2; justify-items: center; }
+#container.disease_03_02 .section1 .grid-col-4-svg-text > li .img { height: 78px; }
+#container.disease_03_02 .section1 .grid-col-4-svg-text > li .img > img { height: 100%; }
+#container.disease_03_02 .section1 .grid-col-4-svg-text > li .text { margin-top: 30px; font-size: var(--fs-18); line-height: 1.44; font-weight: 600; color: #383839; }
+#container.disease_03_02 .section1 .grid-col-2-zigzag { margin-top: 130px; }
+#container.disease_03_02 .section1 .grid-col-2-zigzag .text-box > span { display: block; margin-top: 20px; font-size: var(--fs-18); line-height: 1.55; color: #686869; }
+
+#container.disease_03_02 .section2 { padding-top: 180px; }
+#container.disease_03_02 .section2 .grid-col-2-zigzag { margin-top: 60px; }
+
+#container.disease_03_02 .section3 { padding-top: 180px; }
+#container.disease_03_02 .section3 .grid-col-4-title-28-img-text { margin-top: 60px; padding-top: 50px; counter-reset: step; }
+#container.disease_03_02 .section3 .grid-col-4-title-28-img-text > li { counter-increment: step; }
+#container.disease_03_02 .section3 .grid-col-4-title-28-img-text > li .text { text-align: center; }
+#container.disease_03_02 .section3 .grid-col-4-title-28-img-text > li .step { display: flex; font-size: var(--fs-20); color: #000; font-weight: 700; line-height: 1.4; justify-content: center; gap: 14px; }
+#container.disease_03_02 .section3 .grid-col-4-title-28-img-text > li .step::after { content: counter(step); width: 30px; height: 30px; font-size: var(--fs-14); color: #fff; font-weight: 700; line-height: normal; background-color: #000; border-radius: 100px; display: flex; align-items: center; justify-content: center; }
+#container.disease_03_02 .section3 .grid-col-4-title-28-img-text > li .step+.title { margin-top: 20px; }
+
+#container.disease_03_02 .section4 { padding-top: 120px; }
