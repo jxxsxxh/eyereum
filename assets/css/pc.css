@@ -2806,3 +2806,24 @@ html.scroll-hidden { overflow: hidden; }
 #container.disease_02_02 .section5 .box-592+.grid-col-3-title-32-img-text > li { border-top: 0; }
 #container.disease_02_02 .section5 .box-592+.grid-col-3-title-32-img-text > li .youtube-pop > p.cover::after { width: 56px; height: 56px; }
 #container.disease_02_02 .section5 > .h2-title { margin-top: 140px; }
+
+
+
+/* 결막이완증 */
+#container.disease_03_01 .section1 {}
+#container.disease_03_01 .section1 .feature-list { width: 100%; }
+#container.disease_03_01 .section1 .feature-list > ul { display: flex; justify-content: center; gap: 72px; margin-top: 80px; }
+#container.disease_03_01 .section1 .feature-list > ul > li { display: flex; flex-direction: column; align-items: center; text-align: center; width: 294px; }
+#container.disease_03_01 .section1 .feature-list > ul > li > img { width: 110px; height: 110px; object-fit: contain; border-radius: 50%; }
+#container.disease_03_01 .section1 .feature-list > ul > li > h3 { font-size: var(--fs-28); font-weight: 600; color: #fff; margin-top: 30px; line-height: 1.35; }
+
+#container.disease_03_01 .section2 { padding-top: 130px; }
+#container.disease_03_01 .section2 .wide-bannerPart { margin-top: 60px; }
+#container.disease_03_01 .section2 .wide-bannerPart .text > span { display: block; margin-top: 12px; color: #8B898B; font-size: var(--fs-18); line-height: 1.66; letter-spacing: -0.18px; }
+#container.disease_03_01 .section2 .grid-col-2-zigzag { margin-top: 120px; }
+
+#container.disease_03_01 .section3 { padding-top: 140px; }
+#container.disease_03_01 .section3 .grid-col-2-zigzag { margin-top: 70px; }
+#container.disease_03_01 .section3 .grid-col-4-svg-title-text > li { border-bottom: var(--static-10) dashed #C5C1C4; padding-bottom: 50px; }
+
+#container.disease_03_01 .section4 { padding-top: 180px; }
