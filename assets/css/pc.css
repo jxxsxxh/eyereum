@@ -1049,10 +1049,13 @@ html.scroll-hidden { overflow: hidden; }
 #container.subpage .grid-col-3-svg-title-subtitle-text > li > .text > strong+p { margin-top: 20px; }
 
 
-#container.subpage .grid-col-2-zigzag > li { display: flex; justify-content: space-between; align-items: flex-start; gap: 80px; }
+#container.subpage .grid-col-2-zigzag { counter-reset: num; }
+#container.subpage .grid-col-2-zigzag > li { counter-increment: num; display: flex; justify-content: space-between; align-items: flex-start; gap: 80px; }
 #container.subpage .grid-col-2-zigzag > li + li { margin-top: 120px; }
 #container.subpage .grid-col-2-zigzag > li:nth-of-type(2n) { flex-direction: row-reverse; }
 #container.subpage .grid-col-2-zigzag > li > .text { width: 30.8333vw; }
+#container.subpage .grid-col-2-zigzag > li > .text > .h3-title.num > h3 { display: flex; gap: 20px; align-items: flex-start; }
+#container.subpage .grid-col-2-zigzag > li > .text > .h3-title.num > h3::before { flex: 0 0 auto; content: counter(num); width: 40px; height: 40px; border-radius: 100px; margin-top: 5px; font-size: var(--fs-22); font-weight: 700; color: #fff; background-color: #000; display: flex; justify-content: center; align-items: center; }
 #container.subpage .grid-col-2-zigzag > li > .text > .text-box { margin-top: 40px; font-size: var(--fs-18); color: #383839; line-height: 1.66; word-break: keep-all; }
 #container.subpage .grid-col-2-zigzag > li > .text > .text-box > strong { font-size: var(--fs-22); color: #000; line-height: 1.54; margin-bottom: 20px; display: block; }
 #container.subpage .grid-col-2-zigzag > li > .text > .text-box > p > strong { color: #000; font-weight: 700; }
@@ -2654,3 +2657,15 @@ html.scroll-hidden { overflow: hidden; }
 
 #container.disease_01_01 .section2 > .h3-title { margin-top: 180px; }
 #container.disease_01_01 .section2 > .h3-title+.grid-col-3-title-32-img-text { margin-top: 60px; }
+
+
+
+/* 원추각막 치료방법 */
+#container.disease_01_02 .section1 .grid-col-2-zigzag { margin-top: 60px; }
+
+#container.disease_01_02 .section2 { padding-top: 180px; }
+#container.disease_01_02 .section2 .wide-bannerPart { margin-top: 60px; }
+#container.disease_01_02 .section2 .grid-col-4-svg-title-text { margin-top: 120px; border-top: 0; padding-top: 0; }
+#container.disease_01_02 .section2 .grid-col-2-zigzag { border-top: var(--static-10) solid #C5C1C4; margin-top: 70px; padding-top: 140px; }
+#container.disease_01_02 .section2 .grid-col-2-zigzag > li > .text  > .h3-title.num > h3:before { content: '3'; }
+#container.disease_01_02 .section2 .grid-col-2-zigzag > li:nth-of-type(2) > .text  > .h3-title.num > h3:before { content: '4'; }
