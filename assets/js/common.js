@@ -443,3 +443,51 @@ $(function () {
         });
     });
 });
+
+
+$(function () {
+	$('.thesis-category ul li').on('click', function () {
+		var $this = $(this);
+		var filterText = $this.text().trim();
+
+		$('.thesis-category ul li').removeClass('on');
+		$this.addClass('on');
+
+		$('.list-wrap .h2-title h2').text(filterText);
+
+		var targetTop = $('.contents').offset().top;
+		$('html, body').stop().animate({ scrollTop: targetTop }, 300);
+
+		if (filterText === '전체') {
+			$('.list > li').show();
+			return;
+		}
+
+		$('.list > li').each(function () {
+			var category = $.trim($(this).attr('data-category'));
+			var isMatch = false;
+
+			if (!category) {
+				isMatch = true;
+			} else if (filterText === '스마일') {
+				isMatch = category.indexOf('스마일') !== -1;
+			} else if (filterText === '렌즈삽입술') {
+				isMatch = category.indexOf('렌즈삽입술') !== -1;
+			} else if (filterText === '라식·라섹') {
+				isMatch = category.indexOf('라식') !== -1 || category.indexOf('라섹') !== -1;
+			} else if (filterText === '부작용치료') {
+				isMatch = category.indexOf('부작용치료') !== -1;
+			} else if (filterText === '노안·백내장') {
+				isMatch = category.indexOf('노안') !== -1 || category.indexOf('백내장') !== -1;
+			} else if (filterText === '기타') {
+				isMatch = category.indexOf('기타') !== -1 || category.indexOf('시력교정술검사') !== -1;
+			}
+
+			if (isMatch) {
+				$(this).show();
+			} else {
+				$(this).hide();
+			}
+		});
+	});
+});

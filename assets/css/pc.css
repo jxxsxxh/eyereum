@@ -97,6 +97,7 @@ html.scroll-hidden { overflow: hidden; }
 
 .more-detail.white { color: #fff; }
 .more-detail.white::after { content: ""; background-color: transparent; background-image: url('../img/svg-arrow-right-white.svg'); }
+.more-detail.circle::after { background-image: url('../img/svg-circle-arrow-right.svg'); background-color: #000; }
 .more-detail.circle.white::after { background-image: url('../img/svg-circle-arrow-right-white.svg'); background-color: #fff; }
 
 .btn-link { transition: all .5s ease; font-size: var(--fs-16); font-weight: 700; display: inline-flex; align-items: center; gap: 6px; color: #fff; padding: 15px 16px 14px 20px; border: var(--static-10) solid #fff; border-radius: 100px; line-height: 1; }
@@ -976,6 +977,13 @@ html.scroll-hidden { overflow: hidden; }
 #container.subpage .tab-category > ul > li.on { color: var(--main-color); }
 
 
+#container.subpage .thesis-category { padding: 30px 0; border-bottom: var(--static-10) solid var(--highlight-color); }
+#container.subpage .thesis-category > ul { display: flex; gap: 30px; align-items: center; }
+#container.subpage .thesis-category > ul > li { display: flex; align-items: center; gap: 30px; font-size: var(--fs-18); font-weight:700; color: #8B898B; cursor: pointer; }
+#container.subpage .thesis-category > ul > li~li::before { content: ''; width: var(--static-10); height: 24px; background-color: #DFDCDF; }
+#container.subpage .thesis-category > ul > li.on { color: var(--main-color); }
+
+
 #container.subpage > .sticky-wrap { position: relative; height: 85px; }
 #container.subpage > .sticky-wrap .sticky-category { position: absolute; top: 0; width: 100%; padding: 30px 0; border-bottom: var(--static-10) solid var(--highlight-color); background-color: #fff; transition: top .5s ease; }
 #container.subpage > .sticky-wrap .sticky-category.up,
@@ -985,6 +993,10 @@ html.scroll-hidden { overflow: hidden; }
 #container.subpage > .sticky-wrap .sticky-category > ul > li~li::before { content: ''; width: var(--static-10); height: 24px; background-color: #DFDCDF; }
 #container.subpage > .sticky-wrap .sticky-category > ul > li:hover,
 #container.subpage > .sticky-wrap .sticky-category > ul > li.on { color: var(--main-color); }
+
+#container.subpage > .sticky-wrap .thesis-category { position: absolute; top: 0; width: 100%; padding: 30px 0; border-bottom: var(--static-10) solid var(--highlight-color); background-color: #fff; transition: top .5s ease; }
+#container.subpage > .sticky-wrap .thesis-category.up,
+#container.subpage > .sticky-wrap .thesis-category.down { position: fixed; z-index: 10; }
 
 
 #container.subpage > .contents { padding-top: 130px; }
@@ -2976,7 +2988,7 @@ html.scroll-hidden { overflow: hidden; }
 
 
 
-/* 망막혈관폐쇄 */
+/* 근거로 증명하는 아이리움 */
 #container.eyereum_01 .section1 .bannerPart { margin-top: 60px; }
 #container.eyereum_01 .section1 .box-592 { margin-top: 50px; }
 #container.eyereum_01 .section1 .box-592+.grid-col-2-zigzag { margin-top: 130px; }
@@ -3024,3 +3036,34 @@ html.scroll-hidden { overflow: hidden; }
 #container.eyereum_01 .section4 > div > .text > strong { font-size: var(--fs-38); line-height: 1.05; }
 #container.eyereum_01 .section4 > div > .text > p { margin-top: 40px; font-size: var(--fs-20); line-height: 1.5; color: #383839; }
 #container.eyereum_01 .section4 > div > .text > a { margin-top: 30px; }
+
+
+
+/* 연구와 학술활동 */
+#container.subpage .contents > .list-wrap { display: flex; justify-content: space-between; }
+#container.subpage .contents > .list-wrap > .list { width: 1040px; display: flex; flex-direction: column; gap: 50px; }
+
+
+#container.eyereum_02_01 .list-wrap > .list > li { padding-bottom: 50px; border-bottom: var(--static-10) solid #C5C1C4; }
+#container.eyereum_02_01 .list-wrap > .list > li .title { font-size: var(--fs-22); font-weight: 500; line-height: 1.45; color: #000; word-break: keep-all; }
+#container.eyereum_02_01 .list-wrap > .list > li .text { font-size: var(--fs-16); font-weight: 400; line-height: 1.5; color: #8B898B; margin-top: 20px; word-break: keep-all; }
+#container.eyereum_02_01 .list-wrap > .list > li .etc { margin-top: 20px; display: flex; gap: 40px; align-items: center; }
+#container.eyereum_02_01 .list-wrap > .list > li .etc .tag { display: flex; gap: 5px; }
+#container.eyereum_02_01 .list-wrap > .list > li .etc .tag > dd { font-size: var(--fs-16); font-weight: 700; letter-spacing: -0.16px; line-height: normal; color: var(--main-color); }
+#container.eyereum_02_01 .list-wrap > .list > li .etc > div { position: relative; }
+#container.eyereum_02_01 .list-wrap > .list > li .etc > div::before { content: ''; width: var(--static-10); height: 20px; background-color: #DFDCDF; position: absolute; left: -20px; top: 50%; transform: translateY(-50%); }
+#container.eyereum_02_01 .list-wrap > .list > li .etc > div > a { align-items: center; line-height: normal; }
+
+
+#container.eyereum_02_02 .list-wrap+.list-wrap { margin-top: 50px; }
+#container.eyereum_02_02 .list-wrap > .list > li { padding-bottom: 50px; border-bottom: var(--static-10) solid #C5C1C4; display: flex; gap: 60px; justify-content: space-between; word-break: keep-all; }
+#container.eyereum_02_02 .list-wrap > .list > li:last-of-type { border-bottom: var(--static-10) solid var(--highlight-color); }
+#container.eyereum_02_02 .list-wrap > .list > li .text-box .title { font-size: var(--fs-22); font-weight: 500; line-height: 1.45; color: #000; }
+#container.eyereum_02_02 .list-wrap > .list > li .text-box .text { font-size: var(--fs-16); line-height: 1.5; color: #383839; margin-top: 20px; }
+#container.eyereum_02_02 .list-wrap > .list > li .text-box .thesis { font-size: var(--fs-16); font-weight: 400; line-height: 1.5; color: #8B898B; margin-top: 20px; }
+#container.eyereum_02_02 .list-wrap > .list > li .text-box > dl { margin-top: 20px; }
+#container.eyereum_02_02 .list-wrap > .list > li .text-box > dl > dd { font-size: var(--fs-16); line-height: 1.5; color: #383839; display: flex; gap: 5px; }
+#container.eyereum_02_02 .list-wrap > .list > li .text-box > dl > dd::before { content: '•'; flex: 0 0 auto; }
+#container.eyereum_02_02 .list-wrap > .list > li .text-box > a { margin-top: 20px; }
+#container.eyereum_02_02 .list-wrap > .list > li .img { flex: 0 0 auto; width: 260px; aspect-ratio: 130/73; border-radius: 14px; overflow: hidden; background-color: #d9d9d9; }
+
