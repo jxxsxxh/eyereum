@@ -201,6 +201,8 @@ html.scroll-hidden { overflow: hidden; }
 #header .submenu .inner .menu > li > dl > dd > p > a { font-size: var(--fs-16); font-weight: 500; line-height: 2.37; color: #8B898B; padding-right: 14px; }
 #header .submenu .inner .menu > li > dl > dd > p > a:hover { color: #000; display: flex; gap: 6px; align-items: center; padding-right: 0; }
 #header .submenu .inner .menu > li > dl > dd > p > a:hover::before { content: ''; width: 8px; height: 8px; border-radius: 100px; background-color: var(--main-color); }
+#header .submenu .inner .menu > li > dl > dd > p > a > sup { vertical-align: super; line-height: 0; }
+#header .submenu .inner .menu > li > dl > dd > p > a:hover > sup { vertical-align: super; line-height: 0; }
 
 
 
@@ -2864,3 +2866,24 @@ html.scroll-hidden { overflow: hidden; }
 #container.disease_03_03 .section1 > dl > dd+dt { margin-top: 70px; }
 #container.disease_03_03 .section1 > dl > dd > ul.dot-list-383839 { margin-top: 20px; }
 #container.disease_03_03 .section1 > dl > dd > p { margin-top: 20px; font-size: var(--fs-18); line-height: 1.55; color: #686869; }
+
+
+
+/* 녹내장 */
+#container.disease_04_01 .section2 { padding-top: 180px; }
+#container.disease_04_01 .section2 .grid-col-2-img-title-32-text { border-top: 0; padding-top: 60px; }
+
+#container.disease_04_01 .section3 { padding-top: 180px; }
+#container.disease_04_01 .section3 .box { width: 100%; background-color: #151515; border-radius: 14px; padding: 80px 90px; margin-top: 60px; }
+#container.disease_04_01 .section3 .box > dl > dt { font-size: var(--fs-32); line-height: 1.25; font-weight: 500; color: #fff; text-align: center; }
+#container.disease_04_01 .section3 .box > dl > dd { margin-top: 60px; }
+#container.disease_04_01 .section3 .box > dl > dd > ul { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0 80px; }
+#container.disease_04_01 .section3 .box > dl > dd > ul > li > .img { width: 100%; }
+#container.disease_04_01 .section3 .box > dl > dd > ul > li > .img > img { width: 100%; }
+#container.disease_04_01 .section3 .box > dl > dd > ul > li > .text { margin-top: 40px; padding-top: 30px; color: #DFDCDF; font-size: var(--fs-18); text-align: center; line-height: 1.66; border-top: var(--static-10) dashed #686869; }
+#container.disease_04_01 .section3 .box+div { margin-top: 70px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 0 80px; padding: 50px 0; }
+#container.disease_04_01 .section3 .box+div > dl > dt { font-size: var(--fs-20); font-weight: 700; line-height: 1.4; }
+#container.disease_04_01 .section3 .box+div > dl > dd { margin-top: 20px; font-size: var(--fs-16); line-height: 1.62; color: #686869; word-break: keep-all; }
+
+#container.disease_04_01 .section4 { padding-top: 180px; }
+#container.disease_04_01 .section4 .grid-col-2-zigzag { margin-top: 60px; }
