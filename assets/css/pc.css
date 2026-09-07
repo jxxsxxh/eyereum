@@ -2942,3 +2942,25 @@ html.scroll-hidden { overflow: hidden; }
 #container.disease_04_04 .section3 .grid-col-2-zigzag .text > dl > dt { font-weight: 700; font-size: var(--fs-22); line-height: 1.54; color: #000; }
 #container.disease_04_04 .section3 .grid-col-2-zigzag .text > dl > dd { margin-top: 12px; font-size: var(--fs-18); color: #383839; line-height: 1.66; }
 #container.disease_04_04 .section3 .grid-col-2-zigzag .text > dl > dd+dt { margin-top: 40px; padding-top: 40px; border-top: var(--static-10) solid #DFDCDF; }
+
+
+
+/* 포도막염 */
+#container.disease_04_05 .section1 .grid-col-2-zigzag .text-box > span { display: block; margin-top: 20px; font-size: var(--fs-18); line-height: 1.66; color: #686869; }
+
+
+
+/* 망막혈관폐쇄 */
+#container.disease_04_06 .section2 { padding-top: 180px; }
+#container.disease_04_06 .section2 .bannerPart { margin-top: 60px; }
+#container.disease_04_06 .section2 .bannerPart+.box-592 { margin-top: 50px; }
+#container.disease_04_06 .section2 .bannerPart+.box-592 > div:nth-of-type(2) > dl {}
+#container.disease_04_06 .section2 .bannerPart+.box-592 > div:nth-of-type(2) > dl > dt { font-weight: 700; font-size: var(--fs-22); line-height: 1.54; color: #000; }
+#container.disease_04_06 .section2 .bannerPart+.box-592 > div:nth-of-type(2) > dl > dd { margin-top: 12px; font-size: var(--fs-18); color: #383839; line-height: 1.66; }
+#container.disease_04_06 .section2 .bannerPart+.box-592 > div:nth-of-type(2) > dl > dd+dt { margin-top: 40px; padding-top: 40px; border-top: var(--static-10) solid #DFDCDF; }
+#container.disease_04_06 .section2 .box-592+.grid-col-2-zigzag { margin-top: 130px; }
+#container.disease_04_06 .section2 .box-592+.grid-col-2-zigzag .text > dl { margin-top: 40px; }
+#container.disease_04_06 .section2 .box-592+.grid-col-2-zigzag .text > dl > dt { font-weight: 700; font-size: var(--fs-22); line-height: 1.54; color: #000; }
+#container.disease_04_06 .section2 .box-592+.grid-col-2-zigzag .text > dl > dd { margin-top: 12px; font-size: var(--fs-18); color: #383839; line-height: 1.66; }
+#container.disease_04_06 .section2 .box-592+.grid-col-2-zigzag .text > dl > dd+dt { margin-top: 40px; padding-top: 40px; border-top: var(--static-10) solid #DFDCDF; }
+#container.disease_04_06 .section2 .bannerContents { margin-top: 120px; }
