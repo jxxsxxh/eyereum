@@ -455,8 +455,18 @@ $(function () {
 
 		$('.list-wrap .h2-title h2').text(filterText);
 
-		var targetTop = $('.contents').offset().top;
-		$('html, body').stop().animate({ scrollTop: targetTop }, 300);
+
+        const targetTop = $('.contents').offset().top;
+        const currentScroll = $(window).scrollTop();
+
+        let marginTop = 100 + 85;
+        if (targetTop > currentScroll) {
+            marginTop = 85;
+        }
+
+		const targetOffset = targetTop - getResponsivePx(1920, marginTop);
+		$('html, body').stop().animate({ scrollTop: targetOffset }, 300);
+
 
 		if (filterText === '전체') {
 			$('.list > li').show();
@@ -467,7 +477,8 @@ $(function () {
 			var category = $.trim($(this).attr('data-category'));
 			var isMatch = false;
 
-			if (!category) {
+			// 카테고리가 없거나 '시력교정술검사'인 경우 필터 조건과 상관없이 전체 노출
+			if (!category || category.indexOf('시력교정술검사') !== -1) {
 				isMatch = true;
 			} else if (filterText === '스마일') {
 				isMatch = category.indexOf('스마일') !== -1;
@@ -480,7 +491,7 @@ $(function () {
 			} else if (filterText === '노안·백내장') {
 				isMatch = category.indexOf('노안') !== -1 || category.indexOf('백내장') !== -1;
 			} else if (filterText === '기타') {
-				isMatch = category.indexOf('기타') !== -1 || category.indexOf('시력교정술검사') !== -1;
+				isMatch = category.indexOf('기타') !== -1;
 			}
 
 			if (isMatch) {
