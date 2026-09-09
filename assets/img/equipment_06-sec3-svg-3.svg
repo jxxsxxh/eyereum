@@ -1,0 +1,24 @@
+<svg width="118" height="77" viewBox="0 0 118 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_6387_9032" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="6" y="16" width="110" height="57">
+<path d="M115.251 16.51H6.39062V72.74H115.251V16.51Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_6387_9032)">
+<path d="M60.8125 16.51V126.09" stroke="black" stroke-width="1.76" stroke-miterlimit="10"/>
+<path d="M115.251 71.3101H6.39062" stroke="black" stroke-width="1.76" stroke-miterlimit="10"/>
+<path d="M99.3003 32.55L22.3203 110.04" stroke="black" stroke-width="1.76" stroke-miterlimit="10"/>
+<path d="M99.3003 110.04L22.3203 32.55" stroke="black" stroke-width="1.76" stroke-miterlimit="10"/>
+<path d="M81.3181 20.54L40.3281 122.05" stroke="black" stroke-width="1.76" stroke-miterlimit="10"/>
+<path d="M111.238 91.9299L10.3984 50.6699" stroke="black" stroke-width="1.76" stroke-miterlimit="10"/>
+<path d="M110.972 50L10.6719 92.6" stroke="black" stroke-width="1.76" stroke-miterlimit="10"/>
+<path d="M81.9841 121.78L39.6641 20.8201" stroke="black" stroke-width="1.76" stroke-miterlimit="10"/>
+<path d="M71.3225 17.54L50.3125 125.06" stroke="black" stroke-width="1.76" stroke-miterlimit="10"/>
+<path d="M114.232 81.88L7.42188 60.72" stroke="black" stroke-width="1.76" stroke-miterlimit="10"/>
+<path d="M106.007 40.77L15.6172 101.84" stroke="black" stroke-width="1.76" stroke-miterlimit="10"/>
+<path d="M91.1622 116.79L30.4922 25.8" stroke="black" stroke-width="1.76" stroke-miterlimit="10"/>
+<path d="M90.6744 25.48L30.9844 117.12" stroke="black" stroke-width="1.76" stroke-miterlimit="10"/>
+<path d="M106.35 101.34L15.3203 41.26" stroke="black" stroke-width="1.76" stroke-miterlimit="10"/>
+<path d="M114.119 60.1399L7.53906 82.4499" stroke="black" stroke-width="1.76" stroke-miterlimit="10"/>
+<path d="M71.9022 124.95L49.7422 17.6599" stroke="black" stroke-width="1.76" stroke-miterlimit="10"/>
+<path d="M60.8078 95.15C73.538 95.15 83.8578 84.8077 83.8578 72.05C83.8578 59.2922 73.538 48.95 60.8078 48.95C48.0776 48.95 37.7578 59.2922 37.7578 72.05C37.7578 84.8077 48.0776 95.15 60.8078 95.15Z" fill="white"/>
+</g>
+</svg>
