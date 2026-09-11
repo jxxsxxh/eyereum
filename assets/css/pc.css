@@ -3442,3 +3442,20 @@ html.scroll-hidden { overflow: hidden; }
 #container.information .section3 > ul > li .text > dl > dd > a { display: block; }
 #container.information .section3 > ul > li .text > dl > dd > a > img,
 #container.information .section3 > ul > li .text > dl > dd > img { width: 100%; }
+
+
+
+/* 개인정보 취급방침 */
+#container.privacy .contents { font-size: var(--fs-18); line-height: 1.66; color: #383839; display: flex; gap: 70px; flex-direction: column; word-break: keep-all; }
+#container.privacy .contents > div > strong { font-size: var(--fs-32); font-weight: 700; line-height: normal; }
+#container.privacy .contents > div > strong+div { margin-top: 30px; padding-top: 40px; border-top: var(--static-10) solid #C5C1C4; }
+#container.privacy .contents > div > strong+div > ul+p { margin-top: 20px; }
+#container.privacy .contents > div > strong+div > ul.dot-list-383839 { margin-top: 40px; }
+#container.privacy .contents > div > strong+div > ul.dot-list-383839 > li+li { margin-top: 20px; }
+#container.privacy .contents > div > strong+div > ul.dot-list { margin-top: 40px; }
+#container.privacy .contents > div > strong+div > ul.dot-list~ul.dot-list { margin-top: 20px; }
+#container.privacy .contents > div > strong+div > ul.dot-list > li { color: #383839; line-height: 1.66; }
+
+#container.service .contents { font-size: var(--fs-18); line-height: 1.66; color: #383839; display: flex; gap: 70px; flex-direction: column; word-break: keep-all; }
+#container.service .contents > div > strong { font-size: var(--fs-32); font-weight: 700; line-height: normal; }
+#container.service .contents > div > strong+div { margin-top: 30px; padding-top: 40px; border-top: var(--static-10) solid #C5C1C4; }
