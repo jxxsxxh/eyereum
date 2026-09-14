@@ -21,7 +21,7 @@
 *::before,
 *::after { box-sizing: border-box; }
 html.show-layer { overflow: hidden; }
-body { line-height: 1; }
+body { line-height: 1.2; }
 a { color: #000; text-decoration: none; }
 hr { margin: 0; border: 0; }
 input { outline: none; font-family: var(--primary-font); background: #fff; }
