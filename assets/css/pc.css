@@ -2350,17 +2350,17 @@ ul.notice > li::before { content: '*'; margin-top: 2px; }
 
 #container.dreamLens_01 .section3 .recommend-section { padding: 80px 70px; background-color: #f5f5f7; border-radius: 28px; text-align: center; margin-top: 120px; }
 #container.dreamLens_01 .section3 .recommend-section > p { font-size: var(--fs-32); font-weight: 700; color: #383839; margin-bottom: 80px; }
-#container.dreamLens_01 .section3 .recommend-section > ul { display: grid; grid-template-columns: repeat(4, 1fr); gap: 60px; align-items: stretch; }
-#container.dreamLens_01 .section3 .recommend-section > ul > li { position: relative; display: flex; flex-direction: column; justify-content: flex-start; align-items: center; height: 220px; }
-#container.dreamLens_01 .section3 .recommend-section > ul > li::after { content: ''; position: absolute; left: -30px; top: 0; width: var(--static-10); height: 100%; border-left: var(--static-10) solid #DFDCDF; }
-#container.dreamLens_01 .section3 .recommend-section > ul > li:nth-of-type(1):after { display: none; }
-#container.dreamLens_01 .section3 .recommend-section > ul > li > img { object-fit: contain; }
-#container.dreamLens_01 .section3 .recommend-section > ul > li:nth-of-type(1) > img { width: 69px; margin-bottom: 40px; }
-#container.dreamLens_01 .section3 .recommend-section > ul > li:nth-of-type(2) > img { width: 81px; margin-bottom: 40px; }
-#container.dreamLens_01 .section3 .recommend-section > ul > li:nth-of-type(3) > img { width: 84px; margin-bottom: 40px; }
-#container.dreamLens_01 .section3 .recommend-section > ul > li:nth-of-type(4) > img { width: 82px; margin-bottom: 38px; }
-#container.dreamLens_01 .section3 .recommend-section > ul > li > p { font-size: var(--fs-20); color: #383839; line-height: 1.4; word-break: keep-all; }
-#container.dreamLens_01 .section3 .recommend-section > ul > li > span { display: block; margin-top: 12px; font-size: var(--fs-16); color: #686869; line-height: normal; word-break: keep-all; }
+#container.dreamLens_01 .section3 .recommend-section > div > ul { display: grid; grid-template-columns: repeat(4, 1fr); gap: 60px; align-items: stretch; }
+#container.dreamLens_01 .section3 .recommend-section > div > ul > li { position: relative; display: flex; flex-direction: column; justify-content: flex-start; align-items: center; height: 220px; }
+#container.dreamLens_01 .section3 .recommend-section > div > ul > li::after { content: ''; position: absolute; left: -30px; top: 0; width: var(--static-10); height: 100%; border-left: var(--static-10) solid #DFDCDF; }
+#container.dreamLens_01 .section3 .recommend-section > div > ul > li:nth-of-type(1):after { display: none; }
+#container.dreamLens_01 .section3 .recommend-section > div > ul > li > img { object-fit: contain; }
+#container.dreamLens_01 .section3 .recommend-section > div > ul > li:nth-of-type(1) > img { width: 69px; margin-bottom: 40px; }
+#container.dreamLens_01 .section3 .recommend-section > div > ul > li:nth-of-type(2) > img { width: 81px; margin-bottom: 40px; }
+#container.dreamLens_01 .section3 .recommend-section > div > ul > li:nth-of-type(3) > img { width: 84px; margin-bottom: 40px; }
+#container.dreamLens_01 .section3 .recommend-section > div > ul > li:nth-of-type(4) > img { width: 82px; margin-bottom: 38px; }
+#container.dreamLens_01 .section3 .recommend-section > div > ul > li > p { font-size: var(--fs-20); color: #383839; line-height: 1.4; word-break: keep-all; }
+#container.dreamLens_01 .section3 .recommend-section > div > ul > li > span { display: block; margin-top: 12px; font-size: var(--fs-16); color: #686869; line-height: normal; word-break: keep-all; }
 
 #container.dreamLens_01 .contents > .wide-bannerPart { margin-top: 120px; }
 #container.dreamLens_01 .contents > .wide-bannerPart .layer .text > p { color: #383839; }
