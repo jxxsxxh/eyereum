@@ -2662,7 +2662,7 @@ ul.notice > li::before { content: '*'; margin-top: 2px; }
 #container.cataract_03 .section6 .grid-col-3-span-title-32-img-text > li > .text > strong { font-size: var(--fs-22); font-weight: 700; color: #383839; line-height: 1.54; word-break: keep-all; }
 #container.cataract_03 .section6 .grid-col-3-span-title-32-img-text > li > .text > p { font-size: var(--fs-20); color: #383839; line-height: 1.5; word-break: keep-all; }
 #container.cataract_03 .section6 .grid-col-3-span-title-32-img-text > li > .text > strong+p { margin-top: 20px; }
-#container.cataract_03 .section6 .tab-contents+p { font-size: var(--fs-20); color: #686869; line-height: 1.4; margin-top: 20px; }
+#container.cataract_03 .section6 .tab-contents+.notice { font-size: var(--fs-20); color: #686869; line-height: 1.4; margin-top: 20px; }
 
 #container.cataract_03 .section7 { padding-top: 180px; }
 #container.cataract_03 .section7 .grid-col-3-title-32-img-text { margin-top: 60px; padding-bottom: 40px; }
@@ -2678,7 +2678,8 @@ ul.notice > li::before { content: '*'; margin-top: 2px; }
 #container.cataract_03 .section7 .lens-price-table .price-list > .data-row { display: grid; grid-template-columns: 1fr 1fr; align-items: center; text-align: center; padding: 30px 0; }
 #container.cataract_03 .section7 .lens-price-table .price-list > .data-row + .data-row { border-top: var(--static-10) solid #DFDCDF; }
 #container.cataract_03 .section7 .lens-price-table .price-list > .data-row .lens-name { font-size: var(--fs-20); font-weight: 500; color: #000; line-height: 1.4; }
-#container.cataract_03 .section7 .lens-price-table .price-list > .data-row .price { font-size: var(--fs-22); font-weight: 800; line-height: normal; color: var(--highlight-color); }
+#container.cataract_03 .section7 .lens-price-table .price-list > .data-row .price { font-size: var(--fs-22); font-weight: 500; line-height: normal; color: var(--highlight-color); }
+#container.cataract_03 .section7 .lens-price-table .price-list > .data-row .price strong { font-weight: 800; }
 #container.cataract_03 .section7 .lens-price-table .notice-text { font-size: var(--fs-20); color: #686869; line-height: 1.4; margin-top: 30px; word-break: keep-all; display: flex; gap: 5px; }
 
 #container.cataract_03 .section8 { padding-top: 120px; }
