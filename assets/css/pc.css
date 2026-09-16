@@ -2585,6 +2585,7 @@ ul.notice > li::before { content: '*'; margin-top: 2px; }
 #container.cataract_02 .section7 { padding-top: 180px; }
 #container.cataract_02 .section7 .grid-col-3-title-32-img-text { margin-top: 60px; padding-top: 60px; }
 #container.cataract_02 .section7 .grid-col-3-title-32-img-text > li { padding-top: 0; border-top: 0; }
+#container.cataract_02 .section7 .grid-col-3-title-32-img-text > li .notice { margin-top: 14px; color: #8B898B; }
 
 #container.cataract_02 .section7+.wide-bannerPart { margin-top: 120px; }
 #container.cataract_02 .section7+.wide-bannerPart .text .text-body { color: #383839; }
