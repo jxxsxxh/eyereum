@@ -1269,7 +1269,10 @@ html.scroll-hidden { overflow: hidden; }
 #container.subpage .grid-table > ul > li > div:nth-of-type(1) { border-bottom: var(--static-10) solid #000; }
 #container.subpage .grid-table > ul > li+li > div:nth-of-type(1) { font-size: var(--fs-22); font-weight: 700; line-height: normal; }
 #container.subpage .grid-table > ul > li > div:last-of-type { border-bottom: 0; }
-#container.subpage .grid-table+.notice { font-size: var(--fs-18); line-height: 1.44; color: #686869; margin-top: 30px; }
+#container.subpage .grid-table+.notice { font-size: var(--fs-18); line-height: 1.44; color: #686869; margin-top: 30px; word-break: keep-all; }
+#container.subpage .grid-table+.notice > li { display: flex; gap: 8px; }
+#container.subpage .grid-table+.notice > li::before { content: '*'; margin-top: 2px; }
+
 #container.subpage .grid-table.senior > ul > li > div { font-size: var(--fs-20); line-height: 1.5; }
 #container.subpage .grid-table.senior+.notice { font-size: var(--fs-20); line-height: 1.5; }
 
@@ -2084,17 +2087,19 @@ html.scroll-hidden { overflow: hidden; }
 #container.icl_04 .section6 { padding-top: 120px; }
 #container.icl_04 .section6 > .recommend-section { padding: 80px 70px; background-color: #f5f5f7; border-radius: 28px; text-align: center; margin-top: 120px; }
 #container.icl_04 .section6 > .recommend-section > p { font-size: var(--fs-32); font-weight: 700; color: #383839; margin-bottom: 80px; }
-#container.icl_04 .section6 > .recommend-section > ul { display: grid; grid-template-columns: repeat(4, 1fr); gap: 60px; align-items: stretch; }
-#container.icl_04 .section6 > .recommend-section > ul > li { position: relative; display: flex; flex-direction: column; justify-content: flex-start; align-items: center; height: 220px; }
-#container.icl_04 .section6 > .recommend-section > ul > li::after { content: ''; position: absolute; left: -30px; top: 0; width: var(--static-10); height: 100%; border-left: var(--static-10) solid #DFDCDF; }
-#container.icl_04 .section6 > .recommend-section > ul > li:nth-of-type(1):after { display: none; }
-#container.icl_04 .section6 > .recommend-section > ul > li > img { object-fit: contain; }
-#container.icl_04 .section6 > .recommend-section > ul > li:nth-of-type(1) > img { width: 69px; margin-bottom: 40px; }
-#container.icl_04 .section6 > .recommend-section > ul > li:nth-of-type(2) > img { width: 61px; margin-bottom: 40px; }
-#container.icl_04 .section6 > .recommend-section > ul > li:nth-of-type(3) > img { width: 68px; margin-bottom: 40px; }
-#container.icl_04 .section6 > .recommend-section > ul > li:nth-of-type(4) > img { width: 103px; margin-bottom: 40px; }
-#container.icl_04 .section6 > .recommend-section > ul > li > p { font-size: var(--fs-20); color: #383839; line-height: 1.4; word-break: keep-all; }
+#container.icl_04 .section6 > .recommend-section > div > ul { display: grid; grid-template-columns: repeat(4, 1fr); gap: 60px; align-items: stretch; }
+#container.icl_04 .section6 > .recommend-section > div > ul > li { position: relative; display: flex; flex-direction: column; justify-content: flex-start; align-items: center; height: 220px; }
+#container.icl_04 .section6 > .recommend-section > div > ul > li::after { content: ''; position: absolute; left: -30px; top: 0; width: var(--static-10); height: 100%; border-left: var(--static-10) solid #DFDCDF; }
+#container.icl_04 .section6 > .recommend-section > div > ul > li:nth-of-type(1):after { display: none; }
+#container.icl_04 .section6 > .recommend-section > div > ul > li > img { object-fit: contain; }
+#container.icl_04 .section6 > .recommend-section > div > ul > li:nth-of-type(1) > img { width: 69px; margin-bottom: 40px; }
+#container.icl_04 .section6 > .recommend-section > div > ul > li:nth-of-type(2) > img { width: 61px; margin-bottom: 40px; }
+#container.icl_04 .section6 > .recommend-section > div > ul > li:nth-of-type(3) > img { width: 68px; margin-bottom: 40px; }
+#container.icl_04 .section6 > .recommend-section > div > ul > li:nth-of-type(4) > img { width: 103px; margin-bottom: 40px; }
+#container.icl_04 .section6 > .recommend-section > div > ul > li > p { font-size: var(--fs-20); color: #383839; line-height: 1.4; word-break: keep-all; }
 #container.icl_04 .section6 > .recommend-section+.notice { margin-top: 30px; font-size: var(--fs-20); color: #686869; line-height: 1.4; }
+#container.icl_04 .section6 > .recommend-section+.notice > li { display: flex; gap: 8px; }
+#container.icl_04 .section6 > .recommend-section+.notice > li::before { content: '*'; margin-top: 2px; }
 
 #container.icl_04 .section7 { padding-top: 120px; }
 
