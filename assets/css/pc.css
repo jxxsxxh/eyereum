@@ -2249,6 +2249,7 @@ ul.notice > li::before { content: '*'; margin-top: 2px; }
 #container.enhancement_01 .section3 { padding-top: 180px; }
 #container.enhancement_01 .section3 .grid-col-4-title-28-img-text { margin-top: 60px; }
 #container.enhancement_01 .section3 .grid-col-4-title-28-img-text+.h3-title { margin-top: 120px; }
+#container.enhancement_01 .section3 .grid-col-2-img-title-22-text { border-top: 0; }
 
 #container.enhancement_01 .section4 { padding-top: 180px; }
 #container.enhancement_01 .section4 .wide-bannerPart { margin-top: 60px; }
