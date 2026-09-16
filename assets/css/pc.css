@@ -1070,7 +1070,7 @@ html.scroll-hidden { overflow: hidden; }
 #container.subpage .grid-col-3-title-32-img-text.senior > li .text { font-size: var(--fs-20); line-height: 1.5; }
 
 
-#container.subpage .grid-col-3-svg-title-subtitle-text { display: grid; grid-template-columns: repeat(3, 1fr); gap: 80px; width: 100%; border-top: var(--static-10) solid #C5C1C4; padding-top: 70px; }
+#container.subpage .grid-col-3-svg-title-subtitle-text { display: grid; grid-template-columns: repeat(3, 1fr); gap: 80px; border-top: var(--static-10) solid #C5C1C4; padding-top: 70px; }
 #container.subpage .grid-col-3-svg-title-subtitle-text > li > p.img > img { height: 73px; margin: 0 auto; display: block; }
 #container.subpage .grid-col-3-svg-title-subtitle-text > li > strong { display: block; margin-top: 30px; font-size: var(--fs-28); font-weight: 700; line-height: 1.35; text-align: center; }
 #container.subpage .grid-col-3-svg-title-subtitle-text > li > .text { margin-top: 50px; padding-top: 50px; border-top: var(--static-10) dashed #8B898B; word-break: keep-all; }
@@ -1864,7 +1864,7 @@ html.scroll-hidden { overflow: hidden; }
 #container.icl_01 .section2 { padding-top: 130px; }
 #container.icl_01 .section2 .title > h2 { font-size: var(--fs-82); font-weight: 300; line-height: 1.14; }
 #container.icl_01 .section2 .title > p:nth-of-type(1) { margin-top: 0; font-size: var(--fs-82); font-weight: 700; letter-spacing: -1.64px; line-height: 1; display: flex; align-items: baseline; gap: 5px; }
-#container.icl_01 .section2 .title > p:nth-of-type(1) > span { font-size: var(--fs-28); fontw-eight: 600; }
+#container.icl_01 .section2 .title > p:nth-of-type(1) > span { font-size: var(--fs-28); font-weight: 600; }
 #container.icl_01 .section2 .title > p:nth-of-type(2) { margin-top: 30px; font-size: var(--fs-18); font-weight: 500; color: #8B898B; line-height: 1.44; }
 #container.icl_01 .section2 .grid-col-4-svg-title-28-text { margin-top: 60px; display: flex; gap: 80px; padding: 70px 0; border-top: var(--static-10) solid #C5C1C4; border-bottom: var(--static-10) solid #C5C1C4; }
 #container.icl_01 .section2 .grid-col-4-svg-title-28-text > li { flex: 1; display: flex; flex-direction: column; align-items: center; text-align: center; }
@@ -1874,9 +1874,9 @@ html.scroll-hidden { overflow: hidden; }
 #container.icl_01 .section2 .grid-col-4-svg-title-28-text > li .text { font-size: var(--fs-18); margin-top: 20px; line-height: 1.44; color: #383839; }
 
 #container.icl_01 .section3 { padding-top: 140px; }
-#container.icl_01 .section3 .grid-col-3-svg-title-subtitle-text,
+#container.icl_01 .section3 .scroll-wrap,
 #container.icl_01 .section3 .grid-col-3-title-32-img-text { margin-top: 60px; }
-#container.icl_01 .section3 .grid-col-3-svg-title-subtitle-text+.h3-title { margin-top: 140px; }
+#container.icl_01 .section3 .scroll-wrap+.h3-title { margin-top: 140px; }
 
 #container.icl_01 .section4 { padding-top: 180px; }
 #container.icl_01 .section4 .wide-bannerPart { margin-top: 60px; }
@@ -1924,17 +1924,17 @@ html.scroll-hidden { overflow: hidden; }
 
 #container.icl_01 .section9 .recommend-section { padding: 80px 70px; background-color: #f5f5f7; border-radius: 28px; text-align: center; margin-top: 120px; }
 #container.icl_01 .section9 .recommend-section > p { font-size: var(--fs-32); font-weight: 700; color: #383839; margin-bottom: 80px; }
-#container.icl_01 .section9 .recommend-section > ul { display: grid; grid-template-columns: repeat(5, 1fr); gap: 60px; align-items: stretch; }
-#container.icl_01 .section9 .recommend-section > ul > li { position: relative; display: flex; flex-direction: column; justify-content: flex-start; align-items: center; height: 220px; }
-#container.icl_01 .section9 .recommend-section > ul > li::after { content: ''; position: absolute; left: -30px; top: 0; width: var(--static-10); height: 100%; border-left: var(--static-10) solid #DFDCDF; }
-#container.icl_01 .section9 .recommend-section > ul > li:nth-of-type(1):after { display: none; }
-#container.icl_01 .section9 .recommend-section > ul > li > img { object-fit: contain; }
-#container.icl_01 .section9 .recommend-section > ul > li:nth-of-type(1) > img { width: 70px; margin-bottom: 40px; }
-#container.icl_01 .section9 .recommend-section > ul > li:nth-of-type(2) > img { width: 62px; margin-bottom: 40px; }
-#container.icl_01 .section9 .recommend-section > ul > li:nth-of-type(3) > img { width: 86px; margin-bottom: 40px; }
-#container.icl_01 .section9 .recommend-section > ul > li:nth-of-type(4) > img { width: 110px; margin-bottom: 40px; }
-#container.icl_01 .section9 .recommend-section > ul > li:nth-of-type(5) > img { width: 67px; margin-bottom: 40px; }
-#container.icl_01 .section9 .recommend-section > ul > li > p { font-size: var(--fs-20); color: #383839; line-height: 1.4; word-break: keep-all; }
+#container.icl_01 .section9 .recommend-section > div > ul { display: grid; grid-template-columns: repeat(5, 1fr); gap: 60px; align-items: stretch; }
+#container.icl_01 .section9 .recommend-section > div > ul > li { position: relative; display: flex; flex-direction: column; justify-content: flex-start; align-items: center; height: 220px; }
+#container.icl_01 .section9 .recommend-section > div > ul > li::after { content: ''; position: absolute; left: -30px; top: 0; width: var(--static-10); height: 100%; border-left: var(--static-10) solid #DFDCDF; }
+#container.icl_01 .section9 .recommend-section > div > ul > li:nth-of-type(1):after { display: none; }
+#container.icl_01 .section9 .recommend-section > div > ul > li > img { object-fit: contain; }
+#container.icl_01 .section9 .recommend-section > div > ul > li:nth-of-type(1) > img { width: 70px; margin-bottom: 40px; }
+#container.icl_01 .section9 .recommend-section > div > ul > li:nth-of-type(2) > img { width: 62px; margin-bottom: 40px; }
+#container.icl_01 .section9 .recommend-section > div > ul > li:nth-of-type(3) > img { width: 86px; margin-bottom: 40px; }
+#container.icl_01 .section9 .recommend-section > div > ul > li:nth-of-type(4) > img { width: 110px; margin-bottom: 40px; }
+#container.icl_01 .section9 .recommend-section > div > ul > li:nth-of-type(5) > img { width: 67px; margin-bottom: 40px; }
+#container.icl_01 .section9 .recommend-section > div > ul > li > p { font-size: var(--fs-20); color: #383839; line-height: 1.4; word-break: keep-all; }
 
 #container.icl_01 .section10 { margin-top: 120px; }
 
