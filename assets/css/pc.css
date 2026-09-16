@@ -2693,7 +2693,7 @@ ul.notice > li::before { content: '*'; margin-top: 2px; }
 #container.disease_01_01 .section2 .grid-col-2-img-title-28-text { margin-top: 60px; padding-top: 70px; border-top: var(--static-10) solid #C5C1C4; }
 #container.disease_01_01 .section2 .grid-col-2-img-title-28-text .title { text-align: center; }
 #container.disease_01_01 .section2 .grid-col-2-zigzag { margin-top: 40px; padding-top: 130px; border-top: var(--static-10) solid #C5C1C4; }
-#container.disease_01_01 .section2 .grid-col-2-zigzag .text-box+p { margin-top: 30px; color: #686869; line-height: 1.44; font-size: var(--fs-18); }
+#container.disease_01_01 .section2 .grid-col-2-zigzag .text-box+.notice { margin-top: 30px; color: #686869; line-height: 1.44; font-size: var(--fs-18); }
 #container.disease_01_01 .section2 > .h3-title { margin-top: 180px; }
 
 #container.disease_01_01 .section2 > .h3-title { margin-top: 180px; }

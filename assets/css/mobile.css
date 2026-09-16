@@ -565,11 +565,11 @@ ul.notice > li::before { content: '*'; margin-top: 2px; }
 #container.subpage > .top.img-banner > .inner > div > p { margin-top: 30px; font-size: var(--fs-18); color: #686869; line-height: 1.66; }
 
 
-#container.subpage > .sub-category { padding-bottom: 50px; }
-#container.subpage > .sub-category > ul { display: flex; gap: 30px; align-items: center; }
-#container.subpage > .sub-category > ul > li { display: flex; align-items: center; gap: 30px; }
-#container.subpage > .sub-category > ul > li~li::before { content: ''; width: var(--static-10); height: 24px; background-color: #C5C1C4; }
-#container.subpage > .sub-category > ul > li > a { font-size: var(--fs-20); font-weight:700; color: #8B898B; }
+#container.subpage > .sub-category { padding-bottom: 30px; overflow-x: auto; }
+#container.subpage > .sub-category > ul { display: flex; gap: 14px; align-items: center; width: max-content; padding: 0 var(--w-18); }
+#container.subpage > .sub-category > ul > li { display: flex; align-items: center; gap: 14px; }
+#container.subpage > .sub-category > ul > li~li::before { content: ''; width: var(--static-10); height: 22px; background-color: #C5C1C4; }
+#container.subpage > .sub-category > ul > li > a { font-size: var(--fs-16); font-weight:700; color: #8B898B; }
 #container.subpage > .sub-category > ul > li > a:hover,
 #container.subpage > .sub-category > ul > li.on > a { color: var(--main-color); }
 
@@ -801,12 +801,12 @@ ul.notice > li::before { content: '*'; margin-top: 2px; }
 
 
 #container.subpage ul.dot-list { width: 100%; }
-#container.subpage ul.dot-list > li { font-size: var(--fs-14); position: relative; padding-left: 10px; line-height: 1.42; color: #000; }
+#container.subpage ul.dot-list > li { font-size: var(--fs-16); position: relative; padding-left: 10px; line-height: 1.5; color: #000; }
 #container.subpage ul.dot-list > li::before { content: '•'; position: absolute; left: 0; top: 0; color: #000; }
 #container.subpage ul.dot-list.senior > li { font-size: var(--fs-16); }
 
 #container.subpage ul.dot-list-383839 { width: 100%; }
-#container.subpage ul.dot-list-383839 > li { font-size: var(--fs-14); line-height: 1.42; color: #383839; display: flex; gap: 5px; }
+#container.subpage ul.dot-list-383839 > li { font-size: var(--fs-16); line-height: 1.5; color: #383839; display: flex; gap: 5px; }
 #container.subpage ul.dot-list-383839 > li::before { content: '•'; color: #383839; flex: 0 0 auto; }
 #container.subpage ul.dot-list-383839.senior > li { font-size: var(--fs-16); }
 
@@ -2038,3 +2038,91 @@ ul.notice > li::before { content: '*'; margin-top: 2px; }
 #container.cataract_03 .section7 .lens-price-table .notice-text { font-size: var(--fs-16); color: #686869; line-height: 1.4; margin-top: 30px; word-break: keep-all; display: flex; gap: 5px; }
 
 #container.cataract_03 .section8 { padding-top: 70px; }
+
+
+
+/* 원추각막 클리닉 */
+#container.disease_01_01 .section1 .grid-col-2-zigzag { margin-top: 30px; }
+
+#container.disease_01_01 .section2 { padding-top: 70px; }
+#container.disease_01_01 .section2 .grid-col-2-img-title-28-text { margin-top: 30px; padding-top: 30px; border-top: var(--static-10) solid #C5C1C4; }
+#container.disease_01_01 .section2 .grid-col-2-img-title-28-text .title { text-align: center; }
+#container.disease_01_01 .section2 .grid-col-2-zigzag { margin-top: 40px; padding-top: 50px; border-top: var(--static-10) solid #C5C1C4; }
+#container.disease_01_01 .section2 .grid-col-2-zigzag .text-box+.notice { margin-top: 20px; line-height: 1.42; font-size: var(--fs-14); }
+#container.disease_01_01 .section2 > .h3-title { margin-top: 70px; }
+#container.disease_01_01 .section2 > .h3-title+.grid-col-3-title-32-img-text { margin-top: 30px; }
+
+
+
+/* 원추각막 치료방법 */
+#container.disease_01_02 .section1 .grid-col-2-zigzag { margin-top: 60px; }
+
+#container.disease_01_02 .section2 { padding-top: 180px; }
+#container.disease_01_02 .section2 .wide-bannerPart { margin-top: 60px; }
+#container.disease_01_02 .section2 .grid-col-4-svg-title-text { margin-top: 120px; border-top: 0; padding-top: 0; }
+#container.disease_01_02 .section2 .grid-col-2-zigzag { border-top: var(--static-10) solid #C5C1C4; margin-top: 70px; padding-top: 140px; }
+#container.disease_01_02 .section2 .grid-col-2-zigzag > li > .text  > .h3-title.num > h3:before { content: '3'; }
+#container.disease_01_02 .section2 .grid-col-2-zigzag > li:nth-of-type(2) > .text  > .h3-title.num > h3:before { content: '4'; }
+
+
+
+/* 원추각막 치료사례 */
+#container.disease_01_03 .corvis-result-wrap { width: 100%; margin-top: 70px; padding-top: 50px; border-top: var(--static-10) solid #C5C1C4; }
+#container.disease_01_03 .corvis-result-wrap > p { font-size: var(--fs-22); font-weight: 700; color: #000; line-height: 1.54; }
+#container.disease_01_03 .corvis-result-wrap > .corvis-eye-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 48px; margin-top: 30px; }
+#container.disease_01_03 .corvis-result-wrap > .corvis-eye-list > li { display: flex; flex-direction: column; }
+#container.disease_01_03 .corvis-result-wrap > .corvis-eye-list > li > .eye-card { width: 100%; aspect-ratio: 2/1; border-radius: 14px; overflow: hidden; }
+#container.disease_01_03 .corvis-result-wrap > .corvis-eye-list > li > .eye-card > img { width: 100%; height: auto; display: block; }
+#container.disease_01_03 .corvis-result-wrap > .corvis-eye-list > li > .data-table { display: flex; flex-direction: column; width: 100%; margin-top: 40px; }
+#container.disease_01_03 .corvis-result-wrap > .corvis-eye-list > li > .data-table > .table-header { display: grid; grid-template-columns: 205px 1fr 1fr; gap: 0 40px; font-size: var(--fs-18); font-weight: 700; color: #000; padding: 28px 0; }
+#container.disease_01_03 .corvis-result-wrap > .corvis-eye-list > li > .data-table > .table-header > span:first-child { grid-column: 2; }
+#container.disease_01_03 .corvis-result-wrap > .corvis-eye-list > li > .data-table > .table-row { display: grid; grid-template-columns: 205px 1fr 1fr; gap: 0 40px; font-size: var(--fs-18); color: #000; padding: 28px 0; border-top: var(--static-10) solid #C5C1C4; }
+#container.disease_01_03 .corvis-result-wrap > .corvis-eye-list > li > .data-table > .table-row > .row-label { font-weight: 700; }
+#container.disease_01_03 .corvis-result-wrap > .corvis-eye-list > li > .data-table > .table-row > .highlight { font-weight: 700; color: var(--main-color); }
+#container.disease_01_03 .corvis-result-wrap > .corvis-eye-list > li > .data-table > .table-row+.table-header { margin-top: 60px; }
+
+#container.disease_01_03 .tab-category { margin-top: 120px; }
+#container.disease_01_03 .tab-contents { margin-top: 60px; }
+#container.disease_01_03 .grid-table { margin-top: 70px; }
+#container.disease_01_03 .grid-table > ul { grid-template-columns: 13.1944% 1fr 1fr 29.0278%; }
+#container.disease_01_03 .grid-table > ul > li {  position: relative; background-color: #f9f9f9; }
+#container.disease_01_03 .grid-table > ul > li:nth-of-type(1) { background-color: #fff; }
+#container.disease_01_03 .grid-table > ul > li:last-of-type { position: relative; }
+#container.disease_01_03 .grid-table > ul > li:last-of-type::before { content: ''; position: absolute; left: -40px; top: calc(50% + 3px); z-index: 3; width: 80px; height: 80px; background: url('../img/svg-grid-arrow.svg') center/100% no-repeat; }
+#container.disease_01_03 .grid-table > ul > li:last-of-type::after { content: ''; position: absolute; left: 0; top: -1px; width: calc(100% + var(--static-20)); height: calc(100% + var(--static-20)); border: var(--static-20) solid var(--highlight-color); }
+#container.disease_01_03 .grid-table > ul > li:last-of-type > div { color: var(--highlight-color); font-weight: 700; }
+#container.disease_01_03 .grid-table > ul > li:nth-of-type(3)::before { content: ''; position: absolute; left: -40px; top: calc(50% + 3px); z-index: 3; width: 80px; height: 80px; background: url('../img/svg-grid-arrow.svg') center/100% no-repeat; }
+
+#container.disease_01_03 .grid-table > ul > li+li > div { align-items: center; }
+#container.disease_01_03 .grid-table > ul > li+li > div:first-of-type { font-size: var(--fs-20); }
+#container.disease_01_03 .grid-table > ul > li+li > div > p { width: 336px; }
+#container.disease_01_03 .grid-table > ul > li+li > div > p > img { width: 100%; }
+
+#container.disease_01_03 .grid-noti { display: flex; justify-content: center; gap: 80px; padding-right: 10px; font-size: var(--fs-18); color: #686869; line-height: 1.44; margin-top: 30px; padding-bottom: 30px; border-bottom: var(--static-10) solid #DFDCDF; }
+#container.disease_01_03 .grid-noti > div:nth-of-type(1) > p:nth-of-type(1) { width: 129px; }
+#container.disease_01_03 .grid-noti > div:nth-of-type(1) > p:nth-of-type(1) > img { width: 100%; }
+#container.disease_01_03 .grid-noti > div:nth-of-type(1) > p:nth-of-type(2) { margin-top: 12px; text-align: center; }
+#container.disease_01_03 .grid-noti > div:nth-of-type(2) { width: 800px; margin-top: 3px; }
+#container.disease_01_03 .grid-noti > div:nth-of-type(2) > p > img { width: 100%; }
+#container.disease_01_03 .grid-noti > div:nth-of-type(2) > ul { display: flex; justify-content: space-between; gap: 211px; margin-top: 17px; }
+#container.disease_01_03 .grid-noti > div:nth-of-type(2) > ul > li { flex: 1; }
+#container.disease_01_03 .grid-noti > div:nth-of-type(2) > ul > li:nth-of-type(2) { text-align: center; }
+#container.disease_01_03 .grid-noti > div:nth-of-type(2) > ul > li:nth-of-type(3) { text-align: right; }
+
+#container.disease_01_03 .result { padding: 40px 0; display: flex; flex-direction: column; align-items: center; text-align: center; }
+#container.disease_01_03 .result > strong { font-size: var(--fs-22); line-height: 1.54; color: var(--highlight-color); }
+#container.disease_01_03 .result > p { margin-top: 10px; font-size: var(--fs-20); line-height: 1.4; color: #686869; }
+
+#container.disease_01_03 .section1 .box-592 { margin-top: 50px; }
+#container.disease_01_03 .section1 .box-592 > div:nth-of-type(2) > span { display: block; font-size: var(--fs-18); line-height: 1.44; color: #686869; margin-top: 14px; }
+
+#container.disease_01_03 .section2 .tab-contents > [data-tab-contents] > .box-592~.box-592 { margin-top: 140px; border-top: var(--static-10) solid #383839; padding-top: 60px; }
+#container.disease_01_03 .section2 .tab-contents > [data-tab-contents] > .grid-col-2-img-title-32-text { padding-bottom: 40px; }
+#container.disease_01_03 .section2 .tab-contents > [data-tab-contents] > .result+p { margin-top: 120px; font-size: var(--fs-32); font-weight: 500; line-height: 1.25; }
+#container.disease_01_03 .section2 .tab-contents > [data-tab-contents] > .result+p+.bannerContents { margin-top: 40px; }
+
+#container.disease_01_03 .section2 .tab-contents > [data-tab-contents] > .grid-noti+p { margin-top: 120px; font-size: var(--fs-32); font-weight: 500; line-height: 1.25; }
+#container.disease_01_03 .section2 .tab-contents > [data-tab-contents] > .grid-noti+p+.bannerContents { margin-top: 40px; }
+
+#container.disease_01_03 .section2 .tab-contents > [data-tab-contents="Case 3"] > .box-592+.box-592,
+#container.disease_01_03 .section2 .tab-contents > [data-tab-contents="Case 4"] > .box-592+.box-592 { margin-top: 70px; }
