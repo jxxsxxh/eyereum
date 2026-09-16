@@ -1168,7 +1168,8 @@ ul.notice > li::before { content: '*'; margin-top: 2px; }
 #container.subpage .wide-bannerPart { position: relative; }
 #container.subpage .wide-bannerPart > p { width: 100%; aspect-ratio: 1920/520; }
 #container.subpage .wide-bannerPart .layer { position: absolute; left: 0; top: 0; width: 100%; height: 100%; }
-#container.subpage .wide-bannerPart .text-body { word-break: keep-all; }
+#container.subpage .wide-bannerPart .text .btn-wrap { margin-top: 30px; display: flex; gap: 20px; }
+#container.subpage .wide-bannerPart .text .text-body { word-break: keep-all; }
 #container.subpage .wide-bannerPart.white .text strong { color: #fff !important; }
 #container.subpage .wide-bannerPart.white .text .text-body { color: #DFDCDF !important; }
 
@@ -2396,9 +2397,9 @@ ul.notice > li::before { content: '*'; margin-top: 2px; }
 #container.presbyopia_01 .section3 .wide-bannerPart { margin-top: 60px; }
 #container.presbyopia_01 .section3 .grid-col-4-title-28-img-text { margin-top: 120px; border-top: 0; padding-top: 0; }
 #container.presbyopia_01 .section3 .box-592 { margin-top: 140px; }
-#container.presbyopia_01 .section3 .box-592+.xl-center { margin-top: 60px; }
-#container.presbyopia_01 .section3 .box-592+.xl-center > picture { width: 100%; }
-#container.presbyopia_01 .section3 .box-592+.xl-center > picture > img { width: 100%; height: auto; }
+#container.presbyopia_01 .section3 .swipe-noti+.xl-center { margin-top: 60px; }
+#container.presbyopia_01 .section3 .swipe-noti+.xl-center > picture { width: 100%; }
+#container.presbyopia_01 .section3 .swipe-noti+.xl-center > picture > img { width: 100%; height: auto; }
 
 #container.presbyopia_01 .wide-bannerPart { margin-top: 120px; }
 
