@@ -2183,6 +2183,7 @@ ul.notice > li::before { content: '*'; margin-top: 2px; }
 #container.xtra_01 .section4 .phD > ul > li > .img { width: 190px; height: 190px; border-radius: 200px; overflow: hidden; }
 #container.xtra_01 .section4 .phD > ul > li > .title { color: #C5C1C4; font-size: var(--fs-18); line-height: 1.66; text-align: center; margin-top: 20px; }
 #container.xtra_01 .section4 .phD > ul > li > .logo { flex: 1; margin-top: 30px; padding-top: 30px; border-top: var(--static-10) dashed #686869; width: 100%; display: flex; justify-content: center; align-items: center; }
+#container.xtra_01 .section4 .phD > ul > li:nth-of-type(1) > .logo { mix-blend-mode: exclusion; }
 #container.xtra_01 .section4 .phD > ul > li:nth-of-type(1) > .logo > img { width: 104px; }
 #container.xtra_01 .section4 .phD > ul > li:nth-of-type(2) > .logo > img { width: 116px; }
 #container.xtra_01 .section4 .phD > ul > li:nth-of-type(3) > .logo > img { width: 175px; }
