@@ -2761,7 +2761,7 @@ ul.notice > li::before { content: '*'; margin-top: 2px; }
 #container.disease_01_03 .result > p { margin-top: 10px; font-size: var(--fs-20); line-height: 1.4; color: #686869; }
 
 #container.disease_01_03 .section1 .box-592 { margin-top: 50px; }
-#container.disease_01_03 .section1 .box-592 > div:nth-of-type(2) > span { display: block; font-size: var(--fs-18); line-height: 1.44; color: #686869; margin-top: 14px; }
+#container.disease_01_03 .section1 .box-592 > div:nth-of-type(2) .notice { display: block; font-size: var(--fs-18); line-height: 1.44; color: #686869; margin-top: 14px; }
 
 #container.disease_01_03 .section2 .tab-contents > [data-tab-contents] > .box-592~.box-592 { margin-top: 140px; border-top: var(--static-10) solid #383839; padding-top: 60px; }
 #container.disease_01_03 .section2 .tab-contents > [data-tab-contents] > .grid-col-2-img-title-32-text { padding-bottom: 40px; }
