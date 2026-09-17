@@ -81,7 +81,7 @@
 .xs-color-000 { color: #000 !important; }
 .xs-word-break-normal { word-break: normal !important; }
 .xs-word-break-keep-all { word-break: keep-all !important; }
-.xs-fs-22 { font-size: var(--fs-22) !important; line-height: normal; }
+.xs-fs-22 { font-size: var(--fs-22) !important; }
 .xs-fs-24 { font-size: var(--fs-24) !important; }
 
 
@@ -2489,3 +2489,53 @@ ul.notice > li::before { content: '*'; margin-top: 2px; }
 #container.eyereum_02_02 .list-wrap > .list > li .text-box > a { margin-top: 20px; }
 #container.eyereum_02_02 .list-wrap > .list > li .img { flex: 0 0 auto; width: 100%; aspect-ratio: 71/40; border-radius: 8px; overflow: hidden; }
 #container.eyereum_02_02 .list-wrap > .list > li .img > img { width: 100%; height: auto; object-fit: cover; object-position: center; }
+
+
+
+/* 아이리움 CI */
+#container.eyereum_03 .section1 .box-592 > div:nth-of-type(2) .btn-link { margin-top: 20px; }
+#container.eyereum_03 .section1 .logo-guide-wrap { margin-top: 40px; }
+#container.eyereum_03 .section1 .logo-guide-wrap > .logo-grid-list { display: grid; grid-template-columns: repeat(1, 1fr); gap: 30px; }
+#container.eyereum_03 .section1 .logo-guide-wrap > .logo-grid-list > li { position: relative; display: flex; align-items: center; justify-content: center; border-radius: 14px; overflow: hidden; }
+#container.eyereum_03 .section1 .logo-guide-wrap > .logo-grid-list > li.bg-light { background-color: #f5f5f7; padding: 80px 70px; }
+#container.eyereum_03 .section1 .logo-guide-wrap > .logo-grid-list > li.bg-blue { background-color: var(--highlight-color); padding: 80px 70px; }
+#container.eyereum_03 .section1 .logo-guide-wrap > .logo-grid-list > li > span { position: absolute; top: 14px; left: 14px; font-size: var(--fs-12); color: #686869; line-height: 1.83; }
+#container.eyereum_03 .section1 .logo-guide-wrap > .logo-grid-list > li.bg-blue > span { color: #C5C1C4; }
+#container.eyereum_03 .section1 .logo-guide-wrap > .logo-grid-list > li > div { display: flex; align-items: center; justify-content: center; }
+#container.eyereum_03 .section1 .logo-guide-wrap > .logo-grid-list > li > div.logo { width: 100%; }
+#container.eyereum_03 .section1 .logo-guide-wrap > .logo-grid-list > li > div.logo > img { width: 100%; }
+
+#container.eyereum_03 .section1 .logo-guide-wrap > .logo-grid-list > li.sub-grid-item { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0; padding: 0; }
+#container.eyereum_03 .section1 .logo-guide-wrap > .logo-grid-list > li.sub-grid-item > div { position: relative; display: flex; align-items: center; justify-content: center; padding: 80px 20px; }
+#container.eyereum_03 .section1 .logo-guide-wrap > .logo-grid-list > li.sub-grid-item > div.bg-black { background-color: #000; }
+#container.eyereum_03 .section1 .logo-guide-wrap > .logo-grid-list > li.sub-grid-item > div.bg-light { background-color: #f5f5f7; }
+#container.eyereum_03 .section1 .logo-guide-wrap > .logo-grid-list > li.sub-grid-item > div > .logo { width: 100%; }
+#container.eyereum_03 .section1 .logo-guide-wrap > .logo-grid-list > li.sub-grid-item > div > .logo > img { width: 100%; }
+#container.eyereum_03 .section1 .logo-guide-wrap > .logo-grid-list > li.sub-grid-item > div > span { position: absolute; top: 14px; left: 14px; font-size: var(--fs-12); color: #686869; line-height: 1.44; }
+#container.eyereum_03 .section1 .logo-guide-wrap > .logo-grid-list > li.sub-grid-item > div.bg-black > span { color: #C5C1C4; }
+#container.eyereum_03 .section1 .logo-guide-wrap > div { margin-top: 20px; font-size: var(--fs-16); color: #686869; line-height: 1.5; }
+#container.eyereum_03 .section1 .logo-guide-wrap > div > p { display: flex; gap: 5px; }
+#container.eyereum_03 .section1 .logo-guide-wrap > div > p::before { content: "* "; }
+
+#container.eyereum_03 .section2 { padding-top: 70px; }
+#container.eyereum_03 .section2 .color-guide-list { margin-top: 30px; display: grid; grid-template-columns: repeat(1, 1fr); gap: 40px; padding: 30px 0; border-top: var(--static-10) solid #C5C1C4; border-bottom: var(--static-10) solid #C5C1C4; }
+#container.eyereum_03 .section2 .color-guide-list > li > div { display: flex; align-items: center; }
+#container.eyereum_03 .section2 .color-guide-list > li > div > span { display: block; width: 46px; height: 46px; border-radius: 4px; flex-shrink: 0; }
+#container.eyereum_03 .section2 .color-guide-list > li > div > div { margin-left: 14px; font-size: var(--fs-18); font-weight: 700; color: #000; line-height: 1.44; }
+#container.eyereum_03 .section2 .color-guide-list > li > ul { margin-top: 20px; }
+#container.eyereum_03 .section2 .color-guide-list > li > ul > li { font-size: var(--fs-16); color: #383839; line-height: 1.75; }
+
+#container.eyereum_03 .section2 .symbol-wrap { margin-top: 50px; display: flex; flex-direction: column; }
+#container.eyereum_03 .section2 .symbol-wrap .logo { width: 100%; order: 1; margin-top: 30px;  }
+#container.eyereum_03 .section2 .symbol-wrap .logo > div { width: 100%; border-radius: 8px; background-color: #F5F5F7; display: flex; align-items: flex-end; gap: 10px; padding: 48px 0 48px 90px; }
+#container.eyereum_03 .section2 .symbol-wrap .logo > div > p { width: 64px; aspect-ratio: 1/1; }
+#container.eyereum_03 .section2 .symbol-wrap .logo > div > p:nth-of-type(2) { width: 30px; }
+#container.eyereum_03 .section2 .symbol-wrap .logo > div > p > img { width: 100%; }
+#container.eyereum_03 .section2 .symbol-wrap .logo > p { margin-top: 20px; font-size: var(--fs-16); color: #686869; line-height: 1.5; }
+#container.eyereum_03 .section2 .symbol-wrap .h3-title { order: 0; }
+#container.eyereum_03 .section2 .symbol-wrap .h3-title h3 { line-height: 1.27; }
+#container.eyereum_03 .section2 .symbol-wrap .text { order: 2; }
+#container.eyereum_03 .section2 .symbol-wrap .text > dl { margin-top: 30px; }
+#container.eyereum_03 .section2 .symbol-wrap .text > dl > dt { font-weight: 700; font-size: var(--fs-18); line-height: 1.33; color: #000; }
+#container.eyereum_03 .section2 .symbol-wrap .text > dl > dd { margin-top: 8px; font-size: var(--fs-16); color: #383839; line-height: 1.5; }
+#container.eyereum_03 .section2 .symbol-wrap .text > dl > dd+dt { margin-top: 20px; padding-top: 20px; border-top: var(--static-10) solid #DFDCDF; }
