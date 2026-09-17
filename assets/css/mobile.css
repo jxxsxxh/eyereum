@@ -2343,17 +2343,21 @@ ul.notice > li::before { content: '*'; margin-top: 2px; }
 
 
 /* 망막박리 */
-#container.disease_04_03 .section2 { padding-top: 180px; }
-#container.disease_04_03 .section2 .grid-col-3-title-32-img-text { margin-top: 60px; }
+#container.disease_04_03 .section2 { padding-top: 70px; }
+#container.disease_04_03 .section2 .grid-col-3-title-32-img-text { margin-top: 30px; }
+#container.disease_04_03 .section2 .grid-col-3-title-32-img-text > li { padding-top: 30px; }
+#container.disease_04_03 .section2 .grid-col-3-title-32-img-text > li .title { font-size: var(--fs-20); line-height: normal; }
 
-#container.disease_04_03 .section3 { padding-top: 180px; }
-#container.disease_04_03 .section3 .grid-col-3-title-32-img-text { margin-top: 60px; }
+#container.disease_04_03 .section3 { padding-top: 70px; }
+#container.disease_04_03 .section3 .grid-col-3-title-32-img-text { margin-top: 30px; }
+#container.disease_04_03 .section3 .grid-col-3-title-32-img-text > li { padding-top: 30px; }
+#container.disease_04_03 .section3 .grid-col-3-title-32-img-text > li .title { font-size: var(--fs-20); line-height: normal; }
 #container.disease_04_03 .section3 .grid-col-3-title-32-img-text .text > ul > li { display: flex; gap: 5px; }
 #container.disease_04_03 .section3 .grid-col-3-title-32-img-text .text > ul > li > span { flex: 0 0 auto; }
-#container.disease_04_03 .section3 .bannerContents { margin-top: 120px; }
-#container.disease_04_03 .section3 .bannerContents > div > strong { margin-top: 40px; font-size: var(--fs-20); display: block; }
+#container.disease_04_03 .section3 .bannerContents { margin-top: 50px; }
+#container.disease_04_03 .section3 .bannerContents > div > strong { font-size: var(--fs-16); margin-top: 30px; display: block; }
 
-#container.disease_04_03 .section4 { padding-top: 120px; }
+#container.disease_04_03 .section4 { padding-top: 70px; }
 
 
 
