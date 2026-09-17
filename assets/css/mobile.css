@@ -2539,3 +2539,77 @@ ul.notice > li::before { content: '*'; margin-top: 2px; }
 #container.eyereum_03 .section2 .symbol-wrap .text > dl > dt { font-weight: 700; font-size: var(--fs-18); line-height: 1.33; color: #000; }
 #container.eyereum_03 .section2 .symbol-wrap .text > dl > dd { margin-top: 8px; font-size: var(--fs-16); color: #383839; line-height: 1.5; }
 #container.eyereum_03 .section2 .symbol-wrap .text > dl > dd+dt { margin-top: 20px; padding-top: 20px; border-top: var(--static-10) solid #DFDCDF; }
+
+
+
+/* 의료진 소개 */
+#container.subpage > .top.doctor-banner { position: relative; width: 100%; height: max-content; }
+#container.subpage > .top.doctor-banner > div { width: 100%; height: 100%; z-index: 2; position: relative; }
+#container.subpage > .top.doctor-banner > div > div:nth-of-type(1) { width: 100%; height: 620px; padding-top: 92px; }
+#container.subpage > .top.doctor-banner > div > div:nth-of-type(1) > h1 { position: relative; font-size: var(--fs-38); font-weight: 800; color: #000; line-height: 1.09; font-family: var(--second-font); }
+#container.subpage > .top.doctor-banner > div > div:nth-of-type(1) > p { margin-top: 20px; font-size: var(--fs-18); font-weight: 600; color: #686869; }
+#container.subpage > .top.doctor-banner > div .schedule-table-wrap { width: 100%; background-color: #F5F5F7; }
+#container.subpage > .top.doctor-banner > div .schedule-table-wrap > table { width: 100%; border-collapse: collapse; text-align: center; border-top: var(--static-10) solid var(--highlight-color); }
+#container.subpage > .top.doctor-banner > div .schedule-table-wrap > table > thead > tr > th { font-size: var(--fs-14); font-weight: 700; color: #686869; padding: 18px 0; border-bottom: var(--static-10) dashed #8B898B; }
+#container.subpage > .top.doctor-banner > div .schedule-table-wrap > table > thead > tr > th:first-of-type { color: var(--highlight-color); }
+#container.subpage > .top.doctor-banner > div .schedule-table-wrap > table > tbody > tr > td { font-size: var(--fs-14); font-weight: 700; color: #000; padding: 18px 0; border-bottom: var(--static-10) solid #DFDCDF; background-color: #fff; }
+#container.subpage > .top.doctor-banner > div .schedule-table-wrap > table > tbody > tr > td:first-of-type { font-weight: 700; }
+#container.subpage > .top.doctor-banner > div .schedule-table-wrap > p { padding: 18px;font-size: var(--fs-14); color: #8B898B; line-height: 1.57; }
+#container.subpage > .top.doctor-banner > p.img { width: 100%; height: 620px; position: absolute; left: 0; top: 0; background: url('../img/doctor-bg.webp') center/cover no-repeat; }
+#container.subpage[data-menu-depth3="강성용 대표원장"] > .top.doctor-banner > div > div > h1::before { content: ''; width: 284px; height: 46px; margin-bottom: 20px; display: block; background: url('../img/doctor-logo.webp') center/cover no-repeat; }
+#container.subpage[data-menu-depth3="강성용 대표원장"] > .top.doctor-banner > p.img > img { width: 289px; margin-top: 261px; margin-left: 80px; }
+#container.subpage[data-menu-depth3="최진영 대표원장"] > .top.doctor-banner > p.img > img { width: 268px; margin-top: 242px; margin-left: 66px; }
+#container.subpage[data-menu-depth3="정병훈 대표원장"] > .top.doctor-banner > p.img > img { width: 280px; margin-top: 227px; margin-left: 85px; }
+#container.subpage[data-menu-depth3="장준혁 원장"] > .top.doctor-banner > p.img > img { width: 268px; margin-top: 229px; margin-left: 83px; }
+#container.subpage[data-menu-depth3="정상원 원장"] > .top.doctor-banner > p.img > img { width: 259px; margin-top: 204px; margin-left: 83px; }
+
+
+#container.doctor .contents { padding-top: 0; }
+#container.doctor .tab-category { padding: 20px 0; margin-top: 30px; }
+#container.doctor .tab-category > ul > li { font-size: var(--fs-16); }
+#container.doctor .tab-contents { padding-top: 70px; }
+#container.doctor .tab-contents > div[data-tab-contents] {}
+#container.doctor .tab-contents > div[data-tab-contents] .inner-wrap { display: flex; gap: 30px; flex-direction: column; }
+#container.doctor .tab-contents > div[data-tab-contents] .inner-wrap .h2-title .btn-link { margin-top: 20px; }
+#container.doctor .tab-contents > div[data-tab-contents] .inner-wrap .h2-title .img { margin-top: 60px; width: 260px; aspect-ratio: 130/73; border-radius: 14px; overflow: hidden; }
+#container.doctor .tab-contents > div[data-tab-contents] .inner-wrap .h2-title .img > img { width: 100%; }
+#container.doctor .tab-contents > div[data-tab-contents] .inner-wrap .inner{}
+
+#container.doctor .tab-contents > div[data-tab-contents='학력 및 경력'] .inner > dl > dd { display: flex; gap: 12px; flex-direction: column; }
+#container.doctor .tab-contents > div[data-tab-contents='학력 및 경력'] .inner > dl > dd > span { width: 24px; height: 24px; border-radius: 100px; display: flex; justify-content: center; align-items: center; font-size: var(--fs-13); font-weight: 700; color: #fff; background-color: #000; line-height: 1; }
+#container.doctor .tab-contents > div[data-tab-contents='학력 및 경력'] .inner > dl > dd:first-of-type > span { background-color: var(--main-color); }
+#container.doctor .tab-contents > div[data-tab-contents='학력 및 경력'] .inner > dl > dd > p { font-size: var(--fs-18); font-weight: 700; line-height: 1.54; }
+#container.doctor .tab-contents > div[data-tab-contents='학력 및 경력'] .inner > dl > dd > p > span { font-weight: 500; color: #8B898B; }
+#container.doctor .tab-contents > div[data-tab-contents='학력 및 경력'] .inner > dl > dd+dd { margin-top: 30px; }
+#container.doctor .tab-contents > div[data-tab-contents='학력 및 경력'] .inner > dl+.dot-list { margin-top: 40px; padding-top: 40px; border-top: var(--static-10) solid #C5C1C4; }
+#container.doctor .tab-contents > div[data-tab-contents='학력 및 경력'] .inner > .dot-list > li { line-height: 1.5; font-weight: 500; padding-left: 20px; }
+#container.doctor .tab-contents > div[data-tab-contents='학력 및 경력'] .inner > .dot-list > li+li { margin-top: 12px; }
+
+#container.doctor .tab-contents .list.publications { display: flex; flex-direction: column; gap: 30px; }
+#container.doctor .tab-contents .list.publications > li { padding-bottom: 30px; border-bottom: var(--static-10) solid #C5C1C4; }
+#container.doctor .tab-contents .list.publications > li .title { font-size: var(--fs-18); font-weight: 500; line-height: 1.44; color: #000; word-break: keep-all; }
+#container.doctor .tab-contents .list.publications > li .text { font-size: var(--fs-14); font-weight: 400; line-height: 1.57; color: #8B898B; margin-top: 16px; word-break: keep-all; }
+
+#container.doctor .tab-contents .list.conferences { display: flex; flex-direction: column; gap: 30px; }
+#container.doctor .tab-contents .list.conferences > li { padding-bottom: 30px; border-bottom: var(--static-10) solid #C5C1C4; display: flex; flex-direction: column-reverse; word-break: keep-all; }
+#container.doctor .tab-contents .list.conferences > li:last-of-type {}
+#container.doctor .tab-contents .list.conferences > li .text-box .title { margin-top: 24px; font-size: var(--fs-18); font-weight: 500; line-height: 1.44; color: #000; }
+#container.doctor .tab-contents .list.conferences > li .text-box .text { margin-top: 16px; font-size: var(--fs-14); line-height: 1.5; color: #383839; }
+#container.doctor .tab-contents .list.conferences > li .text-box .thesis { font-size: var(--fs-16); font-weight: 400; line-height: 1.5; color: #8B898B; margin-top: 20px; }
+#container.doctor .tab-contents .list.conferences > li .text-box > dl { margin-top: 16px; }
+#container.doctor .tab-contents .list.conferences > li .text-box > dl > dd { font-size: var(--fs-14); line-height: 1.85; color: #383839; display: flex; gap: 5px; }
+#container.doctor .tab-contents .list.conferences > li .text-box > dl > dd::before { content: '•'; flex: 0 0 auto; }
+#container.doctor .tab-contents .list.conferences > li .text-box > dl > dd > p > span { color: #8B898B; }
+#container.doctor .tab-contents .list.conferences > li .text-box > a { margin-top: 16px; }
+#container.doctor .tab-contents .list.conferences > li .img { width: 100%; aspect-ratio: 71/40; border-radius: 8px; overflow: hidden; }
+#container.doctor .tab-contents .list.conferences > li .img > img { width: 100%; height: auto; object-fit: cover; object-position: center; }
+
+#container.doctor .tab-contents > div[data-tab-contents='관련 뉴스'] .list { display: grid; grid-template-columns: repeat(1, 1fr); gap: 40px; }
+#container.doctor .tab-contents > div[data-tab-contents='관련 뉴스'] .list .img { width: 100%; aspect-ratio: 1/1; border-radius: 8px; overflow: hidden; background-color: #d9d9d9; }
+#container.doctor .tab-contents > div[data-tab-contents='관련 뉴스'] .list .img > img { width: 100%; height: auto; object-fit: cover; object-position: center;  }
+#container.doctor .tab-contents > div[data-tab-contents='관련 뉴스'] .list .title { margin-top: 20px; font-size: var(--fs-18); font-weight: 500; line-height: 1.44; color: #151515; }
+#container.doctor .tab-contents > div[data-tab-contents='관련 뉴스'] .list .date { margin-top: 16px; font-size: var(--fs-14); font-weight: 400; color: #686869; }
+
+#container.doctor .top-blue-box { margin-top: 70px; }
+
+
