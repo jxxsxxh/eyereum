@@ -690,7 +690,7 @@ ul.notice > li::before { content: '*'; margin-top: 2px; }
 #container.subpage .grid-col-2-zigzag > li > .text > .text-box > p+.btn-link { margin-top: 30px; }
 #container.subpage .grid-col-2-zigzag > li > .text > .paper { margin-top: 30px; padding-top: 20px; border-top: var(--static-10) solid #C5C1C4; }
 #container.subpage .grid-col-2-zigzag > li > .text > .paper+.paper { padding-top: 0; border-top: 0; margin-top: 30px; }
-#container.subpage .grid-col-2-zigzag > li > .img-wrap { width: 100%; display: flex; flex-direction: column; gap: 40px; }
+#container.subpage .grid-col-2-zigzag > li > .img-wrap { width: 100%; display: flex; flex-direction: column; gap: 24px; }
 #container.subpage .grid-col-2-zigzag > li > .img { width: 100%; aspect-ratio: 284/160; border-radius: 8px; overflow: hidden; }
 #container.subpage .grid-col-2-zigzag > li > .img > img { width: 100%; }
 #container.subpage .grid-col-2-zigzag > li > .img.auto { aspect-ratio: auto; }
@@ -2139,3 +2139,242 @@ ul.notice > li::before { content: '*'; margin-top: 2px; }
 #container.disease_01_03 .section2 .tab-contents > [data-tab-contents="Case 3"] .result { border-top: var(--static-10) solid #C5C1C4; border-bottom: var(--static-10) solid #C5C1C4; }
 #container.disease_01_03 .section2 .tab-contents > [data-tab-contents="Case 3"] > .box-592+.box-592,
 #container.disease_01_03 .section2 .tab-contents > [data-tab-contents="Case 4"] > .box-592+.box-592 { margin-top: 40px; }
+
+
+
+/* 안구건조증 치료 */
+#container.disease_02_01 .section1 {}
+#container.disease_02_01 .section1 .feature-list { width: 100%; }
+#container.disease_02_01 .section1 .feature-list > ul { display: flex; flex-direction: column; justify-content: center; gap: 40px; margin-top: 40px; }
+#container.disease_02_01 .section1 .feature-list > ul > li { display: flex; flex-direction: column; align-items: center; text-align: center; word-break: keep-all; }
+#container.disease_02_01 .section1 .feature-list > ul > li > img { height: 88px; }
+#container.disease_02_01 .section1 .feature-list > ul > li > h3 { font-size: var(--fs-20); font-weight: 600; color: #fff; margin-top: 20px; line-height: 1.5; }
+
+#container.disease_02_01 .section2 { padding-top: 70px; }
+#container.disease_02_01 .section2 .wide-bannerPart { margin-top: 30px; height: 604px; }
+#container.disease_02_01 .section2 .grid-col-2-zigzag { margin-top: 50px; }
+#container.disease_02_01 .section2 .grid-col-2-zigzag .text-box { word-break: normal !important; }
+#container.disease_02_01 .section2 .grid-col-2-zigzag .text-box > dl > dt { font-size: var(--fs-18); font-weight: 700; line-height: 1.55; display: flex; align-items: center; gap: 12px; }
+#container.disease_02_01 .section2 .grid-col-2-zigzag .text-box > dl > dt::before { content: ''; width: 20px; height: 20px; border-radius: 100px; background-color: #D3C929; }
+#container.disease_02_01 .section2 .grid-col-2-zigzag .text-box > dl > dt:nth-of-type(2):before { background-color: #2DBED8; }
+#container.disease_02_01 .section2 .grid-col-2-zigzag .text-box > dl > dt:nth-of-type(3):before { background-color: #13332C; }
+#container.disease_02_01 .section2 .grid-col-2-zigzag .text-box > dl > dd+dt { margin-top: 30px; }
+#container.disease_02_01 .section2 .grid-col-2-zigzag .text-box > dl > dd { margin-top: 20px; font-size: var(--fs-16); color: #383839; line-height: 1.5; }
+#container.disease_02_01 .section2 .grid-col-2-zigzag .text-box .dot-list-383839+strong { margin-top: 20px; }
+
+#container.disease_02_01 .section3 { padding-top: 70px; }
+#container.disease_02_01 .section3 .grid-col-4-svg-title-text { margin-top: 30px; grid-template-columns: repeat(1, 1fr); }
+#container.disease_02_01 .section3 .grid-col-4-svg-title-text > li+li { margin-top: 40px; }
+#container.disease_02_01 .section3 .grid-col-4-svg-title-text > li > p:nth-of-type(1) { height: 44px; }
+#container.disease_02_01 .section3 .grid-col-4-svg-title-text > li > p:nth-of-type(1) > img { height: 100%; }
+#container.disease_02_01 .section3 .grid-col-4-svg-title-text > li > p:nth-of-type(2) { margin-top: 20px; text-align: center; }
+#container.disease_02_01 .section3 .grid-col-4-svg-title-text > li > div { word-break: normal; }
+
+#container.disease_02_01 .section4 { padding-top: 70px; }
+#container.disease_02_01 .section4 .grid-col-2-zigzag { margin-top: 30px; }
+#container.disease_02_01 .section4 .grid-col-2-zigzag .text-box > span { display: block; font-size: var(--fs-16); color: #8B898B; line-height: 1.5; margin-top: 16px; }
+#container.disease_02_01 .section4 .grid-col-2-zigzag .text-box > span+strong { margin-top: 20px; }
+#container.disease_02_01 .section4 .grid-col-2-zigzag .text-box > ul+strong { margin-top: 20px; }
+
+#container.disease_02_01 .section5 { padding-top: 60px; }
+#container.disease_02_01 .section5 .h3-title h3 { font-size: var(--fs-24); }
+#container.disease_02_01 .section5 .grid-col-3-title-32-img-text { margin-top: 16px; }
+#container.disease_02_01 .section5 .grid-col-3-title-32-img-text > li .title { font-size: var(--fs-20); }
+#container.disease_02_01 .section5 .h2-title { margin-top: 70px; }
+
+
+
+/* 마이봄샘 기능장애 */
+#container.disease_02_02 .section1 {}
+#container.disease_02_02 .section1 .feature-list { width: 100%; }
+#container.disease_02_02 .section1 .feature-list > ul { display: flex; justify-content: center; gap: 150px; margin-top: 80px; }
+#container.disease_02_02 .section1 .feature-list > ul > li { display: flex; flex-direction: column; align-items: center; text-align: center; width: 294px; }
+#container.disease_02_02 .section1 .feature-list > ul > li > img { width: 110px; height: 110px; object-fit: contain; border-radius: 50%; }
+#container.disease_02_02 .section1 .feature-list > ul > li > h3 { font-size: var(--fs-28); font-weight: 600; color: #fff; margin-top: 30px; line-height: 1.35; }
+#container.disease_02_02 .section1 .feature-list > ul > li > h3+p { font-size: var(--fs-16); margin-top: 10px; color: #C5C1C4; line-height: 1.5; }
+
+#container.disease_02_02 .section2 { padding-top: 130px; }
+#container.disease_02_02 .section3 { padding-top: 140px; }
+#container.disease_02_02 .section3 .wide-bannerPart { margin-top: 60px; }
+#container.disease_02_02 .section3 .wide-bannerPart .text .dot-list { margin-top: 20px; }
+#container.disease_02_02 .section3 .wide-bannerPart .text .dot-list > li { color: #686869; line-height: 1.66; }
+#container.disease_02_02 .section3 .wide-bannerPart .text .dot-list > li::before { color: #686869; }
+#container.disease_02_02 .section3 .h3-title { margin-top: 140px; }
+
+#container.disease_02_02 .section4 { padding-top: 140px; }
+#container.disease_02_02 .section4 .grid-col-2-zigzag { margin-top: 60px; }
+#container.disease_02_02 .section4 .grid-col-2-zigzag .num-title-text { margin-top: 20px; padding-top: 40px; border-top: var(--static-10) solid #C5C1C4; }
+#container.disease_02_02 .section4 .grid-col-2-zigzag .num-title-text > li+li { margin-top: 50px; }
+
+#container.disease_02_02 .section5 { padding-top: 120px; }
+#container.disease_02_02 .section5 .dna-step-section { margin-top: 60px; padding-top: 70px; border-top: var(--static-10) solid #C5C1C4; }
+#container.disease_02_02 .section5 .dna-step-section > ul { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0 80px; padding-bottom: 70px; border-bottom: var(--static-10) solid #C5C1C4; }
+#container.disease_02_02 .section5 .dna-step-section > ul > li { text-align: center; display: grid; grid-row: span 3; gap: 0; grid-template-rows: subgrid; justify-content: center; }
+#container.disease_02_02 .section5 .dna-step-section > ul > li > .step-num { font-size: var(--fs-20); color: #000; font-weight: 700; line-height: 1.4; }
+#container.disease_02_02 .section5 .dna-step-section > ul > li > .step-num > span { display: inline-flex; justify-content: center; align-items: center; width: 30px; height: 30px; background-color: #000; color: #fff; border-radius: 50%; font-size: var(--fs-14); margin-left: 14px; vertical-align: middle; }
+#container.disease_02_02 .section5 .dna-step-section > ul > li > strong { display: block; margin-top: 20px; font-size: var(--fs-28); color: #000; font-weight: 700; line-height: 1.35; }
+#container.disease_02_02 .section5 .dna-step-section > ul > li > .img-wrap { margin: 40px auto 0; width: 112px; aspect-ratio: 1/1; }
+#container.disease_02_02 .section5 .dna-step-section > ul > li > .img-wrap > img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+#container.disease_02_02 .section5 .dna-step-section > p { margin-top: 30px; font-size: var(--fs-18); line-height: 1.44; color: #686869; }
+
+#container.disease_02_02 .section5 .box-592 { margin-top: 140px; }
+#container.disease_02_02 .section5 .box-592+.grid-col-3-title-32-img-text { margin-top: 70px; border-top: var(--static-10) solid #C5C1C4; }
+#container.disease_02_02 .section5 .box-592+.grid-col-3-title-32-img-text > li { border-top: 0; }
+#container.disease_02_02 .section5 .box-592+.grid-col-3-title-32-img-text > li .youtube-pop > p.cover::after { width: 56px; height: 56px; }
+#container.disease_02_02 .section5 > .h2-title { margin-top: 140px; }
+
+
+
+/* 결막이완증 */
+#container.disease_03_01 .section1 {}
+#container.disease_03_01 .section1 .feature-list { width: 100%; }
+#container.disease_03_01 .section1 .feature-list > ul { display: flex; justify-content: center; gap: 72px; margin-top: 80px; }
+#container.disease_03_01 .section1 .feature-list > ul > li { display: flex; flex-direction: column; align-items: center; text-align: center; width: 294px; }
+#container.disease_03_01 .section1 .feature-list > ul > li > img { width: 110px; height: 110px; object-fit: contain; border-radius: 50%; }
+#container.disease_03_01 .section1 .feature-list > ul > li > h3 { font-size: var(--fs-28); font-weight: 600; color: #fff; margin-top: 30px; line-height: 1.35; }
+
+#container.disease_03_01 .section2 { padding-top: 130px; }
+#container.disease_03_01 .section2 .wide-bannerPart { margin-top: 60px; }
+#container.disease_03_01 .section2 .wide-bannerPart .text > span { display: block; margin-top: 12px; color: #8B898B; font-size: var(--fs-18); line-height: 1.66; letter-spacing: -0.18px; }
+#container.disease_03_01 .section2 .grid-col-2-zigzag { margin-top: 120px; }
+
+#container.disease_03_01 .section3 { padding-top: 140px; }
+#container.disease_03_01 .section3 .grid-col-2-zigzag { margin-top: 70px; }
+#container.disease_03_01 .section3 .grid-col-4-svg-title-text > li { border-bottom: var(--static-10) dashed #C5C1C4; padding-bottom: 50px; }
+
+#container.disease_03_01 .section4 { padding-top: 180px; }
+
+
+/* 결막모반 */
+#container.disease_03_02 .section1 {}
+#container.disease_03_02 .section1 .grid-col-4-svg-text { margin-top: 70px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 0 80px; justify-content: center; padding: 50px 0; }
+#container.disease_03_02 .section1 .grid-col-4-svg-text > li { display: grid; grid-row: span 2; justify-items: center; }
+#container.disease_03_02 .section1 .grid-col-4-svg-text > li .img { height: 78px; }
+#container.disease_03_02 .section1 .grid-col-4-svg-text > li .img > img { height: 100%; }
+#container.disease_03_02 .section1 .grid-col-4-svg-text > li .text { margin-top: 30px; font-size: var(--fs-18); line-height: 1.44; font-weight: 600; color: #383839; }
+#container.disease_03_02 .section1 .grid-col-2-zigzag { margin-top: 130px; }
+#container.disease_03_02 .section1 .grid-col-2-zigzag .text-box > span { display: block; margin-top: 20px; font-size: var(--fs-18); line-height: 1.55; color: #686869; }
+
+#container.disease_03_02 .section2 { padding-top: 180px; }
+#container.disease_03_02 .section2 .grid-col-2-zigzag { margin-top: 60px; }
+
+#container.disease_03_02 .section3 { padding-top: 180px; }
+#container.disease_03_02 .section3 .grid-col-4-title-28-img-text { margin-top: 60px; padding-top: 50px; counter-reset: step; }
+#container.disease_03_02 .section3 .grid-col-4-title-28-img-text > li { counter-increment: step; }
+#container.disease_03_02 .section3 .grid-col-4-title-28-img-text > li .text { text-align: center; }
+#container.disease_03_02 .section3 .grid-col-4-title-28-img-text > li .step { display: flex; font-size: var(--fs-20); color: #000; font-weight: 700; line-height: 1.4; justify-content: center; gap: 14px; }
+#container.disease_03_02 .section3 .grid-col-4-title-28-img-text > li .step::after { content: counter(step); width: 30px; height: 30px; font-size: var(--fs-14); color: #fff; font-weight: 700; line-height: normal; background-color: #000; border-radius: 100px; display: flex; align-items: center; justify-content: center; }
+#container.disease_03_02 .section3 .grid-col-4-title-28-img-text > li .step+.title { margin-top: 20px; }
+
+#container.disease_03_02 .section4 { padding-top: 120px; }
+
+
+
+/* 익상편 */
+#container.disease_03_03 .section1 > .h3-title { margin-top: 120px; }
+#container.disease_03_03 .section1 > .h3-title+.bannerPart { margin-top: 60px; }
+#container.disease_03_03 .section1 > .box-592 { margin-top: 50px; }
+#container.disease_03_03 .section1 > dl { margin-top: 70px; }
+#container.disease_03_03 .section1 > dl > dt { font-size: var(--fs-22); font-weight: 700; line-height: 1.54; }
+#container.disease_03_03 .section1 > dl > dd > ul.num-title-text { margin-top: 40px; padding: 50px 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 0 80px; }
+#container.disease_03_03 .section1 > dl > dd+dt { margin-top: 70px; }
+#container.disease_03_03 .section1 > dl > dd > ul.dot-list-383839 { margin-top: 20px; }
+#container.disease_03_03 .section1 > dl > dd > p { margin-top: 20px; font-size: var(--fs-18); line-height: 1.55; color: #686869; }
+
+
+
+/* 녹내장 */
+#container.disease_04_01 .section2 { padding-top: 180px; }
+#container.disease_04_01 .section2 .grid-col-2-img-title-32-text { border-top: 0; padding-top: 60px; }
+
+#container.disease_04_01 .section3 { padding-top: 180px; }
+#container.disease_04_01 .section3 .box { width: 100%; background-color: #151515; border-radius: 14px; padding: 80px 90px; margin-top: 60px; }
+#container.disease_04_01 .section3 .box > dl > dt { font-size: var(--fs-32); line-height: 1.25; font-weight: 500; color: #fff; text-align: center; }
+#container.disease_04_01 .section3 .box > dl > dd { margin-top: 60px; }
+#container.disease_04_01 .section3 .box > dl > dd > ul { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0 80px; }
+#container.disease_04_01 .section3 .box > dl > dd > ul > li > .img { width: 100%; }
+#container.disease_04_01 .section3 .box > dl > dd > ul > li > .img > img { width: 100%; }
+#container.disease_04_01 .section3 .box > dl > dd > ul > li > .text { margin-top: 40px; padding-top: 30px; color: #DFDCDF; font-size: var(--fs-18); text-align: center; line-height: 1.66; border-top: var(--static-10) dashed #686869; }
+#container.disease_04_01 .section3 .box+div { margin-top: 70px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 0 80px; padding: 50px 0; }
+#container.disease_04_01 .section3 .box+div > dl > dt { font-size: var(--fs-20); font-weight: 700; line-height: 1.4; }
+#container.disease_04_01 .section3 .box+div > dl > dd { margin-top: 20px; font-size: var(--fs-16); line-height: 1.62; color: #686869; word-break: keep-all; }
+
+#container.disease_04_01 .section4 { padding-top: 180px; }
+#container.disease_04_01 .section4 .grid-col-2-zigzag { margin-top: 60px; }
+
+
+
+/* 황반변성 */
+#container.disease_04_02 .section1 .grid-col-2-zigzag .text-box+div { margin-top: 50px; padding: 40px 0; border-top: var(--static-10) solid #DFDCDF; border-bottom: var(--static-10) solid #DFDCDF; }
+#container.disease_04_02 .section1 .grid-col-2-zigzag .text-box+div > strong { font-size: var(--fs-22); line-height: 1.54; }
+#container.disease_04_02 .section1 .grid-col-2-zigzag .text-box+div > p { width: 162px; margin-top: 20px; }
+#container.disease_04_02 .section1 .grid-col-2-zigzag .text-box+div > p > img { width: 100%; }
+#container.disease_04_02 .section1 .grid-col-2-zigzag .text-box+div+span { display: block; font-weight: 400; font-weight: var(--fs-18); line-height: 1.44; margin-top: 30px; }
+
+#container.disease_04_02 .section2 { padding-top: 140px; }
+#container.disease_04_02 .section2 .h2-title+.bannerPart { margin-top: 60px; }
+#container.disease_04_02 .section2 .box-592 { margin-top: 60px; }
+#container.disease_04_02 .section2 .box-592+.bannerPart { margin-top: 120px; }
+
+#container.disease_04_02 .section3 { padding-top: 180px; }
+#container.disease_04_02 .section3 .bannerPart { margin-top: 60px; }
+#container.disease_04_02 .section3 .bannerPart+div { display: flex; padding: 30px 0; }
+#container.disease_04_02 .section3 .bannerPart+div > p { flex: 1; text-align: center; font-size: var(--fs-18); font-weight: 500; line-height: 1.44; color: #383839; }
+#container.disease_04_02 .section3 .box-592 { margin-top: 70px; }
+#container.disease_04_02 .section3 .box-592 > div:nth-of-type(2) > dl { margin-top: 40px; }
+#container.disease_04_02 .section3 .box-592 > div:nth-of-type(2) > dl > dt { font-weight: 700; font-size: var(--fs-22); line-height: 1.54; color: #000; }
+#container.disease_04_02 .section3 .box-592 > div:nth-of-type(2) > dl > dd { margin-top: 12px; font-size: var(--fs-18); color: #383839; line-height: 1.66; }
+#container.disease_04_02 .section3 .box-592 > div:nth-of-type(2) > dl > dd+dt { margin-top: 40px; padding-top: 40px; border-top: var(--static-10) solid #DFDCDF; }
+
+
+
+/* 망막박리 */
+#container.disease_04_03 .section2 { padding-top: 180px; }
+#container.disease_04_03 .section2 .grid-col-3-title-32-img-text { margin-top: 60px; }
+
+#container.disease_04_03 .section3 { padding-top: 180px; }
+#container.disease_04_03 .section3 .grid-col-3-title-32-img-text { margin-top: 60px; }
+#container.disease_04_03 .section3 .grid-col-3-title-32-img-text .text > ul > li { display: flex; gap: 5px; }
+#container.disease_04_03 .section3 .grid-col-3-title-32-img-text .text > ul > li > span { flex: 0 0 auto; }
+#container.disease_04_03 .section3 .bannerContents { margin-top: 120px; }
+#container.disease_04_03 .section3 .bannerContents > div > strong { margin-top: 40px; font-size: var(--fs-20); display: block; }
+
+#container.disease_04_03 .section4 { padding-top: 120px; }
+
+
+
+/* 당뇨망막병증 */
+#container.disease_04_04 .section2 { padding-top: 180px; }
+#container.disease_04_04 .section2 .bannerPart { margin-top: 60px; }
+#container.disease_04_04 .section2 .bannerPart+.box-592 { margin-top: 50px; }
+#container.disease_04_04 .section2 .box-592+.bannerPart { margin-top: 120px; }
+
+#container.disease_04_04 .section3 { padding-top: 180px; }
+#container.disease_04_04 .section3 .grid-col-2-zigzag { margin-top: 60px; }
+#container.disease_04_04 .section3 .grid-col-2-zigzag .text > strong { font-size: var(--fs-22); line-height: 1.54; margin-top: 40px; display: block; }
+#container.disease_04_04 .section3 .grid-col-2-zigzag .text > dl { margin-top: 40px; }
+#container.disease_04_04 .section3 .grid-col-2-zigzag .text > dl > dt { font-weight: 700; font-size: var(--fs-22); line-height: 1.54; color: #000; }
+#container.disease_04_04 .section3 .grid-col-2-zigzag .text > dl > dd { margin-top: 12px; font-size: var(--fs-18); color: #383839; line-height: 1.66; }
+#container.disease_04_04 .section3 .grid-col-2-zigzag .text > dl > dd+dt { margin-top: 40px; padding-top: 40px; border-top: var(--static-10) solid #DFDCDF; }
+
+
+
+/* 포도막염 */
+#container.disease_04_05 .section1 .grid-col-2-zigzag .text-box > span { display: block; margin-top: 20px; font-size: var(--fs-18); line-height: 1.66; color: #686869; }
+
+
+
+/* 망막혈관폐쇄 */
+#container.disease_04_06 .section2 { padding-top: 180px; }
+#container.disease_04_06 .section2 .bannerPart { margin-top: 60px; }
+#container.disease_04_06 .section2 .bannerPart+.box-592 { margin-top: 50px; }
+#container.disease_04_06 .section2 .bannerPart+.box-592 > div:nth-of-type(2) > dl {}
+#container.disease_04_06 .section2 .bannerPart+.box-592 > div:nth-of-type(2) > dl > dt { font-weight: 700; font-size: var(--fs-22); line-height: 1.54; color: #000; }
+#container.disease_04_06 .section2 .bannerPart+.box-592 > div:nth-of-type(2) > dl > dd { margin-top: 12px; font-size: var(--fs-18); color: #383839; line-height: 1.66; }
+#container.disease_04_06 .section2 .bannerPart+.box-592 > div:nth-of-type(2) > dl > dd+dt { margin-top: 40px; padding-top: 40px; border-top: var(--static-10) solid #DFDCDF; }
+#container.disease_04_06 .section2 .box-592+.grid-col-2-zigzag { margin-top: 130px; }
+#container.disease_04_06 .section2 .box-592+.grid-col-2-zigzag .text > dl { margin-top: 40px; }
+#container.disease_04_06 .section2 .box-592+.grid-col-2-zigzag .text > dl > dt { font-weight: 700; font-size: var(--fs-22); line-height: 1.54; color: #000; }
+#container.disease_04_06 .section2 .box-592+.grid-col-2-zigzag .text > dl > dd { margin-top: 12px; font-size: var(--fs-18); color: #383839; line-height: 1.66; }
+#container.disease_04_06 .section2 .box-592+.grid-col-2-zigzag .text > dl > dd+dt { margin-top: 40px; padding-top: 40px; border-top: var(--static-10) solid #DFDCDF; }
+#container.disease_04_06 .section2 .bannerContents { margin-top: 120px; }
