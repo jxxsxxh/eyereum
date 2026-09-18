@@ -701,7 +701,7 @@ ul.notice > li::before { content: '*'; margin-top: 2px; }
 #container.subpage .grid-col-2-zigzag > li > .text > .paper { margin-top: 30px; padding-top: 20px; border-top: var(--static-10) solid #C5C1C4; }
 #container.subpage .grid-col-2-zigzag > li > .text > .paper+.paper { padding-top: 0; border-top: 0; margin-top: 30px; }
 #container.subpage .grid-col-2-zigzag > li > .img-wrap { width: 100%; display: flex; flex-direction: column; gap: 24px; }
-#container.subpage .grid-col-2-zigzag > li > .img { width: 100%; aspect-ratio: 284/160; border-radius: 8px; overflow: hidden; }
+#container.subpage .grid-col-2-zigzag > li > .img { width: 100%; border-radius: 8px; overflow: hidden; }
 #container.subpage .grid-col-2-zigzag > li > .img > img { width: 100%; }
 #container.subpage .grid-col-2-zigzag > li > .img.auto { aspect-ratio: auto; }
 #container.subpage .grid-col-2-zigzag > li > .img.xs-auto { aspect-ratio: auto; }
@@ -2102,6 +2102,7 @@ ul.notice > li::before { content: '*'; margin-top: 2px; }
 #container.disease_01_01 .section2 .grid-col-2-zigzag .text-box+.notice { margin-top: 20px; line-height: 1.42; font-size: var(--fs-14); }
 #container.disease_01_01 .section2 > .h3-title { margin-top: 70px; }
 #container.disease_01_01 .section2 > .h3-title+.grid-col-3-title-32-img-text { margin-top: 30px; }
+#container.disease_01_01 .section2 > .h3-title+.grid-col-3-title-32-img-text > li .title { font-size: var(--fs-20); }
 
 
 
@@ -2136,30 +2137,37 @@ ul.notice > li::before { content: '*'; margin-top: 2px; }
 #container.disease_01_03 .tab-category { margin-top: 30px; }
 #container.disease_01_03 .tab-contents { margin-top: 40px; }
 #container.disease_01_03 .grid-table { margin-top: 12px; }
-#container.disease_01_03 .grid-table > ul { grid-template-columns: 1fr repeat(3, 210px); width: max-content; }
-#container.disease_01_03 .grid-table > ul > li {  position: relative; background-color: #f9f9f9; }
+#container.disease_01_03 .grid-table > ul { grid-template-columns: 1fr 210px 210px 210px; width: 708px; }
+#container.disease_01_03 .grid-table > ul > li { background-color: #f9f9f9; position: relative; }
 #container.disease_01_03 .grid-table > ul > li:nth-of-type(1) { background-color: #fff; }
+#container.disease_01_03 .grid-table > ul > li:nth-of-type(1) > div { font-size: var(--fs-16); }
 #container.disease_01_03 .grid-table > ul > li:last-of-type { position: relative; }
-#container.disease_01_03 .grid-table > ul > li:last-of-type::before { content: ''; position: absolute; left: -40px; top: calc(50% + 3px); z-index: 3; width: 80px; height: 80px; background: url('../img/svg-grid-arrow.svg') center/100% no-repeat; }
+#container.disease_01_03 .grid-table > ul > li:last-of-type::before { content: ''; position: absolute; left: -28px; top: calc(50% + 10px); z-index: 3; width: 56px; height: 56px; background: url('../img/svg-grid-arrow.svg') center/100% no-repeat; }
+#container.disease_01_03 .grid-table > ul > li:nth-of-type(3)::before { content: ''; position: absolute; left: -28px; top: calc(50% + 10px); z-index: 3; width: 56px; height: 56px; background: url('../img/svg-grid-arrow.svg') center/100% no-repeat; }
 #container.disease_01_03 .grid-table > ul > li:last-of-type::after { content: ''; position: absolute; left: 0; top: -1px; width: calc(100% + var(--static-20)); height: calc(100% + var(--static-20)); border: var(--static-20) solid var(--highlight-color); }
-#container.disease_01_03 .grid-table > ul > li:last-of-type > div { color: var(--highlight-color); font-weight: 700; }
-#container.disease_01_03 .grid-table > ul > li:nth-of-type(3)::before { content: ''; position: absolute; left: -40px; top: calc(50% + 3px); z-index: 3; width: 80px; height: 80px; background: url('../img/svg-grid-arrow.svg') center/100% no-repeat; }
+#container.disease_01_03 .grid-table > ul > li:last-child > div { color: var(--highlight-color); font-weight: 700; text-align: center; }
 
 #container.disease_01_03 .grid-table > ul > li+li > div { align-items: center; }
-#container.disease_01_03 .grid-table > ul > li+li > div:first-of-type { font-size: var(--fs-20); }
-#container.disease_01_03 .grid-table > ul > li+li > div > p { width: 336px; }
+#container.disease_01_03 .grid-table > ul > li+li > div { padding: 18px 0; }
+#container.disease_01_03 .grid-table > ul > li+li > div > p { width: 210px; }
 #container.disease_01_03 .grid-table > ul > li+li > div > p > img { width: 100%; }
-
-#container.disease_01_03 .grid-noti { display: flex; justify-content: center; gap: 80px; padding-right: 10px; font-size: var(--fs-18); color: #686869; line-height: 1.44; margin-top: 30px; padding-bottom: 30px; border-bottom: var(--static-10) solid #DFDCDF; }
-#container.disease_01_03 .grid-noti > div:nth-of-type(1) > p:nth-of-type(1) { width: 129px; }
+#container.disease_01_03 .grid-table > ul > li+li > div > div { margin-top: 20px; display: flex; gap: 10px; align-items: center; }
+#container.disease_01_03 .grid-table > ul > li+li > div > div > span { font-size: var(--fs-16); }
+#container.disease_01_03 .grid-table > ul > li+li > div > div > span:nth-of-type(1) { font-weight: 400; }
+#container.disease_01_03 .grid-table > ul > li+li > div > div > span:nth-of-type(2) { font-size: var(--fs-20); font-weight: 500; line-height: 1.33; }
+#container.disease_01_03 .grid-table > ul > li:last-of-type > div > div > span:nth-of-type(2) { font-weight: 800; }
+#container.disease_01_03 .grid-noti { width: 708px; display: flex; gap: 28px; font-size: var(--fs-14); color: #686869; line-height: 1.38; margin-top: 24px; padding-bottom: 24px; border-bottom: var(--static-10) solid #DFDCDF; }
+#container.disease_01_03 .grid-noti > div:nth-of-type(1) {}
+#container.disease_01_03 .grid-noti > div:nth-of-type(1) > p:nth-of-type(1) { width: 99px; }
 #container.disease_01_03 .grid-noti > div:nth-of-type(1) > p:nth-of-type(1) > img { width: 100%; }
-#container.disease_01_03 .grid-noti > div:nth-of-type(1) > p:nth-of-type(2) { margin-top: 12px; text-align: center; }
-#container.disease_01_03 .grid-noti > div:nth-of-type(2) { width: 800px; margin-top: 3px; }
-#container.disease_01_03 .grid-noti > div:nth-of-type(2) > p > img { width: 100%; }
-#container.disease_01_03 .grid-noti > div:nth-of-type(2) > ul { display: flex; justify-content: space-between; gap: 211px; margin-top: 17px; }
+#container.disease_01_03 .grid-noti > div:nth-of-type(1) > p:nth-of-type(2) { margin-top: 11px; text-align: center; }
+#container.disease_01_03 .grid-noti > div:nth-of-type(2) { width: 573px; margin-top: 3px; }
+#container.disease_01_03 .grid-noti > div:nth-of-type(2) > p > img { width: 100%; height: 6px; }
+#container.disease_01_03 .grid-noti > div:nth-of-type(2) > ul { display: flex; justify-content: space-between; margin-top: 14px; }
 #container.disease_01_03 .grid-noti > div:nth-of-type(2) > ul > li { flex: 1; }
 #container.disease_01_03 .grid-noti > div:nth-of-type(2) > ul > li:nth-of-type(2) { text-align: center; }
 #container.disease_01_03 .grid-noti > div:nth-of-type(2) > ul > li:nth-of-type(3) { text-align: right; }
+
 
 #container.disease_01_03 .result { padding: 20px 0; display: flex; flex-direction: column; align-items: center; text-align: center; }
 #container.disease_01_03 .result > strong { font-size: var(--fs-14); line-height: 1.57; color: var(--highlight-color); }
@@ -2176,8 +2184,8 @@ ul.notice > li::before { content: '*'; margin-top: 2px; }
 #container.disease_01_03 .section2 .tab-contents > [data-tab-contents] > .result+p+.bannerContents { margin-top: 30px; }
 #container.disease_01_03 .section2 .tab-contents > [data-tab-contents] > .result~.result { border-top: var(--static-10) solid #C5C1C4; border-bottom: var(--static-10) solid #C5C1C4; }
 
-#container.disease_01_03 .section2 .tab-contents > [data-tab-contents] > .grid-noti+p { margin-top: 50px; font-size: var(--fs-22); font-weight: 500; line-height: 1.27; }
-#container.disease_01_03 .section2 .tab-contents > [data-tab-contents] > .grid-noti+p+.bannerContents { margin-top: 30px; }
+#container.disease_01_03 .section2 .tab-contents > [data-tab-contents] > .grid-table+p { margin-top: 50px; font-size: var(--fs-22); font-weight: 500; line-height: 1.27; }
+#container.disease_01_03 .section2 .tab-contents > [data-tab-contents] > .grid-table+p+.bannerContents { margin-top: 30px; }
 
 #container.disease_01_03 .section2 .tab-contents > [data-tab-contents="Case 3"] .result { border-top: var(--static-10) solid #C5C1C4; border-bottom: var(--static-10) solid #C5C1C4; }
 #container.disease_01_03 .section2 .tab-contents > [data-tab-contents="Case 3"] > .box-592+.box-592,
@@ -2285,7 +2293,7 @@ ul.notice > li::before { content: '*'; margin-top: 2px; }
 
 #container.disease_03_01 .section2 { padding-top: 70px; }
 #container.disease_03_01 .section2 .wide-bannerPart { margin-top: 30px; height: 844px; }
-#container.disease_03_01 .section2 .wide-bannerPart .text > span { display: block; margin-top: 12px; color: #8B898B; font-size: var(--fs-18); line-height: 1.66; letter-spacing: -0.18px; }
+#container.disease_03_01 .section2 .wide-bannerPart .text > span { display: block; margin-top: 12px; color: #8B898B; font-size: var(--fs-14); line-height: 1.66; letter-spacing: -0.18px; }
 #container.disease_03_01 .section2 .grid-col-2-zigzag { margin-top: 50px; }
 
 #container.disease_03_01 .section3 { padding-top: 70px; }
@@ -2376,7 +2384,7 @@ ul.notice > li::before { content: '*'; margin-top: 2px; }
 #container.disease_04_02 .section3 .bannerPart { margin-top: 30px; }
 #container.disease_04_02 .section3 .bannerPart+div { display: flex; padding: 30px 0; }
 #container.disease_04_02 .section3 .bannerPart+div > p { flex: 1; text-align: center; font-size: var(--fs-18); font-weight: 500; line-height: 1.44; color: #383839; }
-#container.disease_04_02 .section3 .box-592 { margin-top: 30px; }
+#container.disease_04_02 .section3 .box-592 { margin-top: 30px; padding-top: 30px; border-top: var(--static-10) solid #C5C1C4; }
 #container.disease_04_02 .section3 .box-592 > div:nth-of-type(2) > dl { margin-top: 24px; }
 #container.disease_04_02 .section3 .box-592 > div:nth-of-type(2) > dl > dt { font-weight: 700; font-size: var(--fs-18); line-height: 1.44; color: #000; }
 #container.disease_04_02 .section3 .box-592 > div:nth-of-type(2) > dl > dd { margin-top: 16px; font-size: var(--fs-16); color: #383839; line-height: 1.5; }

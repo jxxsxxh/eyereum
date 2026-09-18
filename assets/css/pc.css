@@ -2771,8 +2771,8 @@ ul.notice > li::before { content: '*'; margin-top: 2px; }
 #container.disease_01_03 .section2 .tab-contents > [data-tab-contents] > .result+p { margin-top: 120px; font-size: var(--fs-32); font-weight: 500; line-height: 1.25; }
 #container.disease_01_03 .section2 .tab-contents > [data-tab-contents] > .result+p+.bannerContents { margin-top: 40px; }
 
-#container.disease_01_03 .section2 .tab-contents > [data-tab-contents] > .grid-noti+p { margin-top: 120px; font-size: var(--fs-32); font-weight: 500; line-height: 1.25; }
-#container.disease_01_03 .section2 .tab-contents > [data-tab-contents] > .grid-noti+p+.bannerContents { margin-top: 40px; }
+#container.disease_01_03 .section2 .tab-contents > [data-tab-contents] > .grid-table+p { margin-top: 120px; font-size: var(--fs-32); font-weight: 500; line-height: 1.25; }
+#container.disease_01_03 .section2 .tab-contents > [data-tab-contents] > .grid-table+p+.bannerContents { margin-top: 40px; }
 
 #container.disease_01_03 .section2 .tab-contents > [data-tab-contents="Case 3"] > .box-592+.box-592,
 #container.disease_01_03 .section2 .tab-contents > [data-tab-contents="Case 4"] > .box-592+.box-592 { margin-top: 70px; }
