@@ -2801,3 +2801,21 @@ ul.notice > li::before { content: '*'; margin-top: 2px; }
 #container.equipment_08 .tab-contents > div[data-tab-contents] .list > li .box .info { margin-top: 30px; }
 #container.equipment_08 .tab-contents > div[data-tab-contents] .list > li .box .info > dd { margin-top: 20px; padding-top: 30px; }
 
+
+
+/* 둘러보기 */
+#container.facilities .contents { padding-top: 0; }
+#container.facilities .facilities-slide { width: 100%; overflow: hidden; position: relative; }
+#container.facilities .facilities-slide .swiper-wrapper { height: auto; }
+#container.facilities .facilities-slide .swiper-slide { width: 100%; aspect-ratio: 320/163; height: auto; }
+#container.facilities .facilities-slide .swiper-slide > img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+#container.facilities .facilities-slide .pagination { display: block; position: static; }
+#container.facilities .facilities-slide .pagination > .swiper-pagination-bullet { display: none !important; }
+#container.facilities .facilities-slide .pagination > .swiper-pagination-bullet-active { display: flex !important; padding: 21px 0; background-color: #000; color: #fff; font-size: var(--fs-16); font-weight: 500; line-height: 1.5; justify-content: center; gap: 12px; }
+#container.facilities .facilities-slide .pagination > span::before { content: '7층'; font-weight: 700; }
+#container.facilities_02 .facilities-slide .pagination > span::before { content: '6층'; }
+#container.facilities .facilities-slide .swiper-button { position: absolute; left: auto; bottom: 14px; right: auto; top: auto; z-index: 50; width: 38px; height: 38px; background: url('../img/svg-swiper-btn-gray.svg') center/cover no-repeat; }
+#container.facilities .facilities-slide .swiper-button::after { display: none; }
+#container.facilities .facilities-slide .swiper-button-disabled {opacity: 1; background-image: url('../img/svg-swiper-btn-white.svg'); }
+#container.facilities .facilities-slide .swiper-button-prev { left: var(--w-18); }
+#container.facilities .facilities-slide .swiper-button-next { right: var(--w-18); transform: rotate(180deg);}

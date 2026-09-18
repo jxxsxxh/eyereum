@@ -53,6 +53,8 @@
 				</div>
 			</div>
 			<div class="pagination"></div>
+			<div class="swiper-button-next swiper-button xs"></div>
+			<div class="swiper-button-prev swiper-button xs"></div>
 		</div>
 
 		<script>
@@ -68,6 +70,10 @@
 					fadeEffect: {
 						crossFade: true
 					},
+					navigation: {
+						nextEl: '#container .facilities-slide .swiper-button-next',
+						prevEl: '#container .facilities-slide .swiper-button-prev',
+					},
 					observer: true,
 					observeParents: true,
 					observeSlideChildren: true,
@@ -80,7 +86,12 @@
 						renderBullet: function (index, className) {
 							return '<span class="' + className + '">' + (slideTxt[index]) + '</span>';
 						},
-					}
+					},
+					breakpoints: {
+						1025: {
+							autoHeight: false
+						},
+					},
 				});
 
 				$(slideWrap).find('.pagination').on('mouseenter', '.swiper-pagination-bullet', function () {

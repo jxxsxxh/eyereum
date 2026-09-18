@@ -40,6 +40,8 @@
 				<div class="swiper-slide" data-pagination="수술 대기실"><img src="../assets/img/facilities_02-12.webp" alt=""></div>
 			</div>
 			<div class="pagination"></div>
+			<div class="swiper-button-next swiper-button xs"></div>
+			<div class="swiper-button-prev swiper-button xs"></div>
 		</div>
 
 		<script>
@@ -54,6 +56,10 @@
 					effect: 'fade',
 					fadeEffect: {
 						crossFade: true
+					},
+					navigation: {
+						nextEl: '#container .facilities-slide .swiper-button-next',
+						prevEl: '#container .facilities-slide .swiper-button-prev',
 					},
 					observer: true,
 					observeParents: true,
