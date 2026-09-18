@@ -102,7 +102,7 @@ html.scroll-hidden { overflow: hidden; }
 .btn-main-color { display: inline-block; border-radius: 100px; padding: 22px 36px; border: var(--static-10) solid var(--main-color); font-size: var(--fs-16); font-weight: 700; color: #fff; background-color: var(--main-color); }
 .btn-second-color { display: inline-block; border-radius: 100px; padding: 22px 36px; border: var(--static-10) solid var(--highlight-color); font-size: var(--fs-16); font-weight: 700; color: #fff; background-color: var(--highlight-color); }
 
-.more-detail { font-size: var(--fs-13); font-weight: 800; letter-spacing: -0px; display: flex; align-items: center; gap: 4px; }
+.more-detail { font-size: var(--fs-13); font-weight: 700; letter-spacing: -0px; display: flex; align-items: center; gap: 4px; }
 .more-detail::after { content: ""; width: 16px; height: 16px; border-radius: 100%; background-size: 100%; background-position: center; background-image: url("../img/svg-arrow-right-black.svg");}
 
 .more-detail.white { color: #fff; }
@@ -302,12 +302,12 @@ ul.notice > li::before { content: '*'; margin-top: 2px; }
 
 #pop-layer-wrap { position: fixed; width: 100%; height: 100%; top: 0; left: 0; z-index: 10000; background-color: rgba(0,0,0,0.45); display: none; }
 #pop-layer-wrap .layer { width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; }
-#pop-layer-wrap .layer .inner { width: 200px; aspect-ratio: 16/9; position: relative; }
+#pop-layer-wrap .layer .inner { width: 284px; aspect-ratio: 71/40; position: relative; }
 #pop-layer-wrap .layer .inner[data-type='세로형'] {}
-#pop-layer-wrap .layer .inner .frame { width: 100%; height: 100%; border-radius: 14px; overflow: hidden; background-color: #DFDCDF; }
+#pop-layer-wrap .layer .inner .frame { width: 100%; height: 100%; border-radius: 8px; overflow: hidden; background-color: #DFDCDF; }
 #pop-layer-wrap .layer .inner .frame iframe { width: 100%; height: 100%; }
-#pop-layer-wrap .layer .inner .close { position: absolute; right: -60px; top: -60px; width: 60px; height: 60px; background-color: #000; border-radius: 100px; overflow: hidden; cursor: pointer; }
-#pop-layer-wrap .layer .inner .close svg { width: 100%; }
+#pop-layer-wrap .layer .inner .close { position: absolute; right: 0; top: -50px; width: 40px; height: 40px; background-color: #000; border-radius: 100px; overflow: hidden; cursor: pointer; }
+#pop-layer-wrap .layer .inner .close img { width: 100%; }
 
 
 
@@ -365,8 +365,9 @@ ul.notice > li::before { content: '*'; margin-top: 2px; }
 
 
 
-#container.main .section2 { margin-top: 60px; }
+#container.main .section2 { margin-top: 40px; }
 #container.main .section2 .swiper { position: relative; width: 100%; overflow: hidden; }
+#container.main .section2 .swiper .swiper-wrapper { height: auto; }
 #container.main .section2 .swiper .swiper-slide { position: relative; }
 #container.main .section2 .swiper .swiper-slide > div { position: absolute; left: 0; top: 0; width: 100%; height: 100%; color: #000; padding: 0 var(--w-18); display: flex; flex-direction: column; justify-content: flex-end; align-items: flex-start; padding-bottom: 98px; }
 #container.main .section2 .swiper .swiper-slide[data-pagination='투데이라섹'] > div { color: #fff; }
@@ -431,7 +432,7 @@ ul.notice > li::before { content: '*'; margin-top: 2px; }
 
 
 
-#container.main .section5 { padding-top: 60px; }
+#container.main .section5 { padding-top: 40px; }
 #container.main .section5 > ul { display: flex; flex-direction: column; gap: 40px 0; }
 #container.main .section5 > ul > li { padding-bottom: 0; }
 #container.main .section5 > ul > li > a { display: flex; flex-direction: column; }
@@ -457,7 +458,7 @@ ul.notice > li::before { content: '*'; margin-top: 2px; }
 #container.main .section5 > .btn-wrap { margin-top: 40px; padding-top: 20px; justify-content: flex-end; }
 
 
-#container.main .section6 { padding-top: 60px; padding-bottom: 60px; }
+#container.main .section6 { padding-top: 60px; padding-bottom: 40px; }
 
 
 
@@ -518,7 +519,10 @@ ul.notice > li::before { content: '*'; margin-top: 2px; }
 #container .inc.review-event > .inner > .review > .swiper .swiper-slide > div > span + span::before { content: ''; position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 1px; height: 10px; background-color: #686869; }
 #container .inc.review-event > .inner > .review > .swiper .swiper-slide > p:nth-of-type(2) { margin-top: 6px; font-size: var(--fs-20); font-weight: 600; line-height: 1.3; word-break: keep-all; }
 #container .inc.review-event > .inner > .review > .swiper .swiper-slide > p:nth-of-type(2) > a { color: inherit; text-decoration: none; }
-#container .inc.review-event > .inner > .review > .swiper .nav { margin-top: 30px; padding-top: 20px; border-top: var(--static-10) solid #C5C1C4; height: max-content; }
+#container .inc.review-event > .inner > .review > .swiper .nav { margin-top: 30px; padding-top: 20px; border-top: var(--static-10) solid #C5C1C4; height: max-content; display: grid; grid-template-columns: 1fr 38px 38px; gap: 8px; align-items: center; }
+#container .inc.review-event > .inner > .review > .swiper .nav .page-num { color: #8B898B; align-items: center; height: max-content; }
+#container .inc.review-event > .inner > .review > .swiper .nav .page-num > span { font-size: var(--fs-14); color: #8B898B; font-weight: 400; line-height: 1.71; letter-spacing: -0px; }
+#container .inc.review-event > .inner > .review > .swiper .nav .page-num > span:nth-of-type(1) { font-weight: 800; color: #000; }
 
 #container .inc.review-event > .inner > .event > .event-list {  width: 100%; overflow-x: scroll; padding-bottom: 20px; }
 #container .inc.review-event > .inner > .event > .event-list > ul { width: max-content; display: flex; gap: 24px; }
@@ -541,7 +545,7 @@ ul.notice > li::before { content: '*'; margin-top: 2px; }
 
 
 /* ========== 서브페이지 ========== */
-#container.subpage .inc.online { margin-top: 60px; }
+#container.subpage .inc.online { margin-top: 40px; }
 
 
 #container.subpage > .top { width: 100%; }
@@ -768,8 +772,8 @@ ul.notice > li::before { content: '*'; margin-top: 2px; }
 #container.subpage .wide-bannerPart { position: relative; width: 100%; height: 460px; }
 #container.subpage .wide-bannerPart > p { width: 100%; height: 100%; }
 #container.subpage .wide-bannerPart .layer { position: absolute; left: 0; top: 0; width: 100%; height: 100%; }
-#container.subpage .wide-bannerPart .text-body { word-break: keep-all; font-size: var(--fs-18); line-height: 1.44; color: #000; }
-#container.subpage .wide-bannerPart .text-body-22 { font-size: var(--fs-22); font-weight: 700; line-height: 1.36; }
+#container.subpage .wide-bannerPart .text-body { word-break: keep-all; font-size: var(--fs-16); line-height: 1.5; color: #000; }
+#container.subpage .wide-bannerPart .text-body-22 { font-size: var(--fs-18); font-weight: 700; line-height: 1.44; }
 #container.subpage .wide-bannerPart.white .text strong { color: #fff !important; }
 #container.subpage .wide-bannerPart.white .text .text-body { color: #DFDCDF !important; }
 #container.subpage .wide-bannerPart.white .text .text-body-22 { color: #DFDCDF !important; }
@@ -808,6 +812,7 @@ ul.notice > li::before { content: '*'; margin-top: 2px; }
 
 #container.subpage ul.dot-list { width: 100%; }
 #container.subpage ul.dot-list > li { font-size: var(--fs-16); position: relative; padding-left: 10px; line-height: 1.5; color: #000; }
+#container.subpage ul.dot-list.xs-fs-14 > li { font-size: var(--fs-14); line-height: 1.42; }
 #container.subpage ul.dot-list > li::before { content: '•'; position: absolute; left: 0; top: 0; color: #000; }
 #container.subpage ul.dot-list.senior > li { font-size: var(--fs-16); }
 
@@ -921,7 +926,7 @@ ul.notice > li::before { content: '*'; margin-top: 2px; }
 #container.customSurgery_01 .contents .section2 .table > table > tbody > tr:last-of-type > td > div { display: flex; flex-direction: column; justify-content: space-between; align-items: flex-start; height: 100%; }
 #container.customSurgery_01 .contents .section2 .table > table > tbody > tr:last-of-type > td > div:has(a) > ul { margin-bottom: 18px; padding-bottom: 20px; border-bottom: var(--static-10) dashed #C5C1C4; flex: 1 1 0; }
 
-#container.customSurgery_01 .contents .section3 { padding-top: 70px; }
+#container.customSurgery_01 .contents .section3 { padding-top: 50px; }
 #container.customSurgery_01 .contents .section3 .wide-bannerPart { margin-top: 30px; }
 #container.customSurgery_01 .contents .section3 .grid-col-2-zigzag { margin-top: 50px; }
 

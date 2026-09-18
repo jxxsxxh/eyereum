@@ -210,7 +210,7 @@ $(function () {
 
 
 $(function () {
-	const slideWrap = '#container.board.list .swiper';
+	const slideWrap = '#container .swiper.review';
 
 	new Swiper(slideWrap, {
 		slidesPerView: 'auto',
@@ -226,6 +226,18 @@ $(function () {
 			nextEl: slideWrap + ' .swiper-next',
 			prevEl: slideWrap + ' .swiper-prev',
 		},
+		on: {
+			init: function () {
+				if ($(window).width() <= breakPoint) {
+					$('#container .swiper.review .page-num').html('<span>' + (this.realIndex + 1) + '</span> / <span>' + this.slides.length + '</span>');
+				}
+			},
+			slideChange: function () {
+				if ($(window).width() <= breakPoint) {
+					$('#container .swiper.review .page-num').html('<span>' + (this.realIndex + 1) + '</span> / <span>' + this.slides.length + '</span>');
+				}
+			}
+		}
 	});
 });
 

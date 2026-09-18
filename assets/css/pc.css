@@ -293,7 +293,7 @@ ul.notice > li::before { content: '*'; margin-top: 2px; }
 #pop-layer-wrap .layer .inner .frame { width: 100%; height: 100%; border-radius: 14px; overflow: hidden; background-color: #DFDCDF; }
 #pop-layer-wrap .layer .inner .frame iframe { width: 100%; height: 100%; }
 #pop-layer-wrap .layer .inner .close { position: absolute; right: -60px; top: -60px; width: 60px; height: 60px; background-color: #000; border-radius: 100px; overflow: hidden; cursor: pointer; }
-#pop-layer-wrap .layer .inner .close svg { width: 100%; }
+#pop-layer-wrap .layer .inner .close img { width: 100%; }
 
 
 
