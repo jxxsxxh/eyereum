@@ -570,3 +570,42 @@ $(function () {
 		});
 	}
 });
+
+
+$(function () {
+	if ($(window).width() <= breakPoint) {
+		$('.xs-select').on('click', '> p', (event) => {
+			$(event.currentTarget).next('ul').slideToggle();
+		});
+
+		$('.xs-select').on('click', 'ul > li', function(event) {
+			const $this =$(event.currentTarget);
+			const targetName = $this.data('target');
+
+			const $currentSelectDiv =$this.closest('*[data-select-name]');
+			const $wrapper =$currentSelectDiv.parent();
+			$wrapper.children('*[data-select-name]').removeClass('on');
+			$wrapper.children(`*[data-select-name="${targetName}"]`).addClass('on');
+
+			$this.closest('ul').slideUp();
+		});
+	}
+});
+
+
+$(function () {
+	if ($(window).width() <= breakPoint) {
+		$('.paper > div > span').on('click', function() {
+			const $parent = $(this);
+			const $child = $parent.find('span');
+			const parentLeft = $parent[0].getBoundingClientRect().left;
+			const offsetVw = (window.innerWidth * 5.625) / 100;
+			$child.css({
+				'left': (-parentLeft + offsetVw) + 'px',
+				'--before-left': parentLeft + 'px'
+			});
+
+			$parent.toggleClass('on');
+		});
+	}
+});
