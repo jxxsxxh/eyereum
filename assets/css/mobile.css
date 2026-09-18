@@ -905,6 +905,8 @@ ul.notice > li::before { content: '*'; margin-top: 2px; }
 #container.subpage .swipe-noti > div { width: 30px; height: 30px; border-radius: 30px; border: var(--static-10) solid var(--main-color); display: flex; align-items: center; justify-content: center; color: var(--main-color); line-height: 1; }
 #container.subpage .swipe-noti.white > p { color: #fff; }
 #container.subpage .swipe-noti.white > div { color: #fff; border-color: #fff; }
+#container.subpage .swipe-noti.C5C1C4 > p { color: #C5C1C4; }
+#container.subpage .swipe-noti.C5C1C4 > div { color: #C5C1C4; border-color: #C5C1C4; }
 
 
 #container.customSurgery_01 .contents { padding-top: 0; }
@@ -1118,7 +1120,7 @@ ul.notice > li::before { content: '*'; margin-top: 2px; }
 
 /* 커스텀아이즈 투데이라섹 */
 #container.lasek_01 .section2 { padding-top: 70px; }
-#container.lasek_01 .section2 .step-section { margin-top: 15px; }
+#container.lasek_01 .section2 .step-section { margin-top: 40px; }
 #container.lasek_01 .section2 .step-section > ul { display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px; width: calc(948px + var(--w-18)); padding-right: var(--w-18); padding-top: 40px; border-top: var(--static-10) solid #C5C1C4; padding-bottom: 40px; border-bottom: var(--static-10) solid #C5C1C4; }
 #container.lasek_01 .section2 .step-section > ul > li { text-align: center; }
 #container.lasek_01 .section2 .step-section > ul > li > .step-num { font-size: var(--fs-16); color: #000; font-weight: 700; line-height: 1.62; }
@@ -1162,7 +1164,7 @@ ul.notice > li::before { content: '*'; margin-top: 2px; }
 #container.lasek_01 .section7 .title > h2 { font-size: var(--fs-24); font-weight: 700; color: #fff; }
 #container.lasek_01 .section7 .title > span { display: block; font-size: var(--fs-16); color: #fff; font-weight: 400; margin-top: 16px; }
 #container.lasek_01 .section7 .swipe-noti { padding-right: var(--w-18); padding-bottom: 12px; border-bottom: var(--static-10) dashed #8B898B; }
-#container.lasek_01 .section7 > p { padding: 40px 18px; }
+#container.lasek_01 .section7 > p { padding: 40px 18px; width: 100% !important; }
 #container.lasek_01 .section7 > p > img { width: 1002px; }
 #container.lasek_01 .section7 .float { display: flex; flex-direction: column; padding-bottom: 60px; border-top: var(--static-10) dashed #8B898B; }
 #container.lasek_01 .section7 .float > div:nth-of-type(1) {}
