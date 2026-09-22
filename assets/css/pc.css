@@ -1400,13 +1400,13 @@ ul.notice > li::before { content: '*'; margin-top: 2px; }
 
 
 #container.surgeryGuide_01 .contents .section2 { padding-top: 140px; }
-#container.surgeryGuide_01 .contents .section2 > ul { display: flex; gap: 80px; margin-top: 60px; padding: 50px 0 60px; border-top: var(--static-10) solid #C5C1C4; border-bottom: var(--static-10) solid #C5C1C4; }
-#container.surgeryGuide_01 .contents .section2 > ul > li { flex: 1; }
-#container.surgeryGuide_01 .contents .section2 > ul > li > p { text-align: center; font-size: var(--fs-28); font-weight: 700; line-height: 1.35; }
-#container.surgeryGuide_01 .contents .section2 > ul > li > .svg { padding: 46px 0 50px; text-align: center; }
-#container.surgeryGuide_01 .contents .section2 > ul > li > .svg > svg { height: 77px; }
-#container.surgeryGuide_01 .contents .section2 > ul > li > .text { padding-top: 50px; border-top: var(--static-10) dotted #8B898B; }
-#container.surgeryGuide_01 .contents .section2 > ul > li > .text > span { display: block; margin-top: 20px; font-size: var(--fs-16); line-height: 1.5; color: #686869; }
+#container.surgeryGuide_01 .contents .section2 > .scroll-wrap > ul { display: flex; gap: 80px; margin-top: 60px; padding: 50px 0 60px; border-top: var(--static-10) solid #C5C1C4; border-bottom: var(--static-10) solid #C5C1C4; }
+#container.surgeryGuide_01 .contents .section2 > .scroll-wrap > ul > li { flex: 1; }
+#container.surgeryGuide_01 .contents .section2 > .scroll-wrap > ul > li > p { text-align: center; font-size: var(--fs-28); font-weight: 700; line-height: 1.35; }
+#container.surgeryGuide_01 .contents .section2 > .scroll-wrap > ul > li > .svg { padding: 46px 0 50px; text-align: center; }
+#container.surgeryGuide_01 .contents .section2 > .scroll-wrap > ul > li > .svg > img { height: 77px; }
+#container.surgeryGuide_01 .contents .section2 > .scroll-wrap > ul > li > .text { padding-top: 50px; border-top: var(--static-10) dotted #8B898B; }
+#container.surgeryGuide_01 .contents .section2 > .scroll-wrap > ul > li > .text > span { display: block; margin-top: 20px; font-size: var(--fs-16); line-height: 1.5; color: #686869; }
 
 
 #container.surgeryGuide_01 .contents .section3 { padding-top: 140px; display: flex; }
@@ -1455,8 +1455,8 @@ ul.notice > li::before { content: '*'; margin-top: 2px; }
 #container.surgeryGuide_02 .inspection-process > ul > li:nth-of-type(16)::after { left: -3.6458vw; border-right: 0; border-left: 0.5208vw solid #DFDCDF; border-radius: 4.1667vw 0 0 4.1667vw; }
 #container.surgeryGuide_02 .inspection-process > ul > li .num { position: relative; display: inline-flex; align-items: center; justify-content: center; width: 2.6042vw; height: 2.6042vw; background-color: #000; color: #fff; font-size: var(--fs-20); font-weight: 700; border-radius: 50%; z-index: 3; }
 #container.surgeryGuide_02 .inspection-process > ul > li.active .num { background-color: var(--main-color); }
-#container.surgeryGuide_02 .inspection-process > ul > li > strong { display: block; font-size: var(--fs-28); font-weight: 700; line-height: 1.35; margin-top: 0.7813vw; }
-#container.surgeryGuide_02 .inspection-process > ul > li > p { font-size: var(--fs-18); color: #383839; line-height: 1.44; margin-top: 0.7813vw; }
+#container.surgeryGuide_02 .inspection-process > ul > li > div > strong { display: block; font-size: var(--fs-28); font-weight: 700; line-height: 1.35; margin-top: 0.7813vw; }
+#container.surgeryGuide_02 .inspection-process > ul > li > div > p { font-size: var(--fs-18); color: #383839; line-height: 1.44; margin-top: 0.7813vw; }
 #container.surgeryGuide_02 .inspection-process > ul > li .badge { display: inline-block; background-color: var(--main-color); color: #fff; font-size: var(--fs-13); font-weight: 600; padding: 0.1563vw 0.4167vw 0.1042vw 0.4167vw; border-radius: 0.2083vw; margin-top: 0.7813vw; }
 #container.surgeryGuide_02 .inspection-process > .notice { padding-top: 1.0417vw; border-top: var(--static-10) solid #C5C1C4; }
 
@@ -1501,8 +1501,8 @@ ul.notice > li::before { content: '*'; margin-top: 2px; }
 #container.surgeryGuide_02_03 .inspection-process .branch-wrap > dl > dd .num { background-color: var(--main-color); }
 #container.surgeryGuide_02_03 .inspection-process .branch-wrap > dl:nth-of-type(2) dd .num { background-color: #0043FF; }
 #container.surgeryGuide_02_03 .inspection-process .branch-wrap > dl:nth-of-type(2) > dd.step-15 .num { background-color: #DFDCDF; }
-#container.surgeryGuide_02_03 .inspection-process .branch-wrap > dl > dd > strong { display: block; font-size: var(--fs-28); font-weight: 700; line-height: 1.35; margin-top: 0.7813vw; }
-#container.surgeryGuide_02_03 .inspection-process .branch-wrap > dl > dd > p { font-size: var(--fs-18); color: #383839; line-height: 1.44; margin-top: 0.7813vw; }
+#container.surgeryGuide_02_03 .inspection-process .branch-wrap > dl > dd > div > strong { display: block; font-size: var(--fs-28); font-weight: 700; line-height: 1.35; margin-top: 0.7813vw; }
+#container.surgeryGuide_02_03 .inspection-process .branch-wrap > dl > dd > div > p { font-size: var(--fs-18); color: #383839; line-height: 1.44; margin-top: 0.7813vw; }
 
 
 #container.surgeryGuide_02 .section2 { padding-top: 180px; }
