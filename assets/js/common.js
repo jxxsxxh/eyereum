@@ -164,7 +164,7 @@ $(function () {
 		fadeEffect: {
 			crossFade: true
 		},
-		autoHeight: true,
+		autoHeight: false,
 		observer: true,
 		observeParents: true,
 		observeSlideChildren: true,
